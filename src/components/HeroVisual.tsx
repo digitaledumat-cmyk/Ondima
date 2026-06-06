@@ -3,19 +3,15 @@ import heroImage from "@/public/ondima.webp";
 
 export default function HeroVisual() {
   return (
-    <div className="glow-border-purple relative overflow-hidden rounded-2xl">
-      <div className="relative aspect-[4/3] min-h-[320px] w-full sm:min-h-[380px] lg:min-h-[420px]">
+    <div className="glow-border-purple relative isolate overflow-hidden rounded-2xl">
+      <div className="relative aspect-[4/3] min-h-[320px] w-full overflow-hidden rounded-2xl sm:min-h-[380px] lg:min-h-[420px]">
         <Image
           src={heroImage}
           alt="Ondima IPTV Maroc Premium — Streaming 4K stable et abonnement IPTV 2026"
           fill
           priority
-          className="h-full w-full object-contain object-center"
+          className="rounded-2xl object-cover object-center"
           sizes="(max-width: 1024px) 100vw, 50vw"
-        />
-        <div
-          className="pointer-events-none absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-[#0a0a0c]"
-          aria-hidden
         />
       </div>
     </div>
