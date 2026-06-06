@@ -2,7 +2,8 @@ import type { MetadataRoute } from "next";
 
 import { legalNav, mainNav } from "@/lib/navigation";
 
-const WEEKLY_PATHS = ["/fonctionnalites", "/guide"];
+const WEEKLY_PATHS = ["/fonctionnalites", "/guide", "/abonnement-iptv"];
+const HIGH_PRIORITY_PATHS = ["/abonnement-iptv"];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = "https://ondima.ma";
@@ -11,7 +12,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const pages = [
     "/",
     ...mainNav.map((n) => n.href).filter((h) => !h.includes("#")),
-    "/abonnement-iptv",
     "/sitemap-html",
     ...legalNav.map((n) => n.href),
   ];
@@ -23,6 +23,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: now,
     changeFrequency:
       path === "/" || WEEKLY_PATHS.includes(path) ? "weekly" : "monthly",
-    priority: path === "/" ? 1 : path.includes("/legal") ? 0.3 : 0.8,
+    priority: path === "/"
+      ? 1
+      : HIGH_PRIORITY_PATHS.includes(path)
+        ? 0.9
+        : path.includes("/legal")
+          ? 0.3
+          : 0.8,
   }));
 }

@@ -7,6 +7,17 @@ export const abonnementSeoIntro = {
   ],
 };
 
+export const abonnementPricingSeo = {
+  title: "Pourquoi nos tarifs IPTV Maroc sont les plus compétitifs en 2026",
+  paragraphs: [
+    "Lorsque vous comparez un abonnement IPTV Maroc sur le marché, le prix affiché ne reflète jamais toute la réalité technique. Chez Ondima, chaque formule — de l'Accès Essentiel à 249 dhs/an à l'Exclusif Suprême VIP à 449 dhs/an — repose sur une infrastructure VPS OTT réelle, monitorée 24h/24, et non sur des serveurs mutualisés instables.",
+    "Nos tarifs IPTV Maroc intègrent l'Anti-freeze 2.2 sur le pack VIP, un routage Smart-OTT multi-CDN, un EPG dynamique et un support WhatsApp en français disponible à toute heure. Autrement dit : vous achetez IPTV Maroc avec une garantie de performance, pas un simple lien M3U sans assistance.",
+    "Le rapport qualité-prix IPTV d'Ondima surpasse la concurrence low-cost qui facture des recharges cachées, des coupures en direct et zéro SAV. Nos prix IPTV sont fixes, annuels et transparents : 249, 349 ou 449 dhs, activation immédiate, sans mensualité surprise.",
+    "Que vous souhaitiez acheter IPTV Maroc pour un foyer modeste (1 écran HD) ou équiper toute la famille en 4K UHD (3 écrans simultanés), notre grille tarifaire vous permet de choisir précisément le niveau de serveur dont vous avez besoin — Standard, Haute Disponibilité ou VPS dédié — sans payer pour des options inutiles.",
+    "Commandez votre abonnement IPTV Maroc via WhatsApp : notre équipe valide votre forfait, configure votre appareil à distance et active votre accès en moins de 5 minutes. Garantie 45 jours satisfait ou remboursé sur toutes les formules.",
+  ],
+};
+
 export const guideDeviceBlocks = [
   {
     id: "smart-tv",

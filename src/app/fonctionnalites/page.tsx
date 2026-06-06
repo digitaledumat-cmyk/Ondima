@@ -109,7 +109,7 @@ export default function FonctionnalitesPage() {
                 Essai 24h gratuit
               </a>
               <Link
-                href="/#tarifs"
+                href="/abonnement-iptv"
                 className="btn-orange rounded-full px-8 py-3.5 text-sm font-bold text-white"
               >
                 Voir les forfaits

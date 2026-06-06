@@ -117,7 +117,7 @@ export default function GuidePage() {
               </Link>
               {" · "}
               <Link
-                href="/#tarifs"
+                href="/abonnement-iptv"
                 className="text-violet-400 hover:text-violet-300"
               >
                 Voir les forfaits

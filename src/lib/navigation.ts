@@ -1,6 +1,6 @@
 export const mainNav = [
   { label: "Accueil", href: "/" },
-  { label: "Tarifs", href: "/#tarifs" },
+  { label: "Tarifs", href: "/abonnement-iptv" },
   { label: "Fonctionnalités", href: "/fonctionnalites" },
   { label: "Guide", href: "/guide" },
   { label: "FAQ", href: "/faq" },
@@ -24,10 +24,9 @@ export const sitemapSections = [
     description: "Navigation essentielle du site Ondima.ma",
     links: [
       { label: "Accueil", href: "/" },
-      { label: "Tarifs & forfaits", href: "/#tarifs" },
+      { label: "Abonnement IPTV — Tarifs & forfaits", href: "/abonnement-iptv" },
       { label: "Fonctionnalités techniques", href: "/fonctionnalites" },
       { label: "Guide d'installation", href: "/guide" },
-      { label: "Abonnement IPTV", href: "/abonnement-iptv" },
       { label: "FAQ", href: "/faq" },
       { label: "Blog", href: "/blog" },
       { label: "Contact", href: "/contact" },
@@ -37,6 +36,7 @@ export const sitemapSections = [
     title: "Ressources SEO & support",
     description: "Maillage interne optimisé pour l'indexation 2026",
     links: [
+      { label: "Tarifs IPTV Maroc — Abonnement", href: "/abonnement-iptv" },
       { label: "IPTV Smart TV Maroc — Guide", href: "/guide" },
       { label: "IPTV 4K Maroc — Fonctionnalités", href: "/fonctionnalites" },
       { label: "Meilleur IPTV Maroc — Accueil", href: "/" },
