@@ -1,0 +1,10 @@
+{
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "www.ondima.ma" }],
+      "destination": "https://ondima.ma/:path*",
+      "permanent": true
+    }
+  ]
+}

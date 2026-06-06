@@ -1,0 +1,373 @@
+@import "tailwindcss";
+
+@theme {
+  --color-void: #0a0a0c;
+  --color-void-elevated: #111116;
+  --color-neon-violet: #a855f7;
+  --color-neon-purple: #7c3aed;
+  --color-cta-orange: #f97316;
+  --color-cta-orange-hover: #ea580c;
+  --color-whatsapp: #22c55e;
+  --color-whatsapp-hover: #16a34a;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-void);
+    color: #e4e4e7;
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::selection {
+    background-color: rgba(168, 85, 247, 0.35);
+    color: #fff;
+  }
+}
+
+@layer utilities {
+  .glass-panel {
+    background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.06) 0%,
+      rgba(255, 255, 255, 0.02) 100%
+    );
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .glow-border-purple {
+    position: relative;
+    border: 1px solid rgba(168, 85, 247, 0.45);
+    box-shadow:
+      0 0 30px rgba(168, 85, 247, 0.25),
+      0 0 60px rgba(124, 58, 237, 0.12),
+      inset 0 0 40px rgba(124, 58, 237, 0.05);
+  }
+
+  .glow-border {
+    position: relative;
+  }
+
+  .glow-border::before {
+    content: "";
+    position: absolute;
+    inset: -1px;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(
+      135deg,
+      rgba(168, 85, 247, 0.6),
+      rgba(124, 58, 237, 0.3),
+      rgba(168, 85, 247, 0.1)
+    );
+    -webkit-mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+    opacity: 0.7;
+    transition: opacity 0.4s ease;
+  }
+
+  .glow-border:hover::before {
+    opacity: 1;
+  }
+
+  .neon-text {
+    background: linear-gradient(135deg, #c084fc 0%, #a855f7 40%, #22d3ee 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .btn-orange {
+    background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+    box-shadow: 0 4px 20px rgba(249, 115, 22, 0.35);
+    transition: all 0.3s ease;
+  }
+
+  .btn-orange:hover {
+    background: linear-gradient(135deg, #fb923c 0%, #f97316 100%);
+    box-shadow: 0 6px 28px rgba(249, 115, 22, 0.5);
+    transform: translateY(-1px);
+  }
+
+  .btn-whatsapp {
+    background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+    box-shadow: 0 4px 20px rgba(34, 197, 94, 0.35);
+    transition: all 0.3s ease;
+  }
+
+  .btn-whatsapp:hover {
+    background: linear-gradient(135deg, #4ade80 0%, #22c55e 100%);
+    box-shadow: 0 6px 28px rgba(34, 197, 94, 0.5);
+    transform: translateY(-1px);
+  }
+
+  .neon-cta {
+    background: linear-gradient(135deg, #7c3aed 0%, #06b6d4 100%);
+    box-shadow:
+      0 0 20px rgba(124, 58, 237, 0.4),
+      0 0 40px rgba(6, 182, 212, 0.15);
+    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .neon-cta:hover {
+    box-shadow:
+      0 0 30px rgba(124, 58, 237, 0.6),
+      0 0 60px rgba(6, 182, 212, 0.3);
+    transform: translateY(-2px) scale(1.02);
+  }
+
+  .featured-badge {
+    animation: featured-glow 2.5s ease-in-out infinite;
+  }
+
+  @keyframes featured-glow {
+    0%,
+    100% {
+      box-shadow: 0 0 12px rgba(124, 58, 237, 0.4);
+    }
+    50% {
+      box-shadow: 0 0 24px rgba(6, 182, 212, 0.5);
+    }
+  }
+
+  .hero-grid {
+    background-image:
+      linear-gradient(rgba(168, 85, 247, 0.06) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(168, 85, 247, 0.06) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
+
+  .hero-glow-left {
+    background: radial-gradient(
+      ellipse 80% 60% at 20% 50%,
+      rgba(124, 58, 237, 0.18) 0%,
+      transparent 70%
+    );
+  }
+
+  .hero-glow-right {
+    background: radial-gradient(
+      ellipse 70% 70% at 80% 40%,
+      rgba(168, 85, 247, 0.22) 0%,
+      transparent 65%
+    );
+  }
+
+  .pill-tag {
+    background: rgba(124, 58, 237, 0.15);
+    border: 1px solid rgba(168, 85, 247, 0.35);
+    backdrop-filter: blur(8px);
+  }
+
+  .cyber-brand {
+    text-shadow:
+      0 0 10px rgba(168, 85, 247, 0.8),
+      0 0 30px rgba(124, 58, 237, 0.6),
+      0 0 60px rgba(168, 85, 247, 0.3);
+    letter-spacing: 0.15em;
+  }
+
+  .ambient-orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    pointer-events: none;
+    will-change: transform;
+  }
+
+  .grid-cyber {
+    background-image:
+      linear-gradient(rgba(139, 92, 246, 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(139, 92, 246, 0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+  }
+
+  .vip-badge-pulse {
+    animation: vip-pulse 2.5s ease-in-out infinite;
+  }
+
+  @keyframes vip-pulse {
+    0%,
+    100% {
+      box-shadow: 0 0 12px rgba(251, 191, 36, 0.4);
+    }
+    50% {
+      box-shadow: 0 0 28px rgba(251, 191, 36, 0.7);
+    }
+  }
+
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-8px);
+    }
+  }
+
+  .float-slow {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  @keyframes shimmer {
+    0% {
+      background-position: -200% center;
+    }
+    100% {
+      background-position: 200% center;
+    }
+  }
+
+  .shimmer-line {
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(168, 85, 247, 0.4),
+      rgba(124, 58, 237, 0.4),
+      transparent
+    );
+    background-size: 200% 100%;
+    animation: shimmer 4s linear infinite;
+  }
+
+  .nav-active {
+    position: relative;
+  }
+
+  .nav-active::after {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: #f97316;
+    border-radius: 2px;
+  }
+
+  /* ── OnDima Logo — Vert Électrique #00ff00 ── */
+  .logo-on-switch {
+    border-color: rgba(0, 255, 0, 0.6);
+    background: linear-gradient(
+      135deg,
+      rgba(0, 255, 0, 0.15) 0%,
+      rgba(0, 200, 80, 0.1) 50%,
+      rgba(0, 255, 0, 0.05) 100%
+    );
+    color: #00ff00;
+    box-shadow:
+      0 0 14px rgba(0, 255, 0, 0.55),
+      0 0 32px rgba(0, 255, 0, 0.3),
+      0 0 60px rgba(0, 255, 0, 0.12),
+      inset 0 0 14px rgba(0, 255, 0, 0.15);
+    transition: box-shadow 0.35s ease, border-color 0.35s ease;
+  }
+
+  .group\/logo:hover .logo-on-switch {
+    border-color: rgba(0, 255, 0, 0.9);
+    box-shadow:
+      0 0 20px rgba(0, 255, 0, 0.75),
+      0 0 48px rgba(0, 255, 0, 0.45),
+      0 0 80px rgba(0, 255, 0, 0.2),
+      inset 0 0 20px rgba(0, 255, 0, 0.22);
+  }
+
+  .logo-on-glow {
+    background: radial-gradient(
+      ellipse at 30% 50%,
+      rgba(0, 255, 0, 0.45) 0%,
+      transparent 70%
+    );
+    animation: logo-power-pulse 2.8s ease-in-out infinite;
+  }
+
+  .logo-on-text {
+    color: #00ff00;
+    text-shadow:
+      0 0 8px #00ff00,
+      0 0 20px rgba(0, 255, 0, 0.8),
+      0 0 40px rgba(0, 255, 0, 0.4);
+  }
+
+  .logo-on-icon {
+    color: #00ff00;
+    filter: drop-shadow(0 0 6px #00ff00);
+    animation: logo-icon-flicker 3s ease-in-out infinite;
+  }
+
+  .logo-on-dot {
+    background: #00ff00;
+    box-shadow: 0 0 8px #00ff00, 0 0 16px rgba(0, 255, 0, 0.7);
+    animation: logo-dot-pulse 2s ease-in-out infinite;
+  }
+
+  .logo-dima {
+    color: #ffffff;
+    background: linear-gradient(180deg, #ffffff 0%, #f4f4f5 50%, #e4e4e7 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 1px 2px rgba(255, 255, 255, 0.2));
+  }
+
+  .logo-domain {
+    background: linear-gradient(135deg, #a1a1aa 0%, #71717a 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  @keyframes logo-power-pulse {
+    0%,
+    100% {
+      opacity: 0.6;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes logo-icon-flicker {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    92% {
+      opacity: 1;
+    }
+    94% {
+      opacity: 0.7;
+    }
+    96% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes logo-dot-pulse {
+    0%,
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.7;
+      transform: scale(0.85);
+    }
+  }
+}
