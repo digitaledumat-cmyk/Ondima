@@ -13,7 +13,10 @@ export default function HeroVisual() {
           className="h-full w-full object-contain object-center"
           sizes="(max-width: 1024px) 100vw, 50vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/30 to-[#0a0a0c]/50" />
+        <div
+          className="pointer-events-none absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-[#0a0a0c]"
+          aria-hidden
+        />
       </div>
     </div>
   );

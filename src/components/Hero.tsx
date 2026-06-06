@@ -26,19 +26,19 @@ export default function Hero() {
         <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-12 xl:gap-16">
           {/* Left content */}
           <div className="space-y-6 lg:space-y-7">
-            <p className="text-xs font-medium tracking-[0.2em] text-zinc-500 uppercase">
+            <p className="text-xs font-medium tracking-[0.2em] text-zinc-500 uppercase drop-shadow-[0_4px_12px_rgba(0,0,0,1)]">
               Le futur du divertissement · Maroc
             </p>
 
-            <h1 className="text-4xl leading-[1.1] font-extrabold tracking-tight text-white sm:text-5xl xl:text-[3.25rem]">
+            <h1 className="text-4xl leading-[1.1] font-extrabold tracking-tight text-white drop-shadow-[0_4px_12px_rgba(0,0,0,1)] sm:text-5xl xl:text-[3.25rem]">
               Le Meilleur IPTV Maroc en 2026 : Streaming Premium Stable
             </h1>
 
-            <p className="text-lg font-semibold text-cta-orange sm:text-xl">
+            <p className="text-lg font-semibold text-cta-orange drop-shadow-[0_4px_12px_rgba(0,0,0,1)] sm:text-xl">
               Meilleur abonnement 4K premium · 2026
             </p>
 
-            <p className="max-w-lg text-base leading-relaxed text-zinc-300">
+            <p className="max-w-lg text-base leading-relaxed text-zinc-300 drop-shadow-[0_4px_12px_rgba(0,0,0,1)]">
               Trois forfaits Ondima 12 mois : live, sport, VOD et essai 24h via
               WhatsApp.
             </p>
@@ -80,10 +80,10 @@ export default function Hero() {
             </div>
 
             <div className="space-y-1 pt-2">
-              <p className="text-sm text-zinc-500">
+              <p className="text-sm text-zinc-500 drop-shadow-[0_4px_12px_rgba(0,0,0,1)]">
                 Garantie 45 jours · Support 24/7 · Dès 249 DH/an
               </p>
-              <p className="text-xs text-zinc-600">
+              <p className="text-xs text-zinc-600 drop-shadow-[0_4px_12px_rgba(0,0,0,1)]">
                 Essai 24h : test gratuit — Commencer : aide pour choisir votre
                 forfait
               </p>
