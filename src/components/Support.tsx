@@ -26,10 +26,10 @@ export default function Support() {
               <p className="mb-3 text-sm font-medium tracking-widest text-cyan-400 uppercase">
                 Support & Installation
               </p>
-              <p className="mb-4 text-2xl font-bold text-white sm:text-3xl">
+              <h2 className="mb-4 text-2xl font-bold text-white sm:text-3xl">
                 Activation rapide via{" "}
                 <span className="neon-text">WhatsApp</span>
-              </p>
+              </h2>
               <p className="mb-8 text-sm leading-relaxed text-zinc-400">
                 Une question sur la playlist, l&apos;application ou le choix du
                 forfait ? Notre support vous accompagne de A à Z pour finaliser

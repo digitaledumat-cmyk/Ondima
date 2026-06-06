@@ -30,9 +30,9 @@ export default function Hero() {
               Le futur du divertissement · Maroc
             </p>
 
-            <h2 className="text-4xl leading-[1.1] font-extrabold tracking-tight text-white sm:text-5xl xl:text-[3.25rem]">
+            <h1 className="text-4xl leading-[1.1] font-extrabold tracking-tight text-white sm:text-5xl xl:text-[3.25rem]">
               Le Meilleur IPTV Maroc en 2026 : Streaming Premium Stable
-            </h2>
+            </h1>
 
             <p className="text-lg font-semibold text-cta-orange sm:text-xl">
               Meilleur abonnement 4K premium · 2026

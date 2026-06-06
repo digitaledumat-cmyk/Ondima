@@ -6,10 +6,10 @@ export default function WhyChooseIptv() {
           <p className="mb-3 text-sm font-medium tracking-widest text-violet-400 uppercase">
             Pourquoi Ondima
           </p>
-          <p className="mb-8 text-2xl font-bold tracking-tight text-white sm:text-3xl">
+          <h2 className="mb-8 text-2xl font-bold tracking-tight text-white sm:text-3xl">
             Pourquoi choisir notre{" "}
             <span className="neon-text">IPTV Maroc</span> ?
-          </p>
+          </h2>
 
           <div className="space-y-6 text-sm leading-[1.85] text-zinc-400 sm:text-base">
             <p>
