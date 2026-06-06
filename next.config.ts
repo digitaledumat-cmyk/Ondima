@@ -15,6 +15,11 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
+        source: "/guide-installation",
+        destination: "/guide",
+        permanent: true,
+      },
+      {
         source: "/:path*",
         has: [{ type: "host", value: "www.ondima.ma" }],
         destination: "https://ondima.ma/:path*",

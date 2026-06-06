@@ -34,7 +34,7 @@ export default function AbonnementPage() {
         <TrialForm />
         <div className="pb-12 text-center">
           <p className="text-sm text-zinc-600">
-            <Link href="/guide-installation" className="text-violet-400 hover:text-violet-300">
+            <Link href="/guide" className="text-violet-400 hover:text-violet-300">
               Guide d&apos;installation
             </Link>
             {" · "}

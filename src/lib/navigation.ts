@@ -1,8 +1,8 @@
 export const mainNav = [
   { label: "Accueil", href: "/" },
-  { label: "Tarifs", href: "/abonnement-iptv" },
-  { label: "Fonctionnalités", href: "/#avantages" },
-  { label: "Guide", href: "/guide-installation" },
+  { label: "Tarifs", href: "/#tarifs" },
+  { label: "Fonctionnalités", href: "/fonctionnalites" },
+  { label: "Guide", href: "/guide" },
   { label: "FAQ", href: "/faq" },
   { label: "Blog", href: "/blog" },
   { label: "Contact", href: "/contact" },
@@ -21,17 +21,31 @@ export const legalNav = [
 export const sitemapSections = [
   {
     title: "Pages principales",
+    description: "Navigation essentielle du site Ondima.ma",
     links: [
       { label: "Accueil", href: "/" },
+      { label: "Tarifs & forfaits", href: "/#tarifs" },
+      { label: "Fonctionnalités techniques", href: "/fonctionnalites" },
+      { label: "Guide d'installation", href: "/guide" },
       { label: "Abonnement IPTV", href: "/abonnement-iptv" },
-      { label: "Guide d'installation", href: "/guide-installation" },
       { label: "FAQ", href: "/faq" },
       { label: "Blog", href: "/blog" },
       { label: "Contact", href: "/contact" },
     ],
   },
   {
+    title: "Ressources SEO & support",
+    description: "Maillage interne optimisé pour l'indexation 2026",
+    links: [
+      { label: "IPTV Smart TV Maroc — Guide", href: "/guide" },
+      { label: "IPTV 4K Maroc — Fonctionnalités", href: "/fonctionnalites" },
+      { label: "Meilleur IPTV Maroc — Accueil", href: "/" },
+      { label: "Plan du site HTML", href: "/sitemap-html" },
+    ],
+  },
+  {
     title: "Informations légales",
+    description: "Conformité, confidentialité et conditions d'utilisation",
     links: legalNav,
   },
 ];

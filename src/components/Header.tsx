@@ -19,6 +19,8 @@ function WhatsAppIcon({ className }: { className?: string }) {
 function isActive(pathname: string, href: string) {
   if (href === "/") return pathname === "/";
   if (href.startsWith("/#")) return pathname === "/";
+  if (href === "/fonctionnalites") return pathname === "/fonctionnalites";
+  if (href === "/guide") return pathname === "/guide" || pathname === "/guide-installation";
   return pathname === href || pathname.startsWith(`${href}/`);
 }
 
