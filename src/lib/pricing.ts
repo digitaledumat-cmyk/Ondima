@@ -34,7 +34,7 @@ export const pricingPlans: PricingPlan[] = [
     id: "ultra",
     name: "Expérience Ultra",
     tagline:
-      "Haute technologie et catalogue XXL. Installez sur 2 écrans, 1 flux actif à la fois.",
+      "Haute technologie et catalogue XXL. Installation sur 2 appareils, connexion non simultanée.",
     price: 349,
     currency: "dhs",
     period: "/ an",
@@ -46,7 +46,7 @@ export const pricingPlans: PricingPlan[] = [
       "Résolution FHD (Full HD) cristalline",
       "Anti-freeze 2.0",
       "Multi-Appareils (Installation sur 2 écrans : Salon, Chambre)",
-      "⚠️ 1 seul écran en ligne à la fois (Connexion non simultanée)",
+      "Installation sur 2 appareils (Connexion non simultanée)",
       "Activation immédiate",
       "Support client prioritaire 24/7",
     ],
@@ -55,7 +55,7 @@ export const pricingPlans: PricingPlan[] = [
     id: "vip",
     name: "Exclusif Suprême VIP",
     tagline:
-      "L'élite du divertissement mondial. Installez sur 3 écrans, 1 flux actif à la fois.",
+      "L'élite du divertissement mondial. Installation sur 3 appareils, connexion non simultanée.",
     price: 449,
     currency: "dhs",
     period: "/ an",
@@ -68,7 +68,7 @@ export const pricingPlans: PricingPlan[] = [
       "Résolution 4K UHD authentique",
       "Anti-freeze 2.2 de pointe",
       "Multi-Appareils (Installation sur 3 écrans : Salon, Chambre, Mobile)",
-      "⚠️ 1 seul écran en ligne à la fois (Connexion non simultanée)",
+      "Installation sur 3 appareils (Connexion non simultanée)",
       "Activation de l'Application PRO incluse",
       "Ligne d'assistance VIP 24/7",
     ],
@@ -84,8 +84,8 @@ export const compareRows = [
   {
     label: "Appareils",
     essentiel: "1 en ligne",
-    ultra: "2 écrans · 1 en ligne",
-    vip: "3 écrans · 1 en ligne",
+    ultra: "2 appareils",
+    vip: "3 appareils",
   },
   { label: "Support", essentiel: "24/7", ultra: "Prioritaire", vip: "VIP Instantané" },
 ];

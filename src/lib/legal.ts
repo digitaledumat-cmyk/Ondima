@@ -92,7 +92,7 @@ export const legalPages: Record<string, LegalPage> = {
         title: "Usage autorisé",
         paragraphs: [
           "Le service Ondima est destiné à un usage personnel et familial dans le cadre de l'abonnement souscrit.",
-          "L'Accès Essentiel autorise 1 appareil configuré. L'Expérience Ultra permet l'installation sur 2 écrans (Salon, Chambre) et l'Exclusif Suprême VIP sur 3 écrans (Salon, Chambre, Mobile). Pour Ultra et VIP : 1 seul écran en ligne à la fois — connexion non simultanée.",
+          "L'Accès Essentiel autorise 1 appareil configuré. L'Expérience Ultra : installation sur 2 appareils (connexion non simultanée). L'Exclusif Suprême VIP : installation sur 3 appareils (connexion non simultanée).",
         ],
       },
       {

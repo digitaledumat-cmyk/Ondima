@@ -27,7 +27,7 @@ const features = [
     icon: "🖥️",
     title: "Multi-Écrans",
     description:
-      "Smart TV, Firestick, Box Android et mobile — Essentiel : 1 appareil · Ultra : 2 écrans · VIP : 3 écrans (1 seul en ligne à la fois pour Ultra & VIP).",
+      "Smart TV, Firestick, Box Android et mobile — Essentiel : 1 appareil · Ultra : 2 appareils · VIP : 3 appareils (connexion non simultanée).",
   },
   {
     icon: "💬",

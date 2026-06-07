@@ -71,7 +71,7 @@ export default function PricingCard({ plan }: PricingCardProps) {
       <div className="flex flex-1 flex-col p-8 pt-6">
         <ul className="mb-8 flex-1 space-y-3">
           {plan.features.map((feature) => {
-            const isWarning = feature.startsWith("⚠️");
+            const isWarning = feature.includes("Connexion non simultanée");
             return (
               <li
                 key={feature}

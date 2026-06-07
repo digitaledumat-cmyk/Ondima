@@ -50,7 +50,7 @@ export default function AbonnementPage() {
             </h1>
             <p className="mt-5 max-w-2xl text-base leading-relaxed text-zinc-400">
               Trois packs annuels Ondima — Accès Essentiel, Expérience Ultra et
-              Ultra &amp; VIP multi-écrans (1 connexion active) — serveurs
+              Ultra (2 appareils) &amp; VIP (3 appareils) — connexion non simultanée — serveurs
               VPS OTT, activation WhatsApp et garantie 45 jours satisfait ou remboursé.
             </p>
             <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:flex-wrap sm:items-center">
