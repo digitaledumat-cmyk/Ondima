@@ -70,19 +70,40 @@ export default function PricingCard({ plan }: PricingCardProps) {
 
       <div className="flex flex-1 flex-col p-8 pt-6">
         <ul className="mb-8 flex-1 space-y-3">
-          {plan.features.map((feature) => (
-            <li key={feature} className="flex items-start gap-3 text-sm text-zinc-400">
-              <svg
-                className={`mt-0.5 h-4 w-4 shrink-0 ${accent.check}`}
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
+          {plan.features.map((feature) => {
+            const isWarning = feature.startsWith("⚠️");
+            return (
+              <li
+                key={feature}
+                className={`flex items-start gap-3 text-sm ${
+                  isWarning
+                    ? "rounded-lg border border-amber-500/25 bg-amber-500/10 px-3 py-2 text-amber-200/90"
+                    : "text-zinc-400"
+                }`}
               >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-              </svg>
-              <span className="leading-relaxed">{feature}</span>
-            </li>
-          ))}
+                {isWarning ? (
+                  <span className="text-xs font-semibold leading-relaxed">{feature}</span>
+                ) : (
+                  <>
+                    <svg
+                      className={`mt-0.5 h-4 w-4 shrink-0 ${accent.check}`}
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                    <span className="leading-relaxed">{feature}</span>
+                  </>
+                )}
+              </li>
+            );
+          })}
         </ul>
 
         <a

@@ -21,7 +21,7 @@ export const faqItems: FaqItem[] = [
     id: "appareils",
     question: "Puis-je utiliser mon abonnement sur plusieurs appareils ?",
     answer:
-      "Oui, selon votre pack : 1 appareil pour l'Accès Essentiel, 2 pour l'Expérience Ultra et 3 écrans simultanés pour l'Exclusif Suprême VIP. Smart TV, Firestick, Android Box et smartphones sont compatibles.",
+      "Oui, selon votre pack : 1 appareil pour l'Accès Essentiel. L'Expérience Ultra permet l'installation sur 2 écrans (Salon, Chambre) et l'Exclusif Suprême VIP sur 3 écrans (Salon, Chambre, Mobile) — ⚠️ 1 seul écran en ligne à la fois pour Ultra et VIP (connexion non simultanée). Smart TV, Firestick, Android Box et smartphones sont compatibles.",
   },
   {
     id: "activation",
