@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://ondima.ma"),
   title: "IPTV Maroc Premium 2026 | +45 000 Chaînes HD/4K - Ondima",
   description:
-    "Découvrez la nouvelle expérience IPTV Maroc avec Ondima.ma. Profitez d'un accès premium stable, +45k chaînes, VOD 4K/UHD, serveurs VPS ultra-rapides et un support 24/7.",
+    "Découvrez OnDima, le leader de l'abonnement IPTV Maroc Premium. Profitez d'un accès 4K ultra-stable, anti-freeze et d'un support 24/7 sur tous vos écrans.",
   alternates: {
     canonical: "https://ondima.ma",
   },
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     siteName: "Ondima",
     title: "IPTV Maroc Premium 2026 | +45 000 Chaînes HD/4K - Ondima",
     description:
-      "Découvrez la nouvelle expérience IPTV Maroc avec Ondima.ma. Profitez d'un accès premium stable, +45k chaînes, VOD 4K/UHD, serveurs VPS ultra-rapides et un support 24/7.",
+      "Découvrez OnDima, le leader de l'abonnement IPTV Maroc Premium. Profitez d'un accès 4K ultra-stable, anti-freeze et d'un support 24/7 sur tous vos écrans.",
   },
   robots: {
     index: true,
