@@ -84,9 +84,9 @@ export default function AbonnementPage() {
         <section className="border-t border-white/5 py-16">
           <div className="mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
             <div className="glow-border-purple rounded-3xl glass-panel p-8 sm:p-10">
-              <p className="mb-2 text-xl font-bold text-white">
+              <h2 className="mb-2 text-xl font-bold text-white">
                 Prêt à commander votre abonnement IPTV Maroc ?
-              </p>
+              </h2>
               <p className="mb-6 text-sm leading-relaxed text-zinc-400">
                 Choisissez votre pack, contactez-nous sur WhatsApp et recevez vos
                 identifiants en moins de 5 minutes. Essai 24h gratuit disponible

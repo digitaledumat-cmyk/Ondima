@@ -2,6 +2,13 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
+import {
+  DEFAULT_DESCRIPTION,
+  DEFAULT_TITLE,
+  rootMetadataExtensions,
+  SITE_URL,
+} from "@/lib/metadata";
+
 const inter = Inter({
   subsets: ["latin"],
   display: "swap",
@@ -9,22 +16,10 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://ondima.ma"),
-  title: "IPTV Maroc Premium 2026 | +45 000 Chaînes HD/4K - Ondima",
-  description:
-    "Découvrez OnDima, le leader de l'abonnement IPTV Maroc Premium. Profitez d'un accès 4K ultra-stable, anti-freeze et d'un support 24/7 sur tous vos écrans.",
-  alternates: {
-    canonical: "https://ondima.ma",
-  },
-  openGraph: {
-    type: "website",
-    locale: "fr_MA",
-    url: "https://ondima.ma",
-    siteName: "Ondima",
-    title: "IPTV Maroc Premium 2026 | +45 000 Chaînes HD/4K - Ondima",
-    description:
-      "Découvrez OnDima, le leader de l'abonnement IPTV Maroc Premium. Profitez d'un accès 4K ultra-stable, anti-freeze et d'un support 24/7 sur tous vos écrans.",
-  },
+  metadataBase: new URL(SITE_URL),
+  title: DEFAULT_TITLE,
+  description: DEFAULT_DESCRIPTION,
+  ...rootMetadataExtensions,
   robots: {
     index: true,
     follow: true,

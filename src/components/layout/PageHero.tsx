@@ -12,9 +12,9 @@ export default function PageHero({ label, title, description }: PageHeroProps) {
         <p className="mb-3 text-xs font-medium tracking-[0.2em] text-violet-400 uppercase">
           {label}
         </p>
-        <p className="max-w-3xl text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
+        <h1 className="max-w-3xl text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
           {title}
-        </p>
+        </h1>
         {description && (
           <p className="mt-4 max-w-2xl text-base leading-relaxed text-zinc-400">
             {description}

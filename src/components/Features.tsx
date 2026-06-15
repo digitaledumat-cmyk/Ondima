@@ -65,9 +65,9 @@ export default function Features() {
               <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl border border-violet-500/20 bg-gradient-to-br from-violet-600/20 to-cyan-500/10 text-xl transition-transform group-hover:scale-110">
                 {feature.icon}
               </div>
-              <p className="mb-2 text-lg font-semibold text-white">
+              <h3 className="mb-2 text-lg font-semibold text-white">
                 {feature.title}
-              </p>
+              </h3>
               <p className="text-sm leading-relaxed text-zinc-500">
                 {feature.description}
               </p>

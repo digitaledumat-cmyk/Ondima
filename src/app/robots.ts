@@ -1,5 +1,7 @@
 import type { MetadataRoute } from "next";
 
+import { absoluteUrl } from "@/lib/metadata";
+
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: {
@@ -7,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: "/api/",
     },
-    sitemap: "https://ondima.ma/sitemap.xml",
+    sitemap: `${absoluteUrl()}/sitemap.xml`,
   };
 }

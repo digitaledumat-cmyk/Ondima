@@ -1,6 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  trailingSlash: false,
+
   /* Autorise l'accès via IP réseau en dev (évite l'erreur "host" / cross-origin) */
   allowedDevOrigins: [
     "localhost",

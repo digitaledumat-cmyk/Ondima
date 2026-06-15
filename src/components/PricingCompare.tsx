@@ -3,9 +3,9 @@ import { compareRows } from "@/lib/pricing";
 export default function PricingCompare() {
   return (
     <div className="mt-16 overflow-x-auto">
-      <p className="mb-6 text-center text-sm font-medium tracking-widest text-zinc-500 uppercase">
+      <h3 className="mb-6 text-center text-sm font-medium tracking-widest text-zinc-500 uppercase">
         Comparatif des forfaits
-      </p>
+      </h3>
       <div className="glow-border min-w-[640px] overflow-hidden rounded-2xl glass-panel">
         <table className="w-full text-sm">
           <thead>

@@ -17,7 +17,7 @@ export default function LegalPageContent({ page }: LegalPageContentProps) {
           <div className="space-y-10">
             {page.sections.map((section) => (
               <article key={section.title}>
-                <p className="mb-4 text-lg font-semibold text-white">{section.title}</p>
+                <h2 className="mb-4 text-lg font-semibold text-white">{section.title}</h2>
                 <div className="space-y-3">
                   {section.paragraphs.map((p, i) => (
                     <p key={i} className="text-sm leading-relaxed text-zinc-400">

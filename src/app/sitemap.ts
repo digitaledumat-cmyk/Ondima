@@ -1,8 +1,7 @@
 import type { MetadataRoute } from "next";
 
 import { legalNav, mainNav } from "@/lib/navigation";
-
-const BASE_URL = "https://ondima.ma";
+import { absoluteUrl } from "@/lib/metadata";
 
 type SitemapEntry = MetadataRoute.Sitemap[number];
 
@@ -19,9 +18,6 @@ const PRIORITY_ROUTES: PriorityRoute[] = [
   { path: "/guide", priority: 0.8, changeFrequency: "weekly" },
 ];
 
-function toAbsoluteUrl(path: string): string {
-  return path === "/" ? BASE_URL : `${BASE_URL}${path}`;
-}
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
@@ -37,7 +33,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const priorityEntries: MetadataRoute.Sitemap = PRIORITY_ROUTES.map(
     (route) => ({
-      url: toAbsoluteUrl(route.path),
+      url: absoluteUrl(route.path),
       lastModified: now,
       changeFrequency: route.changeFrequency,
       priority: route.priority,
@@ -46,7 +42,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const secondaryEntries: MetadataRoute.Sitemap = uniqueSecondary.map(
     (path) => ({
-      url: toAbsoluteUrl(path),
+      url: absoluteUrl(path),
       lastModified: now,
       changeFrequency: path.includes("/legal") ? "yearly" : "monthly",
       priority: path.includes("/legal") ? 0.3 : 0.7,
