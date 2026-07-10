@@ -24,9 +24,9 @@ export const localRegions = [
 
 export function buildLocalSeoParagraph(city: string, country: string): string {
   const templates = [
-    `Meilleur IPTV à ${city} : Ondima propose un accès premium stable avec +45 000 chaînes, VOD 4K et support WhatsApp 24/7 pour les foyers de ${city}.`,
-    `Connexion stable à ${city} (${country}) grâce à nos serveurs OTT haute disponibilité — idéal pour le sport en direct et le streaming sans buffering.`,
-    `Abonnement IPTV ${city} 2026 : forfaits annuels dès 249 dhs, essai 24h gratuit et garantie satisfait 45 jours via Ondima.ma.`,
+    `À ${city}, Ondima assure une connexion OTT stable pour le sport live, la VOD 4K et un support WhatsApp disponible 24/7.`,
+    `Les foyers de ${city} (${country}) profitent de serveurs haute disponibilité, d'une faible latence et d'un streaming sans buffering.`,
+    `Couverture Ondima à ${city} : forfaits annuels dès 249 dhs, essai 24h gratuit et garantie 45 jours satisfait ou remboursé.`,
   ];
   const idx = city.length % templates.length;
   return templates[idx];

@@ -44,7 +44,7 @@ export default function LocalSeo() {
                     className="glass-panel rounded-xl p-4 transition-colors hover:bg-white/[0.04]"
                   >
                     <p className="mb-1 text-sm font-semibold text-white">
-                      Meilleur IPTV à {city}
+                      Couverture IPTV — {city}
                     </p>
                     <p className="text-xs leading-relaxed text-zinc-500">
                       {buildLocalSeoParagraph(city, region.country)}
