@@ -1,4 +1,6 @@
 import Accordion from "@/components/ui/Accordion";
+import NinoPlayerQuickGuide from "@/components/NinoPlayerQuickGuide";
+import RecommendedApps from "@/components/RecommendedApps";
 import { installationSteps } from "@/lib/installation";
 
 export default function InstallationGuide() {
@@ -21,10 +23,12 @@ export default function InstallationGuide() {
             Guide de Configuration : Comment installer IPTV Smarters Maroc et autres lecteurs
           </h2>
           <p className="mx-auto mt-3 max-w-lg text-sm text-zinc-500">
-            Accordéon interactif — suivez chaque étape pour une installation
-            fluide sur tous vos appareils.
+            Nino Player recommandé — tutoriels Android (Google Play) et Firestick
+            (Downloader). Suivez chaque étape pour une installation fluide.
           </p>
         </div>
+        <RecommendedApps />
+        <NinoPlayerQuickGuide />
         <Accordion items={items} defaultOpen="step-1" />
       </div>
     </section>

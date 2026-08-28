@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 import Accordion from "@/components/ui/Accordion";
+import NinoPlayerQuickGuide from "@/components/NinoPlayerQuickGuide";
+import RecommendedApps from "@/components/RecommendedApps";
 import PageHero from "@/components/layout/PageHero";
 import SiteShell from "@/components/layout/SiteShell";
 import SeoContentBlock from "@/components/seo/SeoContentBlock";
@@ -56,6 +58,13 @@ export default function GuidePage() {
 
         <section className="border-t border-white/5 py-12 lg:py-16">
           <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+            <RecommendedApps />
+            <NinoPlayerQuickGuide />
+          </div>
+        </section>
+
+        <section className="border-t border-white/5 py-12 lg:py-16">
+          <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
             <div className="mb-8 text-center">
               <p className="mb-2 text-sm font-medium tracking-widest text-cyan-400 uppercase">
                 Par appareil
@@ -92,8 +101,8 @@ export default function GuidePage() {
                 Installation à distance par WhatsApp
               </p>
               <p className="mb-6 text-sm leading-relaxed text-zinc-400">
-                Notre équipe configure NetIPTV, SetIPTV, Smarters, Firestick ou
-                MAG à distance. Réponse en moins de 15 minutes, 24h/24.
+                Notre équipe configure Nino Player, NetIPTV, SetIPTV, Smarters,
+                Firestick ou MAG à distance. Réponse en moins de 15 minutes, 24h/24.
               </p>
               <a
                 href={WHATSAPP_URL}

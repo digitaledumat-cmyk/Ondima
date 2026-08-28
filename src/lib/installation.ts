@@ -17,7 +17,7 @@ export const installationSteps: InstallStep[] = [
     id: "step-2",
     title: "Étape 2 — Installez l'application IPTV",
     content:
-      "Sur Firestick ou Android Box : téléchargez l'application Ondima PRO depuis le lien fourni ou via le store alternatif indiqué par le support. Sur Smart TV Samsung/LG : utilisez l'application compatible IPTV Smarters ou l'app dédiée selon votre modèle.",
+      "Sur Firestick ou Android Box : installez Nino Player (recommandé) via Google Play ou Downloader (codes fournis ci-dessous). Alternative : Ondima PRO ou IPTV Smarters via le lien WhatsApp. Sur Smart TV Samsung/LG : utilisez NetIPTV, SetIPTV ou IPTV Smarters selon votre modèle.",
     devices: ["Firestick", "Android", "Smart TV"],
   },
   {

@@ -29,13 +29,13 @@ export const guideDeviceBlocks = [
     id: "android-tv",
     title: "IPTV Android Maroc — Android TV, Box & smartphone",
     content:
-      "L'IPTV Android Maroc s'installe via l'APK Ondima PRO (lien WhatsApp) ou le Play Store sur box Nvidia Shield, Xiaomi Mi Box, Formuler et smartphones. Ouvrez l'app, choisissez « Connexion Xtream Codes API », entrez l'URL serveur, identifiant et mot de passe. Activez ExoPlayer dans les paramètres pour une fluidité maximale. Essentiel : 1 appareil · Ultra : 2 appareils · VIP : 3 appareils (connexion non simultanée).",
+      "L'IPTV Android Maroc s'installe idéalement via Nino Player sur Google Play (recherchez « Nino Player » ou ouvrez la fiche com.nino.player). Alternative APK : Downloader code 2929561. Ouvrez l'app → « Connexion Xtream Codes API » → entrez l'URL serveur, identifiant et mot de passe Ondima. Autres apps compatibles : Ondima PRO (lien WhatsApp) ou IPTV Smarters Pro. Essentiel : 1 appareil · Ultra : 2 appareils · VIP : 3 appareils (connexion non simultanée).",
   },
   {
     id: "firestick",
     title: "IPTV Firestick Maroc — Amazon Fire TV Stick 4K",
     content:
-      "Pour l'IPTV Firestick Maroc : Paramètres → Ma Fire TV → Options pour les développeurs → activez « Sources inconnues ». Installez l'application Downloader (code 7275096 ou lien fourni par WhatsApp), téléchargez Ondima PRO ou IPTV Smarters Pro. Lancez l'app, saisissez vos identifiants Xtream Codes, validez. Configuration complète en 3 minutes. Télécommande Alexa réactive, 4K UHD sur Fire Stick 4K Max avec débit fibre 25 Mbps+.",
+      "Pour l'IPTV Firestick Maroc : Paramètres → Ma Fire TV → Options pour les développeurs → activez « Sources inconnues ». Installez Downloader depuis l'Amazon Appstore. Ouvrez Downloader et entrez le code 1029712 pour installer Nino Player (recommandé). Lancez l'app → Xtream Codes → identifiants Ondima. Alternative : code 7275096 pour Ondima PRO ou IPTV Smarters Pro. Configuration complète en 3 minutes. 4K UHD sur Fire Stick 4K Max avec débit fibre 25 Mbps+.",
   },
   {
     id: "smarters",
@@ -54,7 +54,7 @@ export const guideDeviceBlocks = [
 export const guideSeoIntro = {
   title: "Installation IPTV Maroc — Tous appareils, support 24/7",
   paragraphs: [
-    "Ce guide couvre l'installation complète de votre abonnement Ondima sur chaque type d'appareil : IPTV Smart TV Maroc (Samsung/LG via NetIPTV ou SetIPTV), IPTV Android Maroc, IPTV Firestick Maroc, IPTV Smarters Maroc et boîtiers MAG Infomir.",
+    "Ce guide couvre l'installation complète de votre abonnement Ondima sur chaque type d'appareil : Nino Player (recommandé), IPTV Smart TV Maroc (Samsung/LG via NetIPTV ou SetIPTV), IPTV Android Maroc, IPTV Firestick Maroc, IPTV Smarters Maroc et boîtiers MAG Infomir.",
     "Chaque tutoriel est validé par notre équipe technique. En cas de difficulté, contactez-nous sur WhatsApp : nous configurons votre appareil à distance en moins de 15 minutes, 24h/24 et 7j/7.",
   ],
 };

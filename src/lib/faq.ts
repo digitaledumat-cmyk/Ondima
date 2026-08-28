@@ -24,6 +24,12 @@ export const faqItems: FaqItem[] = [
       "Oui, selon votre pack : 1 appareil pour l'Accès Essentiel. L'Expérience Ultra : installation sur 2 appareils (connexion non simultanée). L'Exclusif Suprême VIP : installation sur 3 appareils (connexion non simultanée). Smart TV, Firestick, Android Box et smartphones sont compatibles.",
   },
   {
+    id: "nino-player",
+    question: "Quelle application IPTV recommandez-vous pour Ondima ?",
+    answer:
+      "Nino Player est notre lecteur recommandé pour Android et Fire TV. Sur Android, installez-le via Google Play (com.nino.player) ou via Downloader avec le code 2929561. Sur Firestick, utilisez Downloader avec le code 1029712. Ouvrez Nino Player, choisissez Xtream Codes API et entrez vos identifiants Ondima. IPTV Smarters Pro, NetIPTV et SetIPTV restent également compatibles.",
+  },
+  {
     id: "activation",
     question: "Comment se déroule l'activation de mon forfait ?",
     answer:
