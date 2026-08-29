@@ -111,8 +111,8 @@ export default function Header() {
             className="btn-whatsapp inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-semibold text-white"
           >
             <WhatsAppIcon className="h-4 w-4" />
-            <span className="hidden lg:inline">Essai 24h gratuit</span>
-            <span className="lg:hidden">Essai 24h</span>
+            <span className="hidden lg:inline">Commander via WhatsApp</span>
+            <span className="lg:hidden">Commander</span>
           </a>
           <Link href="/abonnement-iptv" className="btn-orange rounded-full px-5 py-2 text-sm font-semibold text-white">
             Commencer
@@ -155,7 +155,7 @@ export default function Header() {
           </ul>
           <div className="mt-4 flex flex-col gap-2">
             <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="btn-whatsapp flex items-center justify-center gap-2 rounded-full py-3 text-sm font-semibold text-white">
-              <WhatsAppIcon className="h-4 w-4" /> Essai 24h gratuit
+              <WhatsAppIcon className="h-4 w-4" /> Commander via WhatsApp
             </a>
             <Link href="/abonnement-iptv" className="btn-orange rounded-full py-3 text-center text-sm font-semibold text-white" onClick={() => setOpen(false)}>
               Commencer

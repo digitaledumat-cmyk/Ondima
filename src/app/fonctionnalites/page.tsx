@@ -93,11 +93,11 @@ export default function FonctionnalitesPage() {
         <section className="border-t border-white/5 py-16">
           <div className="mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
             <p className="mb-4 text-lg font-semibold text-white">
-              Testez l&apos;Anti-freeze 2.2 gratuitement pendant 24h
+              Serveurs garantis toute la période — Anti-freeze 2.2
             </p>
             <p className="mb-8 text-sm leading-relaxed text-zinc-400">
-              Activez votre essai via WhatsApp et comparez la stabilité Ondima
-              lors du prochain grand match en direct.
+              Souscrivez à Ondima et profitez d&apos;une infrastructure VPS
+              monitorée 24h/24 avec bascule automatique en cas de panne serveur.
             </p>
             <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">
               <a
@@ -106,7 +106,7 @@ export default function FonctionnalitesPage() {
                 rel="noopener noreferrer"
                 className="btn-whatsapp rounded-full px-8 py-3.5 text-sm font-bold text-white"
               >
-                Essai 24h gratuit
+                Commander via WhatsApp
               </a>
               <Link
                 href="/abonnement-iptv"

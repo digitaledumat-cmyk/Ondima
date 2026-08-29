@@ -6,10 +6,16 @@ export interface FaqItem {
 
 export const faqItems: FaqItem[] = [
   {
-    id: "essai",
-    question: "Proposez-vous un essai gratuit avant l'abonnement ?",
+    id: "garantie-remboursement",
+    question: "Proposez-vous une garantie satisfait ou remboursé ?",
     answer:
-      "Oui. Ondima offre un essai 24h entièrement gratuit via WhatsApp. Cliquez sur « Essai 24h gratuit » et notre équipe configure votre accès de test en quelques minutes, sans engagement.",
+      "Oui. Tous nos forfaits annuels incluent une garantie satisfait ou remboursé de 45 jours à compter de l'activation. Si le service ne vous convient pas, vous pouvez demander un remboursement intégral via WhatsApp ou contact@ondima.ma dans ce délai, conformément à notre politique de remboursement.",
+  },
+  {
+    id: "garantie-service",
+    question: "Le service est-il garanti pendant toute la période d'abonnement ?",
+    answer:
+      "Oui. Ondima garantit la continuité du service sur toute la durée de votre abonnement. Nos serveurs VPS sont monitorés 24h/24. En cas de panne ou d'indisponibilité, nous basculons automatiquement votre accès vers un serveur de secours pour maintenir votre streaming sans interruption prolongée.",
   },
   {
     id: "internet",
@@ -39,7 +45,7 @@ export const faqItems: FaqItem[] = [
     id: "garantie",
     question: "Existe-t-il une garantie satisfait ou remboursé ?",
     answer:
-      "Ondima propose une garantie de 45 jours sur tous les forfaits annuels. Si le service ne répond pas à vos attentes, contactez notre support WhatsApp pour une solution adaptée dans le cadre de notre politique de remboursement.",
+      "Ondima propose une garantie satisfait ou remboursé de 45 jours sur tous les forfaits annuels. Vous pouvez demander un remboursement intégral dans les 45 premiers jours si le service ne répond pas à vos attentes. Par ailleurs, la continuité du service est garantie sur toute la période d'abonnement grâce à nos serveurs de secours.",
   },
   {
     id: "contenu",

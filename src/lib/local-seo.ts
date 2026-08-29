@@ -26,7 +26,7 @@ export function buildLocalSeoParagraph(city: string, country: string): string {
   const templates = [
     `À ${city}, Ondima assure une connexion OTT stable pour le sport live, la VOD 4K et un support WhatsApp disponible 24/7.`,
     `Les foyers de ${city} (${country}) profitent de serveurs haute disponibilité, d'une faible latence et d'un streaming sans buffering.`,
-    `Couverture Ondima à ${city} : forfaits annuels dès 249 dhs, essai 24h gratuit et garantie 45 jours satisfait ou remboursé.`,
+    `Couverture Ondima à ${city} : forfaits annuels dès 249 dhs, garantie satisfait ou remboursé 45 jours et serveurs garantis toute la période.`,
   ];
   const idx = city.length % templates.length;
   return templates[idx];

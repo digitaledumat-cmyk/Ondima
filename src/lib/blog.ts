@@ -45,10 +45,10 @@ export const blogPosts: BlogPost[] = [
     readTime: "7 min",
   },
   {
-    slug: "essai-24h-whatsapp-ondima",
-    title: "Essai 24h gratuit Ondima : comment ça marche ?",
+    slug: "garantie-45-jours-ondima",
+    title: "Garantie satisfait ou remboursé 45 jours : comment ça marche ?",
     excerpt:
-      "Demandez votre test via WhatsApp, recevez vos accès en quelques minutes et évaluez la qualité avant de vous abonner.",
+      "Souscrivez en toute confiance : remboursement possible sous 45 jours et serveurs garantis toute la période d'abonnement.",
     category: "Offres",
     date: "8 mai 2026",
     readTime: "4 min",

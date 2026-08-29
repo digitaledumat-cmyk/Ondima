@@ -39,8 +39,8 @@ export default function Hero() {
             </p>
 
             <p className="max-w-lg text-base leading-relaxed text-zinc-300 drop-shadow-[0_4px_12px_rgba(0,0,0,1)]">
-              Trois forfaits Ondima 12 mois : live, sport, VOD et essai 24h via
-              WhatsApp.
+              Trois forfaits Ondima 12 mois : live, sport, VOD et activation
+              directe via WhatsApp.
             </p>
 
             <div className="flex flex-wrap gap-2.5">
@@ -63,7 +63,7 @@ export default function Hero() {
                 className="btn-whatsapp inline-flex items-center justify-center gap-2.5 rounded-full px-7 py-3.5 text-sm font-bold text-white sm:text-base"
               >
                 <WhatsAppIcon className="h-5 w-5" />
-                Essai 24h gratuit
+                Commander via WhatsApp
               </a>
               <a
                 href="/abonnement-iptv"
@@ -80,12 +80,9 @@ export default function Hero() {
             </div>
 
             <div className="space-y-1 pt-2">
-              <p className="text-sm text-zinc-500 drop-shadow-[0_4px_12px_rgba(0,0,0,1)]">
-                Garantie 45 jours · Support 24/7 · Dès 249 DH/an
-              </p>
               <p className="text-xs text-zinc-600 drop-shadow-[0_4px_12px_rgba(0,0,0,1)]">
-                Essai 24h : test gratuit — Commencer : aide pour choisir votre
-                forfait
+                Garantie remboursement 45 jours · Serveurs garantis toute la
+                période · Dès 249 DH/an
               </p>
             </div>
           </div>

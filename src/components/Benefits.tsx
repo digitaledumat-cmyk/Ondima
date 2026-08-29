@@ -19,8 +19,8 @@ const steps = [
 const highlights = [
   "Télé live, sport & VOD sur Smart TV, Firestick ou Box Android",
   "Forfaits annuels dès 249 DH — sans mensualité surprise",
-  "Essai 24h gratuit & garantie satisfait 45 jours",
-  "Serveurs VPS ultra-rapides avec technologie Anti-freeze",
+  "Garantie satisfait ou remboursé 45 jours",
+  "Serveurs garantis toute la période — bascule automatique",
 ];
 
 export default function Benefits() {

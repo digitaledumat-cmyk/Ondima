@@ -69,7 +69,7 @@ export const legalPages: Record<string, LegalPage> = {
       {
         title: "Obligations de l'utilisateur",
         paragraphs: [
-          "L'utilisateur s'engage à fournir des informations exactes lors de sa demande d'essai ou d'abonnement.",
+          "L'utilisateur s'engage à fournir des informations exactes lors de sa demande d'abonnement.",
           "Il s'engage à ne pas partager ses identifiants au-delà du nombre d'appareils autorisés par son forfait.",
           "Toute utilisation abusive, revente non autorisée ou tentative de contournement technique pourra entraîner la suspension immédiate du compte.",
         ],
@@ -121,7 +121,7 @@ export const legalPages: Record<string, LegalPage> = {
       {
         title: "Responsable du traitement",
         paragraphs: [
-          "Ondima agit en qualité de responsable du traitement pour les données collectées via ondima.ma et les échanges WhatsApp liés aux demandes d'essai et d'abonnement.",
+          "Ondima agit en qualité de responsable du traitement pour les données collectées via ondima.ma et les échanges WhatsApp liés aux demandes d'abonnement et de support.",
         ],
       },
       {
@@ -180,7 +180,7 @@ export const legalPages: Record<string, LegalPage> = {
       {
         title: "Collecte des informations",
         paragraphs: [
-          "Nous collectons les informations que vous nous transmettez volontairement via le formulaire d'essai, WhatsApp, e-mail ou lors de la souscription à un abonnement.",
+          "Nous collectons les informations que vous nous transmettez volontairement via le formulaire de commande, WhatsApp, e-mail ou lors de la souscription à un abonnement.",
           "Des cookies techniques et analytiques peuvent être utilisés pour mesurer l'audience et améliorer l'expérience utilisateur.",
         ],
       },
@@ -188,7 +188,7 @@ export const legalPages: Record<string, LegalPage> = {
         title: "Conservation",
         paragraphs: [
           "Les données clients actifs sont conservées pendant la durée de la relation contractuelle plus 3 ans à des fins de preuve et de support.",
-          "Les données de prospects (essais) sont conservées 12 mois maximum sauf opposition.",
+          "Les données de prospects sont conservées 12 mois maximum sauf opposition.",
         ],
       },
       {
@@ -232,9 +232,10 @@ export const legalPages: Record<string, LegalPage> = {
         ],
       },
       {
-        title: "Essai 24h gratuit",
+        title: "Garantie de continuité de service",
         paragraphs: [
-          "L'essai gratuit de 24 heures ne donne lieu à aucun paiement ni remboursement. Il permet d'évaluer la qualité du service avant engagement.",
+          "Ondima garantit la disponibilité du service sur toute la durée de l'abonnement souscrit. Nos serveurs VPS sont monitorés en continu.",
+          "En cas de panne ou d'indisponibilité d'un serveur, Ondima bascule automatiquement l'accès vers un serveur de secours afin de maintenir la continuité du streaming pour le client.",
         ],
       },
     ],

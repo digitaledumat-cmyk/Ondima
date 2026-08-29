@@ -87,7 +87,7 @@ export const reviews: Review[] = [
     flag: "🇲🇦",
     lang: "MA",
     rating: 5,
-    text: "Essai 24h validé en un clic WhatsApp. Qualité HD nickel sur Box Android, chaînes arabes et françaises au top.",
+    text: "Abonnement activé en un clic WhatsApp. Qualité HD nickel sur Box Android, chaînes arabes et françaises au top.",
     date: "Mars 2026",
   },
   {

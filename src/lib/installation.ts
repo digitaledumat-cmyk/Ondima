@@ -10,7 +10,7 @@ export const installationSteps: InstallStep[] = [
     id: "step-1",
     title: "Étape 1 — Recevez vos identifiants Ondima",
     content:
-      "Après validation de votre essai ou abonnement via WhatsApp, notre équipe vous envoie vos identifiants (URL serveur, login et mot de passe) ainsi que le lien de téléchargement de l'application recommandée pour votre appareil.",
+      "Après validation de votre abonnement via WhatsApp, notre équipe vous envoie vos identifiants (URL serveur, login et mot de passe) ainsi que le lien de téléchargement de l'application recommandée pour votre appareil.",
     devices: ["Smart TV", "Firestick", "Android Box", "Smartphone"],
   },
   {

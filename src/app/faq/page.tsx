@@ -11,7 +11,7 @@ import { faqSeoIntro } from "@/lib/seo-content";
 export const metadata: Metadata = createMetadata({
   title: "FAQ Best IPTV | IPTV Subscription UK & Service Providers - Ondima",
   description:
-    "FAQ IPTV : best IPTV services, IPTV subscription UK, IPTV service providers et routage streaming. Réponses techniques sur essai 24h, débit 4K et multi-écrans.",
+    "FAQ IPTV : best IPTV services, IPTV subscription UK, IPTV service providers et routage streaming. Réponses techniques sur garantie 45 jours, débit 4K et multi-écrans.",
   path: "/faq",
   keywords: ["IPTV subscription UK", "best IPTV services", "IPTV service providers", "best IPTV"],
 });

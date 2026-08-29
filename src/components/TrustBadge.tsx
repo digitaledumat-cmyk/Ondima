@@ -18,7 +18,7 @@ export default function TrustBadge({ className = "", compact = false }: TrustBad
           Garantie 45 jours
         </p>
         <p className={`text-emerald-400/90 ${compact ? "text-xs" : "text-sm"}`}>
-          Satisfait ou Remboursé Totalement
+          Remboursement sous 45 jours · Serveurs garantis
         </p>
       </div>
     </div>

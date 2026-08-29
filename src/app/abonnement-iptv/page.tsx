@@ -89,8 +89,8 @@ export default function AbonnementPage() {
               </h2>
               <p className="mb-6 text-sm leading-relaxed text-zinc-400">
                 Choisissez votre pack, contactez-nous sur WhatsApp et recevez vos
-                identifiants en moins de 5 minutes. Essai 24h gratuit disponible
-                avant tout achat.
+                identifiants en moins de 5 minutes. Garantie satisfait ou
+                remboursé 45 jours incluse sur tous les forfaits.
               </p>
               <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">
                 <a
@@ -102,14 +102,12 @@ export default function AbonnementPage() {
                   <WhatsAppIcon className="h-5 w-5" />
                   Commander via WhatsApp
                 </a>
-                <a
-                  href={WHATSAPP_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <Link
+                  href="/#commander"
                   className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/5 px-8 py-3.5 text-sm font-semibold text-zinc-300 transition-all hover:border-emerald-500/40 hover:text-white"
                 >
-                  Essai 24h gratuit
-                </a>
+                  Commander en ligne
+                </Link>
               </div>
             </div>
             <p className="mt-8 text-sm text-zinc-600">

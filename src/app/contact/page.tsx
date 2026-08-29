@@ -8,9 +8,9 @@ import { WHATSAPP_DISPLAY, WHATSAPP_URL } from "@/lib/constants";
 import { createMetadata } from "@/lib/metadata";
 
 export const metadata: Metadata = createMetadata({
-  title: "Contact Ondima | Support WhatsApp 24/7 & Essai Gratuit",
+  title: "Contact Ondima | Support WhatsApp 24/7 & Garantie 45 jours",
   description:
-    "Contactez l'équipe Ondima via WhatsApp ou e-mail. Support technique 24/7, essai 24h gratuit et activation guidée de votre abonnement IPTV.",
+    "Contactez l'équipe Ondima via WhatsApp ou e-mail. Support technique 24/7, garantie satisfait ou remboursé 45 jours et activation guidée de votre abonnement IPTV.",
   path: "/contact",
 });
 
@@ -21,7 +21,7 @@ export default function ContactPage() {
         <PageHero
           label="Contact"
           title="Support & contact Ondima"
-          description="Notre équipe est disponible 24h/24 sur WhatsApp pour l'essai gratuit, l'activation et le support technique en français."
+          description="Notre équipe est disponible 24h/24 sur WhatsApp pour vos commandes, l'activation et le support technique en français."
         />
         <section className="border-b border-white/5 py-12">
           <div className="mx-auto flex max-w-7xl flex-wrap justify-center gap-8 px-4 sm:px-6">
