@@ -1,3 +1,5 @@
+import { GUARANTEE_TAGLINE } from "@/lib/constants";
+
 interface TrustBadgeProps {
   className?: string;
   compact?: boolean;
@@ -15,10 +17,10 @@ export default function TrustBadge({ className = "", compact = false }: TrustBad
       </div>
       <div>
         <p className={`font-bold text-white ${compact ? "text-sm" : "text-base"}`}>
-          Garantie 45 jours
+          Garantie Ondima
         </p>
         <p className={`text-emerald-400/90 ${compact ? "text-xs" : "text-sm"}`}>
-          Remboursement sous 45 jours · Serveurs garantis
+          {GUARANTEE_TAGLINE}
         </p>
       </div>
     </div>

@@ -48,7 +48,7 @@ export const blogPosts: BlogPost[] = [
     slug: "garantie-45-jours-ondima",
     title: "Garantie satisfait ou remboursé 45 jours : comment ça marche ?",
     excerpt:
-      "Souscrivez en toute confiance : remboursement possible sous 45 jours et serveurs garantis toute la période d'abonnement.",
+      "Souscrivez en toute confiance : satisfait ou remboursé sous 45 jours — serveurs garantis durant toute la période de l'abonnement.",
     category: "Offres",
     date: "8 mai 2026",
     readTime: "4 min",

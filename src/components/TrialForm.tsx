@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { WHATSAPP_NUMBER } from "@/lib/constants";
+import { GUARANTEE_TAGLINE, WHATSAPP_NUMBER } from "@/lib/constants";
 import TrustBadge from "./TrustBadge";
 
 const plans = [
@@ -78,12 +78,7 @@ export default function TrialForm() {
             <ul className="mb-6 space-y-2 text-sm text-zinc-400">
               <li className="flex items-start gap-2">
                 <span className="text-emerald-400">✓</span>
-                Garantie satisfait ou remboursé 45 jours
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-emerald-400">✓</span>
-                Serveurs garantis toute la période — bascule automatique en cas
-                de panne
+                {GUARANTEE_TAGLINE}
               </li>
             </ul>
             <TrustBadge />
@@ -179,7 +174,7 @@ export default function TrialForm() {
               Commander via WhatsApp
             </button>
             <p className="mt-3 text-center text-xs text-zinc-600">
-              Garantie 45 jours · Serveurs garantis toute la période
+              {GUARANTEE_TAGLINE}
             </p>
           </form>
         </div>

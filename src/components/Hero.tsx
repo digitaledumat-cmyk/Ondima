@@ -1,6 +1,6 @@
 import HeroVisual from "./HeroVisual";
 
-import { WHATSAPP_URL } from "@/lib/constants";
+import { GUARANTEE_TAGLINE, WHATSAPP_URL } from "@/lib/constants";
 
 const pills = [
   { icon: "📡", label: "45 000+ chaînes" },
@@ -81,8 +81,7 @@ export default function Hero() {
 
             <div className="space-y-1 pt-2">
               <p className="text-xs text-zinc-600 drop-shadow-[0_4px_12px_rgba(0,0,0,1)]">
-                Garantie remboursement 45 jours · Serveurs garantis toute la
-                période · Dès 249 DH/an
+                {GUARANTEE_TAGLINE} · Dès 249 DH/an
               </p>
             </div>
           </div>

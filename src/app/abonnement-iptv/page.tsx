@@ -89,8 +89,9 @@ export default function AbonnementPage() {
               </h2>
               <p className="mb-6 text-sm leading-relaxed text-zinc-400">
                 Choisissez votre pack, contactez-nous sur WhatsApp et recevez vos
-                identifiants en moins de 5 minutes. Garantie satisfait ou
-                remboursé 45 jours incluse sur tous les forfaits.
+                identifiants en moins de 5 minutes. Satisfait ou remboursé sous
+                45 jours — serveurs garantis durant toute la période de
+                l&apos;abonnement.
               </p>
               <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">
                 <a
