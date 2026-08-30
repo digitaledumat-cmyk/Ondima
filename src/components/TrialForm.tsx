@@ -5,9 +5,9 @@ import { GUARANTEE_TAGLINE, WHATSAPP_NUMBER } from "@/lib/constants";
 import TrustBadge from "./TrustBadge";
 
 const plans = [
-  { id: "essentiel", label: "Accès Essentiel — 249 dhs/an" },
-  { id: "ultra", label: "Expérience Ultra — 349 dhs/an" },
-  { id: "vip", label: "Exclusif Suprême VIP — 449 dhs/an" },
+  { id: "essentiel", label: "Pack Pro — 300 dhs/an" },
+  { id: "ultra", label: "Expérience Ultra — 450 dhs/an" },
+  { id: "vip", label: "Exclusif Suprême VIP — 600 dhs/an" },
 ];
 
 const countryCodes = [

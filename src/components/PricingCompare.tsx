@@ -14,7 +14,7 @@ export default function PricingCompare() {
                 Caractéristique
               </th>
               <th className="px-5 py-4 text-center font-semibold text-violet-400">
-                Essentiel
+                Pack Pro
               </th>
               <th className="px-5 py-4 text-center font-semibold text-cyan-400">
                 Ultra

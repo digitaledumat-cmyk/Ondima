@@ -27,7 +27,7 @@ export const faqItems: FaqItem[] = [
     id: "appareils",
     question: "Puis-je utiliser mon abonnement sur plusieurs appareils ?",
     answer:
-      "Oui, selon votre pack : 1 appareil pour l'Accès Essentiel. L'Expérience Ultra : installation sur 2 appareils (connexion non simultanée). L'Exclusif Suprême VIP : installation sur 3 appareils (connexion non simultanée). Smart TV, Firestick, Android Box et smartphones sont compatibles.",
+      "Oui, selon votre pack : 1 appareil pour le Pack Pro. L'Expérience Ultra : installation sur 2 appareils (connexion non simultanée). L'Exclusif Suprême VIP : installation sur 3 appareils (connexion non simultanée). Smart TV, Firestick, Android Box et smartphones sont compatibles.",
   },
   {
     id: "nino-player",
@@ -39,7 +39,7 @@ export const faqItems: FaqItem[] = [
     id: "activation",
     question: "Comment se déroule l'activation de mon forfait ?",
     answer:
-      "Après votre commande via WhatsApp, notre équipe vous envoie vos identifiants et vous guide pas à pas pour l'installation. L'activation est immédiate sur les packs Ultra et VIP, avec configuration de l'application PRO incluse sur le pack VIP.",
+      "Après votre commande via WhatsApp, notre équipe vous envoie vos identifiants et vous guide pas à pas pour l'installation. L'activation est immédiate sur tous les packs, avec configuration de l'application PRO incluse sur le Pack Pro et le VIP.",
   },
   {
     id: "garantie",

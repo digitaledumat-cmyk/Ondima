@@ -4,7 +4,7 @@ const steps = [
   {
     step: "01",
     title: "Choisissez votre forfait",
-    text: "Sélectionnez parmi nos 3 packs annuels Ondima selon vos besoins : essentiel, famille ou expérience VIP 4K.",
+    text: "Sélectionnez parmi nos 3 packs annuels Ondima selon vos besoins : Pack Pro, Ultra ou expérience VIP 4K.",
   },
   {
     step: "02",
@@ -20,7 +20,7 @@ const steps = [
 
 const highlights = [
   "Télé live, sport & VOD sur Smart TV, Firestick ou Box Android",
-  "Forfaits annuels dès 249 DH — sans mensualité surprise",
+  "Forfaits annuels dès 300 DH — sans mensualité surprise",
   GUARANTEE_TAGLINE,
 ];
 

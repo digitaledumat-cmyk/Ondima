@@ -15,7 +15,7 @@ const features = [
     icon: "✨",
     title: "4K UHD Authentique",
     description:
-      "Qualité d'image cinématographique sur le pack VIP — du HD stable au Full HD et 4K selon votre forfait.",
+      "Qualité d'image cinématographique — HD & FHD sur Pack Pro, HD/FHD/4K sur Ultra et 4K UHD sur VIP.",
   },
   {
     icon: "⚡",
@@ -27,7 +27,7 @@ const features = [
     icon: "🖥️",
     title: "Multi-Écrans",
     description:
-      "Smart TV, Firestick, Box Android et mobile — Essentiel : 1 appareil · Ultra : 2 appareils · VIP : 3 appareils (connexion non simultanée).",
+      "Smart TV, Firestick, Box Android et mobile — Pack Pro : 1 appareil · Ultra : 2 appareils · VIP : 3 appareils (connexion non simultanée).",
   },
   {
     icon: "💬",

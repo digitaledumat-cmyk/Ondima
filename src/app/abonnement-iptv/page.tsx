@@ -16,7 +16,7 @@ export const metadata: Metadata = createMetadata({
   title:
     "Abonnement IPTV Maroc Premium | Tarifs & Formules 2026 - Ondima",
   description:
-    "Tarifs IPTV Maroc 2026 : Accès Essentiel 249 dhs, Expérience Ultra 349 dhs, VIP 449 dhs/an. Acheter IPTV Maroc avec serveurs VPS OTT, garantie 45 jours et activation WhatsApp 24/7.",
+    "Tarifs IPTV Maroc 2026 : Pack Pro 300 dhs, Expérience Ultra 450 dhs, VIP 600 dhs/an. Acheter IPTV Maroc avec serveurs VPS OTT, garantie 45 jours et activation WhatsApp 24/7.",
   path: "/abonnement-iptv",
   keywords: [
     "abonnement IPTV Maroc",
@@ -49,7 +49,7 @@ export default function AbonnementPage() {
               Abonnement IPTV Maroc Premium : Nos Tarifs &amp; Formules 2026
             </h1>
             <p className="mt-5 max-w-2xl text-base leading-relaxed text-zinc-400">
-              Trois packs annuels Ondima — Accès Essentiel, Expérience Ultra et
+              Trois packs annuels Ondima — Pack Pro, Expérience Ultra et
               Ultra (2 appareils) &amp; VIP (3 appareils) — connexion non simultanée — serveurs
               VPS OTT, activation WhatsApp et garantie 45 jours satisfait ou remboursé.
             </p>

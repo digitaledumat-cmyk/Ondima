@@ -12,7 +12,7 @@ export const blogPosts: BlogPost[] = [
     slug: "choisir-abonnement-iptv-maroc-2026",
     title: "Comment choisir son abonnement IPTV au Maroc en 2026",
     excerpt:
-      "Guide complet pour comparer les forfaits Essentiel, Ultra et VIP : chaînes, VOD, qualité 4K et nombre d'appareils selon votre foyer.",
+      "Guide complet pour comparer les forfaits Pack Pro, Ultra et VIP : chaînes, VOD, qualité 4K et nombre d'appareils selon votre foyer.",
     category: "Guide",
     date: "4 juin 2026",
     readTime: "8 min",
