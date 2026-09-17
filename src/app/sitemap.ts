@@ -13,6 +13,7 @@ type PriorityRoute = {
 
 const PRIORITY_ROUTES: PriorityRoute[] = [
   { path: "/", priority: 1, changeFrequency: "daily" },
+  { path: "/iptv-maroc", priority: 0.95, changeFrequency: "weekly" },
   { path: "/abonnement-iptv", priority: 0.9, changeFrequency: "weekly" },
   { path: "/fonctionnalites", priority: 0.8, changeFrequency: "weekly" },
   { path: "/guide", priority: 0.8, changeFrequency: "weekly" },

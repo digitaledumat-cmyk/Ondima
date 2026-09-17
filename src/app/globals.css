@@ -370,4 +370,27 @@
       transform: scale(0.85);
     }
   }
+
+  @keyframes wa-chat-scroll {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-50%);
+    }
+  }
+
+  .wa-chat-track {
+    animation: wa-chat-scroll 42s linear infinite;
+  }
+
+  .wa-phone:hover .wa-chat-track {
+    animation-play-state: paused;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .wa-chat-track {
+      animation: none;
+    }
+  }
 }
