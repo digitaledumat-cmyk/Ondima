@@ -7,13 +7,13 @@ export default function WhyChooseIptv() {
             Pourquoi Ondima
           </p>
           <h2 className="mb-8 text-2xl font-bold tracking-tight text-white sm:text-3xl">
-            Pourquoi choisir notre{" "}
-            <span className="neon-text">IPTV Maroc</span> ?
+            Pourquoi Ondima est la{" "}
+            <span className="neon-text">TV IPTV Maroc</span> de référence
           </h2>
 
           <div className="space-y-6 text-sm leading-[1.85] text-zinc-400 sm:text-base">
             <p>
-              En tant que <strong className="font-medium text-zinc-200">fournisseur IPTV Maroc</strong> leader sur le marché, Ondima s&apos;est imposé comme la référence ultime pour les amateurs de divertissement en haute définition. Trouver le <strong className="font-medium text-zinc-200">meilleur IPTV Maroc</strong> implique d&apos;allier un catalogue illimité à une stabilité technique irréprochable. C&apos;est pourquoi notre infrastructure s&apos;appuie sur des serveurs VPS de dernière génération, garantissant une expérience visuelle fluide et une qualité d&apos;image sans compromis en <strong className="font-medium text-zinc-200">IPTV 4K Maroc</strong> et <strong className="font-medium text-zinc-200">IPTV HD Maroc</strong>. Que vous soyez un passionné de grands événements sportifs en direct ou un adepte des dernières sorties cinématographiques, notre plateforme répond à toutes vos exigences de streaming.
+              Ondima.ma/tv est le hub TV des foyers marocains : un <strong className="font-medium text-zinc-200">fournisseur IPTV Maroc</strong> qui transforme chaque écran en télévision 4K stable. Trouver le <strong className="font-medium text-zinc-200">meilleur IPTV Maroc</strong>, c&apos;est allier un catalogue illimité à une infrastructure VPS de dernière génération. Notre <strong className="font-medium text-zinc-200">IPTV 4K Maroc</strong> et notre <strong className="font-medium text-zinc-200">IPTV HD Maroc</strong> tiennent le direct sportif comme les sorties cinéma, sans freeze ni buffering.
             </p>
 
             <p>

@@ -1,5 +1,7 @@
+import { HOME_PATH } from "@/lib/constants";
+
 export const mainNav = [
-  { label: "Accueil", href: "/" },
+  { label: "Accueil", href: HOME_PATH },
   { label: "IPTV Maroc", href: "/iptv-maroc" },
   { label: "Tarifs", href: "/abonnement-iptv" },
   { label: "Fonctionnalités", href: "/fonctionnalites" },
@@ -24,7 +26,7 @@ export const sitemapSections = [
     title: "Pages principales",
     description: "Navigation essentielle du site Ondima.ma",
     links: [
-      { label: "Accueil", href: "/" },
+      { label: "Accueil TV", href: HOME_PATH },
       { label: "IPTV Maroc — Abonnement stable", href: "/iptv-maroc" },
       { label: "Abonnement IPTV — Tarifs & forfaits", href: "/abonnement-iptv" },
       { label: "Fonctionnalités techniques", href: "/fonctionnalites" },
@@ -42,7 +44,7 @@ export const sitemapSections = [
       { label: "Tarifs IPTV Maroc — Abonnement", href: "/abonnement-iptv" },
       { label: "IPTV Smart TV Maroc — Guide", href: "/guide" },
       { label: "IPTV 4K Maroc — Fonctionnalités", href: "/fonctionnalites" },
-      { label: "Meilleur IPTV Maroc — Accueil", href: "/" },
+      { label: "Meilleur IPTV Maroc — Accueil TV", href: HOME_PATH },
       { label: "Plan du site HTML", href: "/sitemap-html" },
     ],
   },

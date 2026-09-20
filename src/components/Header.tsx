@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 
 import Logo from "@/components/Logo";
-import { WHATSAPP_URL } from "@/lib/constants";
+import { HOME_PATH, WHATSAPP_URL } from "@/lib/constants";
 import { legalNav, mainNav } from "@/lib/navigation";
 
 function WhatsAppIcon({ className }: { className?: string }) {
@@ -17,8 +17,10 @@ function WhatsAppIcon({ className }: { className?: string }) {
 }
 
 function isActive(pathname: string, href: string) {
-  if (href === "/") return pathname === "/";
-  if (href.startsWith("/#")) return pathname === "/";
+  if (href === HOME_PATH) return pathname === HOME_PATH || pathname === "/";
+  if (href.startsWith("/#") || href.startsWith(`${HOME_PATH}#`)) {
+    return pathname === HOME_PATH || pathname === "/";
+  }
   if (href === "/abonnement-iptv") return pathname === "/abonnement-iptv";
   if (href === "/fonctionnalites") return pathname === "/fonctionnalites";
   if (href === "/guide") return pathname === "/guide" || pathname === "/guide-installation";
@@ -34,7 +36,7 @@ export default function Header() {
   return (
     <header className="fixed top-0 right-0 left-0 z-50 border-b border-white/5 bg-void/80 backdrop-blur-md">
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3.5 sm:px-6 lg:px-8">
-        <Link href="/" className="shrink-0 transition-opacity hover:opacity-90">
+        <Link href={HOME_PATH} className="shrink-0 transition-opacity hover:opacity-90">
           <Logo size="md" />
         </Link>
 

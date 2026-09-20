@@ -31,17 +31,17 @@ export default function Benefits() {
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
           <div>
             <p className="mb-3 text-sm font-medium tracking-widest text-violet-400 uppercase">
-              Abonnement IPTV Maroc
+              Abonnement TV IPTV Maroc
             </p>
             <h2 className="mb-6 text-3xl font-bold tracking-tight text-white sm:text-4xl">
-              Ce que vous obtenez avec{" "}
-              <span className="neon-text">Ondima</span>
+              Ce que vous obtenez avec votre{" "}
+              <span className="neon-text">TV Ondima</span>
             </h2>
             <p className="mb-8 text-base leading-relaxed text-zinc-400">
-              Un abonnement IPTV Maroc premium, c&apos;est la télé en direct, le
-              sport et une VOD colossale sur tous vos écrans. Trois formules
-              annuelles, activation via WhatsApp et accompagnement technique en
-              français 24h/24.
+              Un abonnement TV Ondima, c&apos;est la télé en direct, le sport et
+              une VOD colossale sur tous vos écrans. Trois formules annuelles,
+              activation via WhatsApp et accompagnement technique en français
+              24h/24.
             </p>
             <ul className="space-y-3">
               {highlights.map((item) => (

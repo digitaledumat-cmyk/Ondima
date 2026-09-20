@@ -31,10 +31,10 @@ export default function Pricing({
               Nos Tarifs
             </p>
             <h2 className="mx-auto max-w-3xl text-3xl font-bold tracking-tight text-white sm:text-4xl">
-              Nos Formules d&apos;Abonnement IPTV Maroc : Choisissez Votre Pack
+              Formules d&apos;abonnement TV IPTV Maroc : choisissez votre pack
             </h2>
             <p className="mx-auto mt-4 max-w-xl text-sm text-zinc-500">
-              Trois formules Ondima, une activation via WhatsApp. Pas de
+              Trois formules TV Ondima, une activation via WhatsApp. Pas de
               mensualité cachée — choisissez le pack adapté à votre foyer.
             </p>
           </div>

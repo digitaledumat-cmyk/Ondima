@@ -106,7 +106,7 @@ Le site sera accessible sur **http://localhost:3000** (mode production).
 ## Structure du projet
 
 - `src/app/layout.tsx` — Métadonnées SEO
-- `src/app/page.tsx` — Page d'accueil
+- `src/app/tv/page.tsx` — Page d'accueil (`/tv`, la racine `/` redirige en 301)
 - `src/components/` — Composants UI (Hero, Pricing, Features…)
 - `src/lib/pricing.ts` — Données des offres
 # Ondima

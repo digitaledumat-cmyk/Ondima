@@ -29,10 +29,21 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: "/",
+        has: [{ type: "host", value: "www.ondima.ma" }],
+        destination: "https://ondima.ma/tv",
+        statusCode: 301,
+      },
+      {
         source: "/:path*",
         has: [{ type: "host", value: "www.ondima.ma" }],
         destination: "https://ondima.ma/:path*",
         permanent: true,
+      },
+      {
+        source: "/",
+        destination: "/tv",
+        statusCode: 301,
       },
     ];
   },

@@ -5,7 +5,7 @@ import Pricing from "@/components/Pricing";
 import TrustBadge from "@/components/TrustBadge";
 import SiteShell from "@/components/layout/SiteShell";
 import SeoContentBlock from "@/components/seo/SeoContentBlock";
-import { WHATSAPP_URL } from "@/lib/constants";
+import { HOME_PATH, WHATSAPP_URL } from "@/lib/constants";
 import { createMetadata } from "@/lib/metadata";
 import {
   abonnementPricingSeo,
@@ -104,7 +104,7 @@ export default function AbonnementPage() {
                   Commander via WhatsApp
                 </a>
                 <Link
-                  href="/#commander"
+                  href={`${HOME_PATH}#commander`}
                   className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/5 px-8 py-3.5 text-sm font-semibold text-zinc-300 transition-all hover:border-emerald-500/40 hover:text-white"
                 >
                   Commander en ligne
@@ -123,7 +123,7 @@ export default function AbonnementPage() {
                 Fonctionnalités techniques
               </Link>
               {" · "}
-              <Link href="/" className="text-violet-400 hover:text-violet-300">
+              <Link href={HOME_PATH} className="text-violet-400 hover:text-violet-300">
                 Retour à l&apos;accueil
               </Link>
             </p>

@@ -69,11 +69,12 @@ export default function TrialForm() {
               Commander
             </p>
             <h2 className="mb-4 text-3xl font-bold text-white sm:text-4xl">
-              Souscrivez à Votre Abonnement IPTV Ondima
+              Activez votre abonnement TV IPTV Ondima
             </h2>
             <p className="mb-4 text-sm leading-relaxed text-zinc-400">
               Remplissez le formulaire et envoyez votre demande directement sur
-              WhatsApp. Activation rapide et accompagnement technique inclus.
+              WhatsApp. Votre TV live, sport et VOD s&apos;activent en quelques
+              minutes, avec accompagnement technique inclus.
             </p>
             <ul className="mb-6 space-y-2 text-sm text-zinc-400">
               <li className="flex items-start gap-2">

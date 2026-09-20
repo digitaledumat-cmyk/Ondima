@@ -3,7 +3,7 @@ import HeroVisual from "./HeroVisual";
 import { GUARANTEE_TAGLINE, WHATSAPP_URL } from "@/lib/constants";
 
 const pills = [
-  { icon: "📡", label: "45 000+ chaînes" },
+  { icon: "📺", label: "TV live 45k+" },
   { icon: "🎬", label: "Films & séries" },
   { icon: "✨", label: "4K Ultra HD" },
   { icon: "⚡", label: "Sans buffering" },
@@ -27,20 +27,21 @@ export default function Hero() {
           {/* Left content */}
           <div className="space-y-6 lg:space-y-7">
             <p className="text-xs font-medium tracking-[0.2em] text-zinc-500 uppercase drop-shadow-[0_4px_12px_rgba(0,0,0,1)]">
-              Le futur du divertissement · Maroc
+              Ondima.ma/tv · Maroc 2026
             </p>
 
             <h1 className="text-4xl leading-[1.1] font-extrabold tracking-tight text-white drop-shadow-[0_4px_12px_rgba(0,0,0,1)] sm:text-5xl xl:text-[3.25rem]">
-              Le Meilleur IPTV Maroc en 2026 : Streaming Premium Stable
+              Abonnement TV Maroc 2026 : IPTV Premium HD/4K sans coupure
             </h1>
 
             <p className="text-lg font-semibold text-cta-orange drop-shadow-[0_4px_12px_rgba(0,0,0,1)] sm:text-xl">
-              Meilleur abonnement 4K premium · 2026
+              Votre télé live, sport et VOD 4K — serveurs stables
             </p>
 
             <p className="max-w-lg text-base leading-relaxed text-zinc-300 drop-shadow-[0_4px_12px_rgba(0,0,0,1)]">
-              Trois forfaits Ondima 12 mois : live, sport, VOD et activation
-              directe via WhatsApp.
+              Transformez chaque écran en TV premium : +45 000 chaînes, matchs
+              en direct et catalogue VOD. Trois forfaits 12 mois, activation
+              WhatsApp en quelques minutes.
             </p>
 
             <div className="flex flex-wrap gap-2.5">

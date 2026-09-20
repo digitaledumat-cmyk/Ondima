@@ -5,6 +5,7 @@ import "./globals.css";
 import {
   DEFAULT_DESCRIPTION,
   DEFAULT_TITLE,
+  HOME_KEYWORDS,
   rootMetadataExtensions,
   SITE_URL,
 } from "@/lib/metadata";
@@ -31,16 +32,7 @@ export const metadata: Metadata = {
     ],
     apple: "/apple-icon.png",
   },
-  keywords: [
-    "IPTV Maroc",
-    "abonnement IPTV Maroc",
-    "meilleur IPTV Maroc",
-    "fournisseur IPTV Maroc",
-    "acheter IPTV Maroc",
-    "recharge IPTV Maroc",
-    "IPTV 4K Maroc",
-    "IPTV HD Maroc",
-  ],
+  keywords: HOME_KEYWORDS,
 };
 
 export default function RootLayout({

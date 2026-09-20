@@ -1,19 +1,21 @@
 import type { Metadata } from "next";
 
+import { HOME_PATH } from "@/lib/constants";
+
 export const SITE_URL = "https://ondima.ma";
 export const SITE_NAME = "Ondima";
 
 export const DEFAULT_TITLE =
-  "IPTV Maroc Premium 2026 | +45 000 Chaînes HD/4K - Ondima";
+  "Abonnement TV IPTV Maroc 2026 | +45 000 Chaînes HD/4K - Ondima";
 
 export const DEFAULT_DESCRIPTION =
-  "Découvrez OnDima, le leader de l'abonnement IPTV Maroc Premium. Profitez d'un accès 4K ultra-stable, anti-freeze et d'un support 24/7 sur tous vos écrans.";
+  "Ondima.ma/tv : abonnement TV et IPTV Maroc Premium. Chaînes live, sport, VOD 4K ultra-stable, anti-freeze et support WhatsApp 24/7. Packs dès 300 DH/an, garantie 45 jours.";
 
 export const OG_IMAGE = {
   url: "/ondima.webp",
   width: 1672,
   height: 941,
-  alt: "Ondima IPTV Maroc Premium — Streaming 4K stable et abonnement IPTV 2026",
+  alt: "Ondima.ma/tv — Abonnement TV IPTV Maroc Premium, streaming 4K stable 2026",
 };
 
 export function absoluteUrl(path = ""): string {
@@ -68,10 +70,27 @@ export function createMetadata({
   };
 }
 
+export const HOME_KEYWORDS = [
+  "IPTV Maroc",
+  "abonnement IPTV Maroc",
+  "meilleur IPTV Maroc",
+  "fournisseur IPTV Maroc",
+  "acheter IPTV Maroc",
+  "recharge IPTV Maroc",
+  "IPTV 4K Maroc",
+  "IPTV HD Maroc",
+  "TV Maroc",
+  "abonnement TV",
+];
+
 export const rootMetadataExtensions: Pick<
   Metadata,
   "openGraph" | "twitter" | "alternates"
 > = {
-  alternates: { canonical: SITE_URL },
-  ...buildSocialMetadata(DEFAULT_TITLE, DEFAULT_DESCRIPTION, SITE_URL),
+  alternates: { canonical: absoluteUrl(HOME_PATH) },
+  ...buildSocialMetadata(
+    DEFAULT_TITLE,
+    DEFAULT_DESCRIPTION,
+    absoluteUrl(HOME_PATH),
+  ),
 };

@@ -26,7 +26,7 @@ export default function Reviews() {
             </span>
           </div>
           <h2 className="text-3xl font-bold text-white sm:text-4xl">
-            Avis de nos Clients : Pourquoi nous sommes le Fournisseur IPTV Maroc de Confiance
+            Avis clients : la TV IPTV Maroc de confiance, notée 5 étoiles
           </h2>
           <p className="mx-auto mt-3 max-w-lg text-sm text-zinc-500">
             Avis clients internationaux — Maroc, France et Espagne

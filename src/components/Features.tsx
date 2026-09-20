@@ -46,11 +46,11 @@ export default function Features() {
             Fonctionnalités
           </p>
           <h2 className="mx-auto max-w-2xl text-3xl font-bold tracking-tight text-white sm:text-4xl">
-            Les Avantages d&apos;un Service IPTV Smart TV Maroc &amp; Android Premium
+            Les avantages d&apos;une TV IPTV Smart TV Maroc &amp; Android premium
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-sm text-zinc-500">
-            Infrastructure OTT premium, serveurs VPS et technologie Anti-freeze —
-            le divertissement sans compromis.
+            Infrastructure OTT, serveurs VPS et Anti-freeze : une télévision
+            fluide sur Smart TV, Firestick et Android.
           </p>
         </div>
 

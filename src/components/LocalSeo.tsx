@@ -9,7 +9,7 @@ export default function LocalSeo() {
             Couverture internationale
           </p>
           <h2 className="mx-auto max-w-3xl text-3xl font-bold text-white sm:text-4xl">
-            IPTV premium disponible au{" "}
+            Votre TV IPTV premium au{" "}
             <span className="neon-text">Maroc, en France et en Espagne</span>
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-zinc-500">

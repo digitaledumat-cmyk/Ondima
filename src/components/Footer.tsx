@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 import Logo from "@/components/Logo";
-import { WHATSAPP_DISPLAY, WHATSAPP_URL } from "@/lib/constants";
+import { HOME_PATH, WHATSAPP_DISPLAY, WHATSAPP_URL } from "@/lib/constants";
 import { legalNav, mainNav } from "@/lib/navigation";
 
 export default function Footer() {
@@ -10,12 +10,12 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-4">
           <div className="sm:col-span-2 lg:col-span-1">
-            <Link href="/" className="inline-block transition-opacity hover:opacity-90">
+            <Link href={HOME_PATH} className="inline-block transition-opacity hover:opacity-90">
               <Logo size="md" showDomain />
             </Link>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-zinc-500">
-              IPTV Maroc Premium 2026 — +45 000 chaînes, VOD 4K/UHD et serveurs VPS
-              ultra-rapides. Le divertissement réinventé par Ondima.
+              Ondima.ma/tv — abonnement TV IPTV Maroc 2026. +45 000 chaînes HD/4K,
+              VOD et serveurs VPS ultra-rapides.
             </p>
           </div>
 
