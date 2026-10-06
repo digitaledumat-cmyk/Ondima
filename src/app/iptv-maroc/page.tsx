@@ -8,7 +8,7 @@ import WhatsAppReviews from "@/components/WhatsAppReviews";
 import PageHero from "@/components/layout/PageHero";
 import SiteShell from "@/components/layout/SiteShell";
 import SeoContentBlock from "@/components/seo/SeoContentBlock";
-import { GUARANTEE_TAGLINE, WHATSAPP_URL } from "@/lib/constants";
+import { GUARANTEE_TAGLINE, PRICING_PATH, WHATSAPP_URL } from "@/lib/constants";
 import {
   iptvMarocCities,
   iptvMarocDevices,
@@ -63,7 +63,7 @@ export default function IptvMarocPage() {
               Commander via WhatsApp
             </a>
             <Link
-              href="/abonnement-iptv"
+              href={PRICING_PATH}
               className="btn-orange inline-flex items-center justify-center rounded-full px-7 py-3.5 text-sm font-bold text-white"
             >
               Voir les tarifs détaillés
@@ -184,7 +184,7 @@ export default function IptvMarocPage() {
           <Pricing showHeader={false} showTrustBadge sectionId="formules" />
           <div className="pb-8 text-center">
             <Link
-              href="/abonnement-iptv"
+              href={PRICING_PATH}
               className="text-sm text-violet-400 hover:text-violet-300"
             >
               Page produit complète — détails &amp; comparatif →
@@ -228,7 +228,7 @@ export default function IptvMarocPage() {
                   Commander via WhatsApp
                 </a>
                 <Link
-                  href="/abonnement-iptv"
+                  href={PRICING_PATH}
                   className="btn-orange inline-flex rounded-full px-8 py-3.5 text-sm font-bold text-white"
                 >
                   Comparer les packs
@@ -285,7 +285,7 @@ export default function IptvMarocPage() {
 
             <p className="mt-8 text-center text-sm text-zinc-600">
               <Link
-                href="/abonnement-iptv"
+                href={PRICING_PATH}
                 className="text-violet-400 hover:text-violet-300"
               >
                 Voir les tarifs IPTV Maroc

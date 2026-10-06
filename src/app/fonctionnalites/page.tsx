@@ -4,7 +4,7 @@ import Link from "next/link";
 import PageHero from "@/components/layout/PageHero";
 import SiteShell from "@/components/layout/SiteShell";
 import SeoContentBlock from "@/components/seo/SeoContentBlock";
-import { WHATSAPP_URL } from "@/lib/constants";
+import { PRICING_PATH, WHATSAPP_URL } from "@/lib/constants";
 import {
   fonctionnalitesSeoIntro,
   techPillars,
@@ -109,7 +109,7 @@ export default function FonctionnalitesPage() {
                 Commander via WhatsApp
               </a>
               <Link
-                href="/abonnement-iptv"
+                href={PRICING_PATH}
                 className="btn-orange rounded-full px-8 py-3.5 text-sm font-bold text-white"
               >
                 Voir les forfaits

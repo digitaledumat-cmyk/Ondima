@@ -29,6 +29,17 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: "/abonnement-iptv",
+        has: [{ type: "host", value: "www.ondima.ma" }],
+        destination: "https://ondima.ma/tarifs",
+        statusCode: 301,
+      },
+      {
+        source: "/abonnement-iptv",
+        destination: "/tarifs",
+        statusCode: 301,
+      },
+      {
         source: "/",
         has: [{ type: "host", value: "www.ondima.ma" }],
         destination: "https://ondima.ma/tv",

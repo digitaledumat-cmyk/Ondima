@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 
 import Logo from "@/components/Logo";
-import { HOME_PATH, WHATSAPP_URL } from "@/lib/constants";
+import { HOME_PATH, PRICING_PATH, WHATSAPP_URL } from "@/lib/constants";
 import { legalNav, mainNav } from "@/lib/navigation";
 
 function WhatsAppIcon({ className }: { className?: string }) {
@@ -21,7 +21,9 @@ function isActive(pathname: string, href: string) {
   if (href.startsWith("/#") || href.startsWith(`${HOME_PATH}#`)) {
     return pathname === HOME_PATH || pathname === "/";
   }
-  if (href === "/abonnement-iptv") return pathname === "/abonnement-iptv";
+  if (href === PRICING_PATH) {
+    return pathname === PRICING_PATH || pathname === "/abonnement-iptv";
+  }
   if (href === "/fonctionnalites") return pathname === "/fonctionnalites";
   if (href === "/guide") return pathname === "/guide" || pathname === "/guide-installation";
   return pathname === href || pathname.startsWith(`${href}/`);
@@ -116,7 +118,7 @@ export default function Header() {
             <span className="hidden lg:inline">Commander via WhatsApp</span>
             <span className="lg:hidden">Commander</span>
           </a>
-          <Link href="/abonnement-iptv" className="btn-orange rounded-full px-5 py-2 text-sm font-semibold text-white">
+          <Link href={PRICING_PATH} className="btn-orange rounded-full px-5 py-2 text-sm font-semibold text-white">
             Commencer
           </Link>
         </div>
@@ -159,7 +161,7 @@ export default function Header() {
             <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="btn-whatsapp flex items-center justify-center gap-2 rounded-full py-3 text-sm font-semibold text-white">
               <WhatsAppIcon className="h-4 w-4" /> Commander via WhatsApp
             </a>
-            <Link href="/abonnement-iptv" className="btn-orange rounded-full py-3 text-center text-sm font-semibold text-white" onClick={() => setOpen(false)}>
+            <Link href={PRICING_PATH} className="btn-orange rounded-full py-3 text-center text-sm font-semibold text-white" onClick={() => setOpen(false)}>
               Commencer
             </Link>
           </div>

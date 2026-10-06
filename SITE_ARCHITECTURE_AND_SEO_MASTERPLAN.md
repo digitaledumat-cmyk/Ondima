@@ -75,7 +75,7 @@ Ondima/
 │   │   ├── robots.ts            # Dynamic /robots.txt
 │   │   ├── icon.png / apple-icon.png / favicon.ico
 │   │   ├── iptv-maroc/          # SEO landing
-│   │   ├── abonnement-iptv/     # Product / pricing page
+│   │   ├── tarifs/              # Product / pricing page
 │   │   ├── fonctionnalites/
 │   │   ├── guide/
 │   │   ├── faq/
@@ -196,7 +196,7 @@ Build output marks all marketing pages as **○ Static (prerendered)**.
 
 **UI sections (in order):**
 
-1. `Header` — mainNav, FR/AR toggle, WhatsApp CTA, Commencer → `/abonnement-iptv`
+1. `Header` — mainNav, FR/AR toggle, WhatsApp CTA, Commencer → `/tarifs`
 2. `Hero` — H1, pills, CTAs (WhatsApp, Commencer, Voir forfaits), guarantee line, `HeroVisual` image
 3. `Benefits` — value props + 3 steps H3
 4. `Features` — 6 feature cards H3
@@ -230,7 +230,7 @@ Build output marks all marketing pages as **○ Static (prerendered)**.
 | Field | Detail |
 |---|---|
 | **File** | `src/app/iptv-maroc/page.tsx` + `src/lib/iptv-maroc.ts` + WhatsApp reviews libs |
-| **Purpose** | Independent SEO landing (keyword hub) — **does not replace** `/tv` or `/abonnement-iptv` |
+| **Purpose** | Independent SEO landing (keyword hub) — **does not replace** `/tv` or `/tarifs` |
 | **Audience / Intent** | Informational → commercial (city + “meilleur IPTV” queries) |
 | **Rendering** | Static + client WhatsAppReviews / PricingCard / Accordion |
 
@@ -243,7 +243,7 @@ Build output marks all marketing pages as **○ Static (prerendered)**.
 **UI sections:**
 
 1. `PageHero` H1  
-2. TrustBadge + WhatsApp + link to `/abonnement-iptv`  
+2. TrustBadge + WhatsApp + link to `/tarifs`  
 3. `SeoContentBlock` intro  
 4. Points forts (4× H3 cards)  
 5. Appareils compatibles (4× H3)  
@@ -258,24 +258,25 @@ Build output marks all marketing pages as **○ Static (prerendered)**.
 
 ---
 
-### 2.3 Product / pricing — `/abonnement-iptv`
+### 2.3 Product / pricing — `/tarifs`
 
 | Field | Detail |
 |---|---|
-| **File** | `src/app/abonnement-iptv/page.tsx` |
+| **File** | `src/app/tarifs/page.tsx` |
 | **Purpose** | Dedicated commercial product page (tariffs & packs) |
 | **Audience / Intent** | Transactional |
 | **Rendering** | Static + PricingCard client |
+| **Redirect** | `/abonnement-iptv` → `/tarifs` (301) |
 
-**Title:** `Abonnement IPTV Maroc Premium | Tarifs & Formules 2026 - Ondima`  
-**Meta description:** `Tarifs IPTV Maroc 2026 : Pack Pro 300 dhs, Expérience Ultra 450 dhs, VIP 600 dhs/an. Acheter IPTV Maroc avec serveurs VPS OTT, garantie 45 jours et activation WhatsApp 24/7.`  
-**Canonical:** `https://ondima.ma/abonnement-iptv`  
-**Keywords:** abonnement IPTV Maroc, tarifs IPTV Maroc, acheter IPTV Maroc, prix IPTV, IPTV 4K Maroc  
+**Title:** `Tarifs Ondima | Packs TV & Formules 2026`  
+**Meta description:** `Tarifs Ondima 2026 : Pack Pro 300 dhs, Expérience Ultra 450 dhs, VIP 600 dhs/an. Packs TV avec serveurs VPS OTT, garantie 45 jours et activation WhatsApp 24/7.`  
+**Canonical:** `https://ondima.ma/tarifs`  
+**Keywords:** tarifs Ondima, tarifs IPTV Maroc, packs TV Maroc, prix IPTV, formules TV 4K  
 **Sitemap:** priority `0.9` weekly
 
 **UI:** Custom hero H1 → `SeoContentBlock` intro → `Pricing` (no header) → SEO pricing paragraphs → CTA WhatsApp + link `/tv#commander` → footer links Guide / Fonctionnalités / Accueil (`/tv`)  
 
-**H1:** « Abonnement IPTV Maroc Premium : Nos Tarifs & Formules 2026 »  
+**H1:** « Tarifs Ondima : packs TV & formules 2026 »  
 **Structured data:** None (Opportunity: Product / Offer schema).
 
 ---
@@ -473,7 +474,7 @@ All use `LegalPageContent` + `createMetadata` + data in `src/lib/legal.ts`.
            ┌───────────────────┼───────────────────┐
            ▼                   ▼                   ▼
    ┌───────────────┐  ┌────────────────┐  ┌────────────────┐
-   │ /iptv-maroc   │  │/abonnement-iptv│  │ /fonctionnalites│
+   │ /iptv-maroc   │  │    /tarifs     │  │ /fonctionnalites│
    │ SEO keyword   │  │ transactional  │  │ tech authority  │
    │ hub + cities  │  │ pricing        │  │                 │
    └───────┬───────┘  └───────┬────────┘  └────────┬───────┘
@@ -497,7 +498,7 @@ All use `LegalPageContent` + `createMetadata` + data in `src/lib/legal.ts`.
 
 **Cluster logic:**
 
-- **Money cluster:** `/abonnement-iptv`, homepage pricing, `/iptv-maroc` formules  
+- **Money cluster:** `/tarifs`, homepage pricing, `/iptv-maroc` formules  
 - **Trust cluster:** FAQ, reviews, WhatsApp social proof, legal refund  
 - **Support cluster:** `/guide`, Nino Player, Support section  
 - **Authority cluster:** `/fonctionnalites`, long SEO on `/iptv-maroc`, blog listing  
@@ -509,7 +510,7 @@ From `mainNav`:
 
 1. Accueil `/tv`  
 2. IPTV Maroc `/iptv-maroc`  
-3. Tarifs `/abonnement-iptv`  
+3. Tarifs `/tarifs`  
 4. Fonctionnalités `/fonctionnalites`  
 5. Guide `/guide`  
 6. FAQ `/faq`  
@@ -557,7 +558,7 @@ Footer also exposes Plan du site + legal links.
 |---|---|
 | 1.0 daily | `/tv` (`/` excluded — 301) |
 | 0.95 weekly | `/iptv-maroc` |
-| 0.9 weekly | `/abonnement-iptv` |
+| 0.9 weekly | `/tarifs` (`/abonnement-iptv` excluded — 301) |
 | 0.8 weekly | `/fonctionnalites`, `/guide` |
 | 0.7 monthly | remaining mainNav + `/sitemap-html` |
 | 0.3 yearly | `/legal/*` |
@@ -616,7 +617,7 @@ Sitemap: https://ondima.ma/sitemap.xml
 | Local / LSI | IPTV Casablanca, IPTV Rabat, IPTV Marrakech, IPTV Tanger, IPTV Fès, IPTV Agadir, Meknès, Oujda, Kénitra, Tétouan, Safi, El Jadida, Nador, Mohammedia |
 | Intent | Informational + Commercial |
 
-#### `/abonnement-iptv`
+#### `/tarifs`
 
 | Type | Keywords |
 |---|---|
@@ -678,7 +679,7 @@ Sitemap: https://ondima.ma/sitemap.xml
 | **Navigational** | `/tv`, `/contact`, `/sitemap-html`, `/legal/*` |
 | **Informational** | `/guide`, `/faq`, `/blog`, `/fonctionnalites`, long SEO on `/iptv-maroc` |
 | **Commercial** | `/tv`, `/iptv-maroc`, `/fonctionnalites` |
-| **Transactional** | `/abonnement-iptv`, `/contact` (TrialForm), WhatsApp CTAs sitewide |
+| **Transactional** | `/tarifs`, `/contact` (TrialForm), WhatsApp CTAs sitewide |
 
 ---
 
@@ -709,7 +710,7 @@ Sitemap: https://ondima.ma/sitemap.xml
 
 1. **WhatsApp** — primary owned channel (already productized).  
 2. **Facebook / Instagram** — pack creatives + Stories using pricing visuals (keep off-site assets out of `/public` if private).  
-3. **YouTube** — device install series → describe `/guide` + `/abonnement-iptv`.  
+3. **YouTube** — device install series → describe `/guide` + `/tarifs`.  
 4. **LinkedIn / diaspora groups** — softer brand/trust content (garantie, support).  
 5. **Search Console** — submit `sitemap.xml`, monitor Coverage, Enhancement, Removals.  
 6. **Brand SERP** — ensure knowledge consistency: ondima.ma, WhatsApp, guarantee wording.
@@ -718,7 +719,7 @@ Sitemap: https://ondima.ma/sitemap.xml
 
 - Impressions/clicks for: `IPTV Maroc`, `abonnement IPTV Maroc`, city modifiers  
 - Conversion: WhatsApp clicks (add event tracking if/when analytics installed)  
-- Index coverage of `/iptv-maroc` and `/abonnement-iptv`  
+- Index coverage of `/iptv-maroc` and `/tarifs`  
 - Referring domains growth monthly  
 
 ### 5.5 Technical off-page hygiene
@@ -767,7 +768,7 @@ Use this checklist to replicate the **Ondima architecture** for a future site.
 |---|---|
 | Homepage | `src/app/tv/page.tsx` + Hero/Benefits/Features/Pricing/FAQ/LocalSeo |
 | SEO landing | `/iptv-maroc` pattern: PageHero + strengths + devices + pricing + long SEO |
-| Product | `/abonnement-iptv` pattern: H1 + SEO blocks + Pricing + CTA |
+| Product | `/tarifs` pattern: H1 + SEO blocks + Pricing + CTA |
 | Authority | `/fonctionnalites` pillars |
 | HowTo | `/guide` accordions + recommended apps |
 | FAQ | `/faq` + Accordion |
@@ -820,7 +821,8 @@ Use this checklist to replicate the **Ondima architecture** for a future site.
 | https://ondima.ma/tv | 1.0 |
 | https://ondima.ma | 301 → /tv (not in sitemap) |
 | https://ondima.ma/iptv-maroc | 0.95 |
-| https://ondima.ma/abonnement-iptv | 0.9 |
+| https://ondima.ma/tarifs | 0.9 |
+| https://ondima.ma/abonnement-iptv | 301 → /tarifs (not in sitemap) |
 | https://ondima.ma/fonctionnalites | 0.8 |
 | https://ondima.ma/guide | 0.8 |
 | https://ondima.ma/faq | 0.7 |

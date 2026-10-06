@@ -1,6 +1,6 @@
 import HeroVisual from "./HeroVisual";
 
-import { GUARANTEE_TAGLINE, WHATSAPP_URL } from "@/lib/constants";
+import { GUARANTEE_TAGLINE, PRICING_PATH, WHATSAPP_URL } from "@/lib/constants";
 
 const pills = [
   { icon: "📺", label: "TV live 45k+" },
@@ -67,13 +67,13 @@ export default function Hero() {
                 Commander via WhatsApp
               </a>
               <a
-                href="/abonnement-iptv"
+                href={PRICING_PATH}
                 className="btn-orange inline-flex items-center justify-center rounded-full px-7 py-3.5 text-sm font-bold text-white sm:text-base"
               >
                 Commencer
               </a>
               <a
-                href="/abonnement-iptv"
+                href={PRICING_PATH}
                 className="inline-flex items-center justify-center rounded-full border border-white/20 bg-white/5 px-7 py-3.5 text-sm font-semibold text-zinc-300 transition-all hover:border-white/30 hover:bg-white/10 hover:text-white"
               >
                 Voir les forfaits

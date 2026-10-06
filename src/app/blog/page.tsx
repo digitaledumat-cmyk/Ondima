@@ -5,6 +5,7 @@ import PageHero from "@/components/layout/PageHero";
 import SiteShell from "@/components/layout/SiteShell";
 import SeoContentBlock from "@/components/seo/SeoContentBlock";
 import { blogPosts } from "@/lib/blog";
+import { PRICING_PATH } from "@/lib/constants";
 import { createMetadata } from "@/lib/metadata";
 import { blogSeoIntro } from "@/lib/seo-content";
 
@@ -55,7 +56,7 @@ export default function BlogPage() {
             </div>
             <p className="mt-10 text-center text-sm text-zinc-600">
               Articles à venir régulièrement.{" "}
-              <Link href="/abonnement-iptv" className="text-violet-400 hover:text-violet-300">
+              <Link href={PRICING_PATH} className="text-violet-400 hover:text-violet-300">
                 Voir nos forfaits
               </Link>
               {" · "}

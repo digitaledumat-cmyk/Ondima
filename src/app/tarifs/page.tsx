@@ -5,7 +5,7 @@ import Pricing from "@/components/Pricing";
 import TrustBadge from "@/components/TrustBadge";
 import SiteShell from "@/components/layout/SiteShell";
 import SeoContentBlock from "@/components/seo/SeoContentBlock";
-import { HOME_PATH, WHATSAPP_URL } from "@/lib/constants";
+import { HOME_PATH, PRICING_PATH, WHATSAPP_URL } from "@/lib/constants";
 import { createMetadata } from "@/lib/metadata";
 import {
   abonnementPricingSeo,
@@ -14,16 +14,16 @@ import {
 
 export const metadata: Metadata = createMetadata({
   title:
-    "Abonnement IPTV Maroc Premium | Tarifs & Formules 2026 - Ondima",
+    "Tarifs Ondima | Packs TV & Formules 2026",
   description:
-    "Tarifs IPTV Maroc 2026 : Pack Pro 300 dhs, Expérience Ultra 450 dhs, VIP 600 dhs/an. Acheter IPTV Maroc avec serveurs VPS OTT, garantie 45 jours et activation WhatsApp 24/7.",
-  path: "/abonnement-iptv",
+    "Tarifs Ondima 2026 : Pack Pro 300 dhs, Expérience Ultra 450 dhs, VIP 600 dhs/an. Packs TV avec serveurs VPS OTT, garantie 45 jours et activation WhatsApp 24/7.",
+  path: PRICING_PATH,
   keywords: [
-    "abonnement IPTV Maroc",
+    "tarifs Ondima",
     "tarifs IPTV Maroc",
-    "acheter IPTV Maroc",
+    "packs TV Maroc",
     "prix IPTV",
-    "IPTV 4K Maroc",
+    "formules TV 4K",
   ],
 });
 
@@ -35,7 +35,7 @@ function WhatsAppIcon({ className }: { className?: string }) {
   );
 }
 
-export default function AbonnementPage() {
+export default function TarifsPage() {
   return (
     <SiteShell>
       <main>
@@ -46,7 +46,7 @@ export default function AbonnementPage() {
               Nos offres · 2026
             </p>
             <h1 className="max-w-4xl text-3xl font-extrabold tracking-tight text-white sm:text-4xl lg:text-5xl">
-              Abonnement IPTV Maroc Premium : Nos Tarifs &amp; Formules 2026
+              Tarifs Ondima : packs TV &amp; formules 2026
             </h1>
             <p className="mt-5 max-w-2xl text-base leading-relaxed text-zinc-400">
               Trois packs annuels Ondima — Pack Pro, Expérience Ultra et
@@ -85,7 +85,7 @@ export default function AbonnementPage() {
           <div className="mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
             <div className="glow-border-purple rounded-3xl glass-panel p-8 sm:p-10">
               <h2 className="mb-2 text-xl font-bold text-white">
-                Prêt à commander votre abonnement IPTV Maroc ?
+                Prêt à commander votre pack TV Ondima ?
               </h2>
               <p className="mb-6 text-sm leading-relaxed text-zinc-400">
                 Choisissez votre pack, contactez-nous sur WhatsApp et recevez vos

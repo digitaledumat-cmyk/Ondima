@@ -7,7 +7,7 @@ import RecommendedApps from "@/components/RecommendedApps";
 import PageHero from "@/components/layout/PageHero";
 import SiteShell from "@/components/layout/SiteShell";
 import SeoContentBlock from "@/components/seo/SeoContentBlock";
-import { WHATSAPP_URL } from "@/lib/constants";
+import { PRICING_PATH, WHATSAPP_URL } from "@/lib/constants";
 import { installationSteps } from "@/lib/installation";
 import { createMetadata } from "@/lib/metadata";
 import { guideDeviceBlocks, guideSeoIntro } from "@/lib/seo-content";
@@ -126,7 +126,7 @@ export default function GuidePage() {
               </Link>
               {" · "}
               <Link
-                href="/abonnement-iptv"
+                href={PRICING_PATH}
                 className="text-violet-400 hover:text-violet-300"
               >
                 Voir les forfaits
