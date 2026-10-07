@@ -4,6 +4,7 @@ export interface PricingPlan {
   tagline: string;
   price: number;
   currency: string;
+  priceEur: number;
   period: string;
   features: string[];
   isFeatured?: boolean;
@@ -18,6 +19,7 @@ export const pricingPlans: PricingPlan[] = [
       "Le pack idéal pour démarrer avec l'application PRO activée dès la souscription.",
     price: 300,
     currency: "dhs",
+    priceEur: 35,
     period: "/ an",
     accent: "violet",
     features: [
@@ -39,6 +41,7 @@ export const pricingPlans: PricingPlan[] = [
       "Haute technologie et catalogue XXL. Installation sur 2 appareils, connexion non simultanée.",
     price: 450,
     currency: "dhs",
+    priceEur: 45,
     period: "/ an",
     accent: "cyan",
     features: [
@@ -60,6 +63,7 @@ export const pricingPlans: PricingPlan[] = [
       "L'élite du divertissement mondial. Installation sur 3 appareils, connexion non simultanée.",
     price: 600,
     currency: "dhs",
+    priceEur: 60,
     period: "/ an",
     accent: "featured",
     isFeatured: true,

@@ -25,14 +25,23 @@ export default function SitemapHtmlPage() {
         />
         <section className="py-16 lg:py-20">
           <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
-            <div className="mb-10 rounded-2xl border border-violet-500/20 bg-violet-600/5 px-6 py-4 text-center">
+            <div className="mb-10 space-y-3 rounded-2xl border border-violet-500/20 bg-violet-600/5 px-6 py-4 text-center">
               <p className="text-sm text-zinc-400">
-                Sitemap XML pour les moteurs de recherche :{" "}
+                Sitemap XML :{" "}
                 <Link
                   href="/sitemap.xml"
                   className="font-medium text-violet-400 hover:text-cyan-400"
                 >
                   ondima.ma/sitemap.xml
+                </Link>
+              </p>
+              <p className="text-sm text-zinc-400">
+                Fichier pour assistants IA (GEO / LLM) :{" "}
+                <Link
+                  href="/llms.txt"
+                  className="font-medium text-violet-400 hover:text-cyan-400"
+                >
+                  ondima.ma/llms.txt
                 </Link>
               </p>
             </div>

@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import HeroVisual from "./HeroVisual";
 
 import { GUARANTEE_TAGLINE, PRICING_PATH, WHATSAPP_URL } from "@/lib/constants";
@@ -83,6 +85,23 @@ export default function Hero() {
             <div className="space-y-1 pt-2">
               <p className="text-xs text-zinc-600 drop-shadow-[0_4px_12px_rgba(0,0,0,1)]">
                 {GUARANTEE_TAGLINE} · Dès 300 DH/an
+              </p>
+              <p className="text-xs text-zinc-500">
+                <Link href="/iptv-maroc" className="hover:text-violet-300">
+                  IPTV Maroc stable
+                </Link>
+                {" · "}
+                <Link href={PRICING_PATH} className="hover:text-violet-300">
+                  Tarifs abonnement IPTV Maroc
+                </Link>
+                {" · "}
+                <Link href="/guide" className="hover:text-violet-300">
+                  Guide d&apos;installation
+                </Link>
+                {" · "}
+                <Link href="/faq" className="hover:text-violet-300">
+                  FAQ
+                </Link>
               </p>
             </div>
           </div>

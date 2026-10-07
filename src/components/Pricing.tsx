@@ -34,8 +34,8 @@ export default function Pricing({
               Formules d&apos;abonnement TV IPTV Maroc : choisissez votre pack
             </h2>
             <p className="mx-auto mt-4 max-w-xl text-sm text-zinc-500">
-              Trois formules TV Ondima, une activation via WhatsApp. Pas de
-              mensualité cachée — choisissez le pack adapté à votre foyer.
+              Trois formules TV Ondima — Maroc (dhs) et Europe (€). Activation
+              via WhatsApp, sans mensualité cachée.
             </p>
           </div>
         )}

@@ -2,7 +2,8 @@ import Link from "next/link";
 
 import Logo from "@/components/Logo";
 import { HOME_PATH, WHATSAPP_DISPLAY, WHATSAPP_URL } from "@/lib/constants";
-import { legalNav, mainNav } from "@/lib/navigation";
+import { footerHubLinks } from "@/lib/geo";
+import { legalNav } from "@/lib/navigation";
 
 export default function Footer() {
   return (
@@ -20,20 +21,20 @@ export default function Footer() {
           </div>
 
           <div>
-            <p className="mb-4 text-xs font-semibold tracking-widest text-zinc-400 uppercase">Navigation</p>
+            <p className="mb-4 text-xs font-semibold tracking-widest text-zinc-400 uppercase">
+              Pages clés
+            </p>
             <ul className="space-y-2.5">
-              {mainNav.map((link) => (
+              {footerHubLinks.map((link) => (
                 <li key={link.href}>
-                  <Link href={link.href} className="text-sm text-zinc-500 transition-colors hover:text-white">
+                  <Link
+                    href={link.href}
+                    className="text-sm text-zinc-500 transition-colors hover:text-white"
+                  >
                     {link.label}
                   </Link>
                 </li>
               ))}
-              <li>
-                <Link href="/sitemap-html" className="text-sm text-zinc-500 transition-colors hover:text-white">
-                  Plan du site
-                </Link>
-              </li>
             </ul>
           </div>
 
@@ -57,6 +58,26 @@ export default function Footer() {
             <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="neon-cta mt-4 inline-flex rounded-full px-5 py-2.5 text-xs font-semibold text-white">
               Commander maintenant
             </a>
+            <p className="mt-6 mb-2 text-xs font-semibold tracking-widest text-zinc-400 uppercase">
+              Assistants IA
+            </p>
+            <ul className="space-y-2">
+              <li>
+                <Link href="/llms.txt" className="text-sm text-zinc-500 hover:text-white">
+                  llms.txt — résumé pour les LLM
+                </Link>
+              </li>
+              <li>
+                <Link href="/sitemap-html" className="text-sm text-zinc-500 hover:text-white">
+                  Plan du site HTML
+                </Link>
+              </li>
+              <li>
+                <Link href="/sitemap.xml" className="text-sm text-zinc-500 hover:text-white">
+                  Sitemap XML
+                </Link>
+              </li>
+            </ul>
           </div>
         </div>
 

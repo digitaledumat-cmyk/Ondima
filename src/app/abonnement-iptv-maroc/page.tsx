@@ -4,6 +4,7 @@ import Link from "next/link";
 import Pricing from "@/components/Pricing";
 import TrustBadge from "@/components/TrustBadge";
 import SiteShell from "@/components/layout/SiteShell";
+import Breadcrumbs from "@/components/seo/Breadcrumbs";
 import SeoContentBlock from "@/components/seo/SeoContentBlock";
 import { HOME_PATH, PRICING_PATH, WHATSAPP_URL } from "@/lib/constants";
 import { createMetadata } from "@/lib/metadata";
@@ -14,16 +15,16 @@ import {
 
 export const metadata: Metadata = createMetadata({
   title:
-    "Tarifs Ondima | Packs TV & Formules 2026",
+    "Abonnement IPTV Maroc Premium | Tarifs & Formules 2026 - Ondima",
   description:
-    "Tarifs Ondima 2026 : Pack Pro 300 dhs, Expérience Ultra 450 dhs, VIP 600 dhs/an. Packs TV avec serveurs VPS OTT, garantie 45 jours et activation WhatsApp 24/7.",
+    "Tarifs IPTV Maroc 2026 : Pack Pro 300 dhs, Expérience Ultra 450 dhs, VIP 600 dhs/an. Acheter IPTV Maroc avec serveurs VPS OTT, garantie 45 jours et activation WhatsApp 24/7.",
   path: PRICING_PATH,
   keywords: [
-    "tarifs Ondima",
+    "abonnement IPTV Maroc",
     "tarifs IPTV Maroc",
-    "packs TV Maroc",
+    "acheter IPTV Maroc",
     "prix IPTV",
-    "formules TV 4K",
+    "IPTV 4K Maroc",
   ],
 });
 
@@ -35,23 +36,25 @@ function WhatsAppIcon({ className }: { className?: string }) {
   );
 }
 
-export default function TarifsPage() {
+export default function AbonnementIptvMarocPage() {
   return (
     <SiteShell>
       <main>
         <section className="relative overflow-hidden border-b border-white/5 pt-28 pb-12 lg:pb-16">
           <div className="hero-grid hero-glow-left hero-glow-right absolute inset-0" aria-hidden />
           <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <Breadcrumbs />
             <p className="mb-3 text-xs font-medium tracking-[0.2em] text-violet-400 uppercase">
               Nos offres · 2026
             </p>
             <h1 className="max-w-4xl text-3xl font-extrabold tracking-tight text-white sm:text-4xl lg:text-5xl">
-              Tarifs Ondima : packs TV &amp; formules 2026
+              Abonnement IPTV Maroc Premium : Nos Tarifs &amp; Formules 2026
             </h1>
             <p className="mt-5 max-w-2xl text-base leading-relaxed text-zinc-400">
-              Trois packs annuels Ondima — Pack Pro, Expérience Ultra et
-              Ultra (2 appareils) &amp; VIP (3 appareils) — connexion non simultanée — serveurs
-              VPS OTT, activation WhatsApp et garantie 45 jours satisfait ou remboursé.
+              Trois packs annuels — Pack Pro (300 dhs / 35&nbsp;€), Expérience Ultra
+              (450 dhs / 45&nbsp;€) et VIP (600 dhs / 60&nbsp;€). Connexion non
+              simultanée, serveurs VPS OTT, activation WhatsApp et garantie 45
+              jours satisfait ou remboursé.
             </p>
             <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:flex-wrap sm:items-center">
               <TrustBadge />

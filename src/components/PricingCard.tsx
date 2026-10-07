@@ -57,14 +57,34 @@ export default function PricingCard({ plan }: PricingCardProps) {
         <p className="mb-2 text-xl font-bold text-white">{plan.name}</p>
         <p className="text-sm leading-relaxed text-zinc-400">{plan.tagline}</p>
 
-        <div className="mt-6 flex items-baseline gap-1">
-          <span className={`text-5xl font-bold ${accent.price}`}>
-            {plan.price}
-          </span>
-          <span className="text-lg text-zinc-500">
-            {plan.currency}
-            <span className="text-sm">{plan.period}</span>
-          </span>
+        <div className="mt-6 grid grid-cols-2 gap-3">
+          <div>
+            <p className="mb-1 text-[10px] font-medium tracking-widest text-zinc-500 uppercase">
+              Maroc
+            </p>
+            <div className="flex items-baseline gap-1">
+              <span className={`text-4xl font-bold ${accent.price}`}>
+                {plan.price}
+              </span>
+              <span className="text-sm text-zinc-500">
+                {plan.currency}
+                <span className="text-xs">{plan.period}</span>
+              </span>
+            </div>
+          </div>
+          <div>
+            <p className="mb-1 text-[10px] font-medium tracking-widest text-zinc-500 uppercase">
+              Europe
+            </p>
+            <div className="flex items-baseline gap-1">
+              <span className={`text-4xl font-bold ${accent.price}`}>
+                {plan.priceEur}
+              </span>
+              <span className="text-sm text-zinc-500">
+                €<span className="text-xs">{plan.period}</span>
+              </span>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -116,7 +136,7 @@ export default function PricingCard({ plan }: PricingCardProps) {
               : "border border-white/15 bg-white/5 text-zinc-200 hover:border-violet-500/40 hover:bg-violet-600/10 hover:text-white"
           }`}
         >
-          Commander — {plan.price} dhs
+          Commander — {plan.price} dhs / {plan.priceEur} €
         </a>
       </div>
 

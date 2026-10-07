@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
+import JsonLd from "@/components/seo/JsonLd";
+import { organizationGraph } from "@/lib/json-ld";
 import {
   DEFAULT_DESCRIPTION,
   DEFAULT_TITLE,
@@ -42,7 +44,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr" className={inter.variable}>
-      <body className="min-h-screen bg-void antialiased">{children}</body>
+      <body className="min-h-screen bg-void antialiased">
+        <JsonLd data={organizationGraph()} />
+        {children}
+      </body>
     </html>
   );
 }

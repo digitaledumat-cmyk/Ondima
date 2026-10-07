@@ -10,9 +10,9 @@ export const abonnementSeoIntro = {
 export const abonnementPricingSeo = {
   title: "Pourquoi nos tarifs IPTV Maroc sont les plus compétitifs en 2026",
   paragraphs: [
-    "Lorsque vous comparez un abonnement IPTV Maroc sur le marché, le prix affiché ne reflète jamais toute la réalité technique. Chez Ondima, chaque formule — du Pack Pro à 300 dhs/an à l'Exclusif Suprême VIP à 600 dhs/an — repose sur une infrastructure VPS OTT réelle, monitorée 24h/24, et non sur des serveurs mutualisés instables.",
+    "Lorsque vous comparez un abonnement IPTV Maroc sur le marché, le prix affiché ne reflète jamais toute la réalité technique. Chez Ondima, chaque formule — du Pack Pro à 300 dhs (35 €) / an à l'Exclusif Suprême VIP à 600 dhs (60 €) / an — repose sur une infrastructure VPS OTT réelle, monitorée 24h/24, et non sur des serveurs mutualisés instables.",
     "Nos tarifs IPTV Maroc intègrent l'Anti-freeze 2.2 sur le pack VIP, un routage Smart-OTT multi-CDN, un EPG dynamique et un support WhatsApp en français disponible à toute heure. Autrement dit : vous achetez IPTV Maroc avec une garantie de performance, pas un simple lien M3U sans assistance.",
-    "Le rapport qualité-prix IPTV d'Ondima surpasse la concurrence low-cost qui facture des recharges cachées, des coupures en direct et zéro SAV. Nos prix IPTV sont fixes, annuels et transparents : 300, 450 ou 600 dhs, activation immédiate, sans mensualité surprise.",
+    "Le rapport qualité-prix IPTV d'Ondima surpasse la concurrence low-cost qui facture des recharges cachées, des coupures en direct et zéro SAV. Nos prix IPTV sont fixes, annuels et transparents : Maroc 300 / 450 / 600 dhs, Europe 35 / 45 / 60 €, activation immédiate, sans mensualité surprise.",
     "Que vous souhaitiez acheter IPTV Maroc pour un foyer modeste (Pack Pro, 1 appareil), l'Ultra sur 2 appareils ou le VIP sur 3 appareils (connexion non simultanée), notre grille tarifaire vous permet de choisir précisément le niveau de serveur dont vous avez besoin sans payer pour des options inutiles.",
     "Commandez votre abonnement IPTV Maroc via WhatsApp : notre équipe valide votre forfait, configure votre appareil à distance et active votre accès en moins de 5 minutes. Garantie 45 jours satisfait ou remboursé sur toutes les formules.",
   ],

@@ -15,7 +15,7 @@ type SitemapRoute = {
 /**
  * URLs indexables uniquement.
  * La racine `/` redirige en 301 vers `/tv`.
- * `/abonnement-iptv` redirige en 301 vers `/tarifs`.
+ * `/abonnement-iptv` et `/tarifs` redirigent en 301 vers `/abonnement-iptv-maroc`.
  */
 const SITEMAP_ROUTES: SitemapRoute[] = [
   { path: HOME_PATH, priority: 1, changeFrequency: "daily" },
@@ -38,7 +38,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
 
   return SITEMAP_ROUTES.filter(
-    (route) => route.path !== "/" && route.path !== "/abonnement-iptv",
+    (route) =>
+      route.path !== "/" &&
+      route.path !== "/abonnement-iptv" &&
+      route.path !== "/tarifs",
   ).map((route) => ({
     url: absoluteUrl(route.path),
     lastModified: now,

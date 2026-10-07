@@ -22,7 +22,11 @@ function isActive(pathname: string, href: string) {
     return pathname === HOME_PATH || pathname === "/";
   }
   if (href === PRICING_PATH) {
-    return pathname === PRICING_PATH || pathname === "/abonnement-iptv";
+    return (
+      pathname === PRICING_PATH ||
+      pathname === "/abonnement-iptv" ||
+      pathname === "/tarifs"
+    );
   }
   if (href === "/fonctionnalites") return pathname === "/fonctionnalites";
   if (href === "/guide") return pathname === "/guide" || pathname === "/guide-installation";
