@@ -42,7 +42,7 @@ export default function Header() {
   return (
     <header className="fixed top-0 right-0 left-0 z-50 border-b border-white/5 bg-void/80 backdrop-blur-md">
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3.5 sm:px-6 lg:px-8">
-        <Link href={HOME_PATH} className="shrink-0 transition-opacity hover:opacity-90">
+        <Link href={HOME_PATH} className="shrink-0 transition-opacity hover:opacity-90" aria-label="Accueil Ondima">
           <Logo size="md" />
         </Link>
 
@@ -67,33 +67,39 @@ export default function Header() {
               className="flex items-center gap-1 text-sm text-zinc-400 hover:text-white"
               onClick={() => setPlusOpen(!plusOpen)}
               aria-expanded={plusOpen}
+              aria-haspopup="true"
+              aria-controls="plus-menu"
             >
               Plus
-              <svg className={`h-3.5 w-3.5 transition-transform ${plusOpen ? "rotate-180" : ""}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <svg className={`h-3.5 w-3.5 transition-transform ${plusOpen ? "rotate-180" : ""}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden>
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
               </svg>
             </button>
-            {plusOpen && (
-              <div className="absolute top-full right-0 mt-2 w-56 rounded-xl border border-white/10 bg-void-elevated py-2 shadow-2xl">
-                {legalNav.map((link) => (
-                  <Link
-                    key={link.href}
-                    href={link.href}
-                    className="block px-4 py-2 text-xs text-zinc-400 hover:bg-white/5 hover:text-white"
-                    onClick={() => setPlusOpen(false)}
-                  >
-                    {link.label}
-                  </Link>
-                ))}
+            <div
+              id="plus-menu"
+              hidden={!plusOpen}
+              className={`absolute top-full right-0 mt-2 w-56 rounded-xl border border-white/10 bg-void-elevated py-2 shadow-2xl ${
+                plusOpen ? "block" : "hidden"
+              }`}
+            >
+              {legalNav.map((link) => (
                 <Link
-                  href="/sitemap-html"
+                  key={link.href}
+                  href={link.href}
                   className="block px-4 py-2 text-xs text-zinc-400 hover:bg-white/5 hover:text-white"
                   onClick={() => setPlusOpen(false)}
                 >
-                  Plan du site
+                  {link.label}
                 </Link>
-              </div>
-            )}
+              ))}
+              <Link
+                href="/sitemap-html"
+                className="block px-4 py-2 text-xs text-zinc-400 hover:bg-white/5 hover:text-white"
+                onClick={() => setPlusOpen(false)}
+              >
+                Plan du site
+              </Link>
+            </div>
           </li>
         </ul>
 
@@ -107,6 +113,8 @@ export default function Header() {
                 className={`px-2.5 py-1.5 transition-colors ${
                   lang === l ? "bg-cta-orange text-white" : "bg-white/5 text-zinc-400 hover:text-white"
                 }`}
+                aria-pressed={lang === l}
+                aria-label={l === "FR" ? "Langue français" : "Langue arabe"}
               >
                 {l}
               </button>
@@ -133,8 +141,9 @@ export default function Header() {
           onClick={() => setOpen(!open)}
           aria-label="Menu"
           aria-expanded={open}
+          aria-controls="mobile-menu"
         >
-          <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden>
             {open ? (
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
             ) : (
@@ -144,33 +153,35 @@ export default function Header() {
         </button>
       </div>
 
-      {open && (
-        <div className="border-t border-white/5 bg-void/95 px-4 py-4 xl:hidden">
-          <ul className="flex flex-col gap-1">
-            {mainNav.map((link) => (
-              <li key={link.href}>
-                <Link
-                  href={link.href}
-                  className={`block rounded-lg px-3 py-2.5 text-sm ${
-                    isActive(pathname, link.href) ? "bg-white/5 font-medium text-white" : "text-zinc-400"
-                  }`}
-                  onClick={() => setOpen(false)}
-                >
-                  {link.label}
-                </Link>
-              </li>
-            ))}
-          </ul>
-          <div className="mt-4 flex flex-col gap-2">
-            <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="btn-whatsapp flex items-center justify-center gap-2 rounded-full py-3 text-sm font-semibold text-white">
-              <WhatsAppIcon className="h-4 w-4" /> Commander via WhatsApp
-            </a>
-            <Link href={PRICING_PATH} className="btn-orange rounded-full py-3 text-center text-sm font-semibold text-white" onClick={() => setOpen(false)}>
-              Commencer
-            </Link>
-          </div>
+      <div
+        id="mobile-menu"
+        hidden={!open}
+        className={`border-t border-white/5 bg-void/95 px-4 py-4 xl:hidden ${open ? "block" : "hidden"}`}
+      >
+        <ul className="flex flex-col gap-1">
+          {mainNav.map((link) => (
+            <li key={link.href}>
+              <Link
+                href={link.href}
+                className={`block rounded-lg px-3 py-2.5 text-sm ${
+                  isActive(pathname, link.href) ? "bg-white/5 font-medium text-white" : "text-zinc-400"
+                }`}
+                onClick={() => setOpen(false)}
+              >
+                {link.label}
+              </Link>
+            </li>
+          ))}
+        </ul>
+        <div className="mt-4 flex flex-col gap-2">
+          <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="btn-whatsapp flex items-center justify-center gap-2 rounded-full py-3 text-sm font-semibold text-white">
+            <WhatsAppIcon className="h-4 w-4" /> Commander via WhatsApp
+          </a>
+          <Link href={PRICING_PATH} className="btn-orange rounded-full py-3 text-center text-sm font-semibold text-white" onClick={() => setOpen(false)}>
+            Commencer
+          </Link>
         </div>
-      )}
+      </div>
     </header>
   );
 }

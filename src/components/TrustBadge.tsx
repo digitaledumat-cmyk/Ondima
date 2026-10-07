@@ -19,7 +19,7 @@ export default function TrustBadge({ className = "", compact = false }: TrustBad
         <p className={`font-bold text-white ${compact ? "text-sm" : "text-base"}`}>
           Garantie Ondima
         </p>
-        <p className={`text-emerald-400/90 ${compact ? "text-xs" : "text-sm"}`}>
+        <p className={`text-emerald-300 ${compact ? "text-xs" : "text-sm"}`}>
           {GUARANTEE_TAGLINE}
         </p>
       </div>

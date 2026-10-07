@@ -14,9 +14,12 @@ export default function SiteShell({ children, showFab = true }: SiteShellProps) 
   return (
     <>
       <PageJsonLd />
+      <a href="#contenu" className="skip-link">
+        Aller au contenu
+      </a>
       <AmbientBackground />
       <Header />
-      {children}
+      <div id="contenu">{children}</div>
       <RelatedPages />
       <Footer />
       {showFab && <WhatsAppFab />}

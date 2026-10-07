@@ -26,7 +26,7 @@ export default function Breadcrumbs() {
                 </span>
               )}
               {last ? (
-                <span className="font-medium text-zinc-300" aria-current="page">
+                <span className="font-medium text-zinc-300">
                   {crumb.label}
                 </span>
               ) : (

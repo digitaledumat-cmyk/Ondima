@@ -85,7 +85,7 @@ export default function Footer() {
           <p className="text-xs text-zinc-600">&copy; {new Date().getFullYear()} Ondima.ma — Tous droits réservés.</p>
           <div className="flex flex-wrap justify-center gap-4">
             {legalNav.map((link) => (
-              <Link key={link.href} href={link.href} className="text-xs text-zinc-600 hover:text-zinc-400">
+              <Link key={link.href} href={link.href} className="text-xs text-zinc-400 hover:text-white">
                 {link.label}
               </Link>
             ))}

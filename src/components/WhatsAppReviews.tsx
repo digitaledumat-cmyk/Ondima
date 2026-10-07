@@ -45,7 +45,7 @@ function Bubble({
           </p>
         )}
         <p className="text-[13px] leading-snug whitespace-pre-wrap">{text}</p>
-        <p className="mt-1 text-right text-[10px] text-[#8696a0]">{time}</p>
+        <p className="mt-1 text-right text-[10px] text-[#c5d0d6]">{time}</p>
       </div>
     </div>
   );
@@ -94,7 +94,7 @@ export default function WhatsAppReviews() {
                   </p>
                   <p className="text-[11px] text-[#00a884]">en ligne</p>
                 </div>
-                <span className="text-xs text-[#8696a0]">⋮</span>
+                <span className="text-xs text-[#c5d0d6]">⋮</span>
               </div>
 
               {/* Chat wallpaper + scrolling bubbles */}
@@ -130,7 +130,7 @@ export default function WhatsAppReviews() {
 
               {/* Input bar */}
               <div className="flex items-center gap-2 bg-[#1f2c34] px-3 py-2.5">
-                <div className="flex-1 rounded-full bg-[#2a3942] px-4 py-2 text-[12px] text-[#8696a0]">
+                <div className="flex-1 rounded-full bg-[#2a3942] px-4 py-2 text-[12px] text-[#c5d0d6]">
                   Message…
                 </div>
                 <div className="flex h-9 w-9 items-center justify-center rounded-full bg-[#00a884]">

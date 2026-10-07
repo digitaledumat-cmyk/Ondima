@@ -25,6 +25,8 @@ export default function Accordion({
     <div className={`space-y-3 ${className}`}>
       {items.map((item) => {
         const isOpen = openId === item.id;
+        const panelId = `faq-panel-${item.id}`;
+        const buttonId = `faq-button-${item.id}`;
         return (
           <article
             key={item.id}
@@ -32,9 +34,11 @@ export default function Accordion({
           >
             <button
               type="button"
+              id={buttonId}
               className="flex w-full items-center justify-between gap-4 px-6 py-5 text-left"
               onClick={() => setOpenId(isOpen ? null : item.id)}
               aria-expanded={isOpen}
+              aria-controls={panelId}
             >
               <span className="text-sm font-semibold text-white sm:text-base">
                 {item.title}
@@ -43,6 +47,7 @@ export default function Accordion({
                 className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-violet-500/30 bg-violet-600/10 text-violet-400 transition-transform duration-300 ${
                   isOpen ? "rotate-180" : ""
                 }`}
+                aria-hidden
               >
                 <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
@@ -50,15 +55,15 @@ export default function Accordion({
               </span>
             </button>
             <div
-              className={`grid transition-all duration-300 ease-in-out ${
-                isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
-              }`}
+              id={panelId}
+              role="region"
+              aria-labelledby={buttonId}
+              hidden={!isOpen}
+              className={isOpen ? "block" : "hidden"}
             >
-              <div className="overflow-hidden">
-                <p className="px-6 pb-5 text-sm leading-relaxed text-zinc-400">
-                  {item.content}
-                </p>
-              </div>
+              <p className="px-6 pb-5 text-sm leading-relaxed text-zinc-400">
+                {item.content}
+              </p>
             </div>
           </article>
         );

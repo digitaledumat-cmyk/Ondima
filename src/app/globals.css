@@ -85,11 +85,12 @@
     opacity: 1;
   }
 
+  /* Couleur opaque (contraste AA) + halo — évite le clip transparent que Lighthouse échoue. */
   .neon-text {
-    background: linear-gradient(135deg, #c084fc 0%, #a855f7 40%, #22d3ee 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #e9d5ff;
+    text-shadow:
+      0 0 12px rgba(168, 85, 247, 0.55),
+      0 0 28px rgba(34, 211, 238, 0.25);
   }
 
   .btn-orange {
@@ -392,5 +393,28 @@
     .wa-chat-track {
       animation: none;
     }
+  }
+
+  /* zinc-500/600 sur fond void échoue WCAG AA — forcer zinc-400 (#a1a1aa). */
+  .text-zinc-500,
+  .text-zinc-600 {
+    color: #a1a1aa;
+  }
+
+  .skip-link {
+    position: absolute;
+    left: 1rem;
+    top: -100px;
+    z-index: 100;
+    border-radius: 999px;
+    background: #f97316;
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #fff;
+  }
+
+  .skip-link:focus {
+    top: 0.75rem;
   }
 }

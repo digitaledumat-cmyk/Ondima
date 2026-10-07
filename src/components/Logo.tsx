@@ -51,10 +51,7 @@ export default function Logo({
   const s = sizeMap[size];
 
   return (
-    <span
-      className={`group/logo inline-flex items-center gap-1.5 sm:gap-2 ${className}`}
-      aria-label="OnDima"
-    >
+    <span className={`group/logo inline-flex items-center gap-1.5 sm:gap-2 ${className}`}>
       {/* "On" — interrupteur allumé */}
       <span
         className={`logo-on-switch relative inline-flex items-center rounded-md border font-black tracking-tight uppercase ${s.on}`}
