@@ -1,3 +1,4 @@
+import type { BlogFaqItem, BlogPost } from "@/lib/blog";
 import {
   GEO_EMAIL,
   ORG_ID,
@@ -163,5 +164,43 @@ export function contactJsonLd() {
       email: GEO_EMAIL,
       telephone: WHATSAPP_DISPLAY,
     },
+  };
+}
+
+export function articleJsonLd(post: BlogPost) {
+  const url = absoluteUrl(`/blog/${post.slug}`);
+  return {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: post.h1 ?? post.title,
+    description: post.description ?? post.excerpt,
+    datePublished: post.dateIso,
+    dateModified: post.dateIso,
+    inLanguage: "fr-MA",
+    keywords: post.keywords?.join(", "),
+    mainEntityOfPage: url,
+    url,
+    author: { "@id": ORG_ID },
+    publisher: { "@id": ORG_ID },
+    image: absoluteUrl("/ondima.webp"),
+    about: {
+      "@type": "Thing",
+      name: "IPTV Maroc",
+    },
+  };
+}
+
+export function faqArticleJsonLd(items: BlogFaqItem[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: items.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer,
+      },
+    })),
   };
 }

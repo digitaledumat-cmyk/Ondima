@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 
+import { publishedPosts } from "@/lib/blog";
 import { HOME_PATH, PRICING_PATH } from "@/lib/constants";
 import { legalNav } from "@/lib/navigation";
 import { absoluteUrl } from "@/lib/metadata";
@@ -31,6 +32,11 @@ const SITEMAP_ROUTES: SitemapRoute[] = [
     path: item.href,
     priority: 0.3,
     changeFrequency: "yearly" as const,
+  })),
+  ...publishedPosts().map((post) => ({
+    path: `/blog/${post.slug}`,
+    priority: 0.75,
+    changeFrequency: "monthly" as const,
   })),
 ];
 

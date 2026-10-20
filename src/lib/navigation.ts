@@ -33,6 +33,10 @@ export const sitemapSections = [
       { label: "Guide d'installation", href: "/guide" },
       { label: "FAQ", href: "/faq" },
       { label: "Blog", href: "/blog" },
+      {
+        label: "IPTV Maroc — abonnement légal 2027",
+        href: "/blog/iptv-maroc-abonnement-legal-2027",
+      },
       { label: "Contact", href: "/contact" },
     ],
   },
@@ -46,6 +50,10 @@ export const sitemapSections = [
       { label: "Fonctionnalités 4K & Anti-freeze", href: "/fonctionnalites" },
       { label: "Accueil TV IPTV Maroc", href: HOME_PATH },
       { label: "FAQ abonnement Ondima", href: "/faq" },
+      {
+        label: "Article IPTV Maroc légal 2027",
+        href: "/blog/iptv-maroc-abonnement-legal-2027",
+      },
       { label: "Plan du site HTML", href: "/sitemap-html" },
       { label: "llms.txt — résumé pour les LLM", href: "/llms.txt" },
     ],

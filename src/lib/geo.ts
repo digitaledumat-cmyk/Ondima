@@ -1,3 +1,4 @@
+import { getPostBySlug } from "@/lib/blog";
 import {
   GUARANTEE_TAGLINE,
   HOME_PATH,
@@ -95,7 +96,11 @@ const relatedByPath: Record<string, string[]> = {
 };
 
 export function relatedLinksFor(pathname: string): RelatedLink[] {
-  const keys = relatedByPath[pathname] ?? [HOME_PATH, "/iptv-maroc", PRICING_PATH, "/faq"];
+  const relatedPath =
+    pathname.startsWith("/blog/") && pathname !== "/blog"
+      ? "/blog"
+      : pathname;
+  const keys = relatedByPath[relatedPath] ?? [HOME_PATH, "/iptv-maroc", PRICING_PATH, "/faq"];
   const byHref = new Map(cluster.map((item) => [item.href, item]));
   return keys
     .filter((href) => href !== pathname)
@@ -113,6 +118,16 @@ export function breadcrumbsFor(pathname: string): { href: string; label: string 
     crumbs.push({
       href: pathname,
       label: pageTitles[pathname] ?? "Légal",
+    });
+    return crumbs;
+  }
+
+  if (pathname.startsWith("/blog/") && pathname !== "/blog") {
+    const post = getPostBySlug(pathname.replace("/blog/", ""));
+    crumbs.push({ href: "/blog", label: "Blog" });
+    crumbs.push({
+      href: pathname,
+      label: post?.category === "IPTV Maroc" ? "IPTV Maroc légal" : (post?.title ?? "Article"),
     });
     return crumbs;
   }
@@ -159,6 +174,7 @@ Contact : WhatsApp ${WHATSAPP_DISPLAY} (${WHATSAPP_URL}) · e-mail ${GEO_EMAIL}.
 - [FAQ](${absoluteUrl("/faq")}) : garantie, débit, appareils, activation.
 - [Contact](${absoluteUrl("/contact")}) : WhatsApp et e-mail.
 - [Blog](${absoluteUrl("/blog")}) : guides pour choisir un abonnement.
+- [IPTV Maroc légal 2027](${absoluteUrl("/blog/iptv-maroc-abonnement-legal-2027")}) : l'abonnement IPTV Maroc en grande surface (réf. Virgin Megastore) et critères Ondima.
 - [Plan du site HTML](${absoluteUrl("/sitemap-html")}) : index humain des pages.
 
 ## Tarifs 2026
