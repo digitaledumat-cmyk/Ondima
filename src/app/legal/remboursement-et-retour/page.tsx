@@ -16,7 +16,7 @@ export const metadata: Metadata = createMetadata({
 export default function RemboursementPage() {
   return (
     <SiteShell showFab={false}>
-      <main><LegalPageContent page={page} /></main>
+      <main id="contenu"><LegalPageContent page={page} /></main>
     </SiteShell>
   );
 }

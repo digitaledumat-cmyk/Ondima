@@ -49,7 +49,7 @@ export default async function BlogArticlePage({ params }: BlogArticlePageProps) 
 
   return (
     <SiteShell>
-      <main>
+      <main id="contenu">
         <JsonLd data={articleJsonLd(post)} />
         {post.faq?.length ? <JsonLd data={faqArticleJsonLd(post.faq)} /> : null}
 
@@ -164,7 +164,7 @@ export default async function BlogArticlePage({ params }: BlogArticlePageProps) 
               Guide d&apos;installation
             </Link>
             <Link href={HOME_PATH} className="hover:text-white">
-              Accueil TV
+              Accueil IPTV
             </Link>
           </div>
         </section>

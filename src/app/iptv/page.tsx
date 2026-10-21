@@ -30,7 +30,7 @@ export const metadata: Metadata = createMetadata({
 export default function Home() {
   return (
     <SiteShell>
-      <main>
+      <main id="contenu">
         <Hero />
         <Benefits />
         <Features />

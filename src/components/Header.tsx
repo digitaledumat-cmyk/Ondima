@@ -46,7 +46,8 @@ export default function Header() {
           <Logo size="md" />
         </Link>
 
-        <ul className="hidden items-center gap-5 xl:flex">
+        <nav aria-label="Navigation principale" className="hidden xl:block">
+        <ul className="flex items-center gap-5">
           {mainNav.map((link) => (
             <li key={link.href}>
               <Link
@@ -75,8 +76,9 @@ export default function Header() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
               </svg>
             </button>
-            <div
+            <nav
               id="plus-menu"
+              aria-label="Informations légales"
               hidden={!plusOpen}
               className={`absolute top-full right-0 mt-2 w-56 rounded-xl border border-white/10 bg-void-elevated py-2 shadow-2xl ${
                 plusOpen ? "block" : "hidden"
@@ -99,12 +101,13 @@ export default function Header() {
               >
                 Plan du site
               </Link>
-            </div>
+            </nav>
           </li>
         </ul>
+        </nav>
 
         <div className="hidden items-center gap-3 md:flex">
-          <div className="flex overflow-hidden rounded-lg border border-white/10 text-xs font-medium">
+          <div role="group" aria-label="Choix de la langue" className="flex overflow-hidden rounded-lg border border-white/10 text-xs font-medium">
             {(["FR", "AR"] as const).map((l) => (
               <button
                 key={l}
@@ -153,8 +156,9 @@ export default function Header() {
         </button>
       </div>
 
-      <div
+      <nav
         id="mobile-menu"
+        aria-label="Navigation principale"
         hidden={!open}
         className={`border-t border-white/5 bg-void/95 px-4 py-4 xl:hidden ${open ? "block" : "hidden"}`}
       >
@@ -181,7 +185,7 @@ export default function Header() {
             Commencer
           </Link>
         </div>
-      </div>
+      </nav>
     </header>
   );
 }

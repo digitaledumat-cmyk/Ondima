@@ -2,13 +2,13 @@ import { buildLocalSeoParagraph, localRegions } from "@/lib/local-seo";
 
 export default function LocalSeo() {
   return (
-    <section id="villes" className="relative border-t border-white/5 py-20 lg:py-24">
+    <section id="villes" aria-labelledby="titre-villes" className="relative border-t border-white/5 py-20 lg:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-12 text-center">
           <p className="mb-3 text-sm font-medium tracking-widest text-cyan-400 uppercase">
             Couverture internationale
           </p>
-          <h2 className="mx-auto max-w-3xl text-3xl font-bold text-white sm:text-4xl">
+          <h2 id="titre-villes" className="mx-auto max-w-3xl text-3xl font-bold text-white sm:text-4xl">
             Votre TV IPTV premium au{" "}
             <span className="neon-text">Maroc, en France et en Espagne</span>
           </h2>
@@ -21,38 +21,38 @@ export default function LocalSeo() {
 
         <div className="space-y-10">
           {localRegions.map((region) => (
-            <div key={region.country}>
+            <section key={region.country} aria-labelledby={`region-${region.country}`}>
               <div className="mb-4 flex items-center gap-2">
-                <span className="text-2xl">{region.flag}</span>
-                <h3 className="text-xl font-bold text-white">{region.country}</h3>
+                <span className="text-2xl" aria-hidden="true">{region.flag}</span>
+                <h3 id={`region-${region.country}`} className="text-xl font-bold text-white">{region.country}</h3>
               </div>
               <p className="mb-4 text-sm text-zinc-400">{region.intro}</p>
-              <div className="mb-6 flex flex-wrap gap-2">
+              <ul className="mb-6 flex flex-wrap gap-2" aria-label={`Villes couvertes — ${region.country}`}>
                 {region.cities.map((city) => (
-                  <span
+                  <li
                     key={city}
                     className="rounded-full border border-violet-500/25 bg-violet-600/10 px-3.5 py-1.5 text-xs font-medium text-violet-200"
                   >
                     IPTV {city}
-                  </span>
+                  </li>
                 ))}
-              </div>
+              </ul>
               <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
                 {region.cities.map((city) => (
                   <article
                     key={`${region.country}-${city}`}
                     className="glass-panel rounded-xl p-4 transition-colors hover:bg-white/[0.04]"
                   >
-                    <p className="mb-1 text-sm font-semibold text-white">
+                    <h4 className="mb-1 text-sm font-semibold text-white">
                       Couverture IPTV — {city}
-                    </p>
+                    </h4>
                     <p className="text-xs leading-relaxed text-zinc-500">
                       {buildLocalSeoParagraph(city, region.country)}
                     </p>
                   </article>
                 ))}
               </div>
-            </div>
+            </section>
           ))}
         </div>
       </div>

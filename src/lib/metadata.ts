@@ -6,16 +6,16 @@ export const SITE_URL = "https://ondima.ma";
 export const SITE_NAME = "Ondima";
 
 export const DEFAULT_TITLE =
-  "Abonnement TV IPTV Maroc 2026 | +45 000 Chaînes HD/4K - Ondima";
+  "Abonnement IPTV Maroc 2026 | +45 000 Chaînes HD/4K - Ondima";
 
 export const DEFAULT_DESCRIPTION =
-  "Ondima.ma/tv : abonnement TV et IPTV Maroc Premium. Chaînes live, sport, VOD 4K ultra-stable, anti-freeze et support WhatsApp 24/7. Packs dès 300 DH/an, garantie 45 jours.";
+  "Ondima.ma/iptv : abonnement IPTV Maroc Premium. Chaînes live, sport, VOD 4K ultra-stable, anti-freeze et support WhatsApp 24/7. Packs dès 300 DH/an, garantie 45 jours.";
 
 export const OG_IMAGE = {
   url: "/ondima.webp",
   width: 1672,
   height: 941,
-  alt: "Ondima.ma/tv — Abonnement TV IPTV Maroc Premium, streaming 4K stable 2026",
+  alt: "Ondima.ma/iptv — Abonnement IPTV Maroc Premium, streaming 4K stable 2026",
 };
 
 export function absoluteUrl(path = ""): string {

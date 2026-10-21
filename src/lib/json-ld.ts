@@ -11,7 +11,7 @@ import {
   WHATSAPP_NUMBER,
 } from "@/lib/constants";
 import { faqItems } from "@/lib/faq";
-import { SITE_NAME, SITE_URL, absoluteUrl } from "@/lib/metadata";
+import { DEFAULT_DESCRIPTION, SITE_NAME, SITE_URL, absoluteUrl } from "@/lib/metadata";
 import { pricingPlans } from "@/lib/pricing";
 
 export function organizationGraph() {
@@ -45,6 +45,7 @@ export function organizationGraph() {
         url: SITE_URL,
         inLanguage: "fr-MA",
         publisher: { "@id": ORG_ID },
+        mainEntity: { "@id": absoluteUrl(HOME_PATH) },
         about: {
           "@type": "Thing",
           name: "Abonnement IPTV Maroc",
@@ -141,7 +142,9 @@ export function homeWebPageJsonLd() {
     "@type": "WebPage",
     "@id": absoluteUrl(HOME_PATH),
     url: absoluteUrl(HOME_PATH),
-    name: "Abonnement TV IPTV Maroc 2026 — Ondima",
+    name: "Abonnement IPTV Maroc 2026 — Ondima",
+    description: DEFAULT_DESCRIPTION,
+    inLanguage: "fr-MA",
     isPartOf: { "@id": WEBSITE_ID },
     about: { "@id": ORG_ID },
     primaryImageOfPage: absoluteUrl("/ondima.webp"),

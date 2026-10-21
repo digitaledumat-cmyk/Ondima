@@ -19,7 +19,7 @@ export const metadata: Metadata = createMetadata({
 export default function FaqPage() {
   return (
     <SiteShell>
-      <main>
+      <main id="contenu">
         <PageHero
           label="Support"
           title="Foire aux questions"

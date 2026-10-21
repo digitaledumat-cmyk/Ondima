@@ -61,14 +61,14 @@ export default function TrialForm() {
   }
 
   return (
-    <section id="commander" className="relative py-20 lg:py-24">
+    <section id="commander" aria-labelledby="titre-commander" className="relative py-20 lg:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid items-start gap-10 lg:grid-cols-2 lg:gap-16">
           <div>
             <p className="mb-3 text-sm font-medium tracking-widest text-cyan-400 uppercase">
               Commander
             </p>
-            <h2 className="mb-4 text-3xl font-bold text-white sm:text-4xl">
+            <h2 id="titre-commander" className="mb-4 text-3xl font-bold text-white sm:text-4xl">
               Activez votre abonnement TV IPTV Ondima
             </h2>
             <p className="mb-4 text-sm leading-relaxed text-zinc-400">
@@ -87,6 +87,7 @@ export default function TrialForm() {
 
           <form
             onSubmit={handleSubmit}
+            aria-labelledby="titre-commander"
             className="glow-border rounded-3xl glass-panel p-6 sm:p-8"
           >
             <div className="mb-5 grid gap-4 sm:grid-cols-2">
@@ -96,6 +97,8 @@ export default function TrialForm() {
                 </label>
                 <input
                   id="firstName"
+                  name="firstName"
+                  autoComplete="given-name"
                   required
                   value={firstName}
                   onChange={(e) => setFirstName(e.target.value)}
@@ -109,6 +112,8 @@ export default function TrialForm() {
                 </label>
                 <input
                   id="lastName"
+                  name="lastName"
+                  autoComplete="family-name"
                   required
                   value={lastName}
                   onChange={(e) => setLastName(e.target.value)}
@@ -124,6 +129,8 @@ export default function TrialForm() {
               </label>
               <div className="flex gap-2">
                 <select
+                  name="countryCode"
+                  autoComplete="tel-country-code"
                   value={countryCode}
                   onChange={(e) => setCountryCode(e.target.value)}
                   className="w-28 shrink-0 rounded-xl border border-white/10 bg-white/5 px-2 py-3 text-sm text-white outline-none focus:border-violet-500/50 sm:w-32"
@@ -137,7 +144,9 @@ export default function TrialForm() {
                 </select>
                 <input
                   id="phone"
+                  name="phone"
                   type="tel"
+                  autoComplete="tel-national"
                   required
                   value={phone}
                   onChange={(e) => setPhone(e.target.value.replace(/[^\d\s]/g, ""))}
@@ -153,6 +162,7 @@ export default function TrialForm() {
               </label>
               <select
                 id="plan"
+                name="plan"
                 value={plan}
                 onChange={(e) => setPlan(e.target.value)}
                 className="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-white outline-none focus:border-violet-500/50"

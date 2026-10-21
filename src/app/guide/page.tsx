@@ -44,7 +44,7 @@ export default function GuidePage() {
 
   return (
     <SiteShell>
-      <main>
+      <main id="contenu">
         <PageHero
           label="Installation"
           title="Guide d'installation IPTV — Tous appareils"

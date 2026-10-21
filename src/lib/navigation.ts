@@ -26,7 +26,7 @@ export const sitemapSections = [
     title: "Pages principales",
     description: "Navigation essentielle du site Ondima.ma",
     links: [
-      { label: "Accueil TV", href: HOME_PATH },
+      { label: "Accueil IPTV", href: HOME_PATH },
       { label: "IPTV Maroc — Abonnement stable", href: "/iptv-maroc" },
       { label: "Tarifs — Packs & forfaits", href: PRICING_PATH },
       { label: "Fonctionnalités techniques", href: "/fonctionnalites" },
@@ -48,7 +48,7 @@ export const sitemapSections = [
       { label: "Abonnement IPTV Maroc — Tarifs", href: PRICING_PATH },
       { label: "Guide d'installation Nino Player", href: "/guide" },
       { label: "Fonctionnalités 4K & Anti-freeze", href: "/fonctionnalites" },
-      { label: "Accueil TV IPTV Maroc", href: HOME_PATH },
+      { label: "Accueil IPTV Maroc", href: HOME_PATH },
       { label: "FAQ abonnement Ondima", href: "/faq" },
       {
         label: "Article IPTV Maroc légal 2027",

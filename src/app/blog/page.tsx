@@ -26,7 +26,7 @@ export const metadata: Metadata = createMetadata({
 export default function BlogPage() {
   return (
     <SiteShell>
-      <main>
+      <main id="contenu">
         <PageHero
           label="Blog"
           title="Guides & actualités IPTV"

@@ -17,7 +17,7 @@ export const metadata: Metadata = createMetadata({
 export default function ContactPage() {
   return (
     <SiteShell>
-      <main>
+      <main id="contenu">
         <PageHero
           label="Contact"
           title="Support & contact Ondima"

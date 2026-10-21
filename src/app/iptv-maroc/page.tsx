@@ -44,7 +44,7 @@ export default function IptvMarocPage() {
 
   return (
     <SiteShell>
-      <main>
+      <main id="contenu">
         <PageHero
           label="IPTV Maroc · 2026"
           title="IPTV Maroc : le meilleur abonnement stable & sans coupure"

@@ -39,13 +39,13 @@ const features = [
 
 export default function Features() {
   return (
-    <section id="avantages" className="relative py-20 lg:py-24">
+    <section id="avantages" aria-labelledby="titre-avantages" className="relative py-20 lg:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-14 text-center">
           <p className="mb-3 text-sm font-medium tracking-widest text-cyan-400 uppercase">
             Fonctionnalités
           </p>
-          <h2 className="mx-auto max-w-2xl text-3xl font-bold tracking-tight text-white sm:text-4xl">
+          <h2 id="titre-avantages" className="mx-auto max-w-2xl text-3xl font-bold tracking-tight text-white sm:text-4xl">
             Les avantages d&apos;une TV IPTV Smart TV Maroc &amp; Android premium
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-sm text-zinc-500">

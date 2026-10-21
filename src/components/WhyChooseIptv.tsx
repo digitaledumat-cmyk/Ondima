@@ -1,19 +1,19 @@
 export default function WhyChooseIptv() {
   return (
-    <section id="pourquoi-ondima" className="relative py-20 lg:py-24">
+    <section id="pourquoi-ondima" aria-labelledby="titre-pourquoi" className="relative py-20 lg:py-24">
       <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
         <div className="glow-border rounded-3xl glass-panel p-8 sm:p-12">
           <p className="mb-3 text-sm font-medium tracking-widest text-violet-400 uppercase">
             Pourquoi Ondima
           </p>
-          <h2 className="mb-8 text-2xl font-bold tracking-tight text-white sm:text-3xl">
+          <h2 id="titre-pourquoi" className="mb-8 text-2xl font-bold tracking-tight text-white sm:text-3xl">
             Pourquoi Ondima est la{" "}
             <span className="neon-text">TV IPTV Maroc</span> de référence
           </h2>
 
           <div className="space-y-6 text-sm leading-[1.85] text-zinc-400 sm:text-base">
             <p>
-              Ondima.ma/tv est le hub TV des foyers marocains : un <strong className="font-medium text-zinc-200">fournisseur IPTV Maroc</strong> qui transforme chaque écran en télévision 4K stable. Trouver le <strong className="font-medium text-zinc-200">meilleur IPTV Maroc</strong>, c&apos;est allier un catalogue illimité à une infrastructure VPS de dernière génération. Notre <strong className="font-medium text-zinc-200">IPTV 4K Maroc</strong> et notre <strong className="font-medium text-zinc-200">IPTV HD Maroc</strong> tiennent le direct sportif comme les sorties cinéma, sans freeze ni buffering.
+              Ondima.ma/iptv est le hub IPTV des foyers marocains : un <strong className="font-medium text-zinc-200">fournisseur IPTV Maroc</strong> qui transforme chaque écran en télévision 4K stable. Trouver le <strong className="font-medium text-zinc-200">meilleur IPTV Maroc</strong>, c&apos;est allier un catalogue illimité à une infrastructure VPS de dernière génération. Notre <strong className="font-medium text-zinc-200">IPTV 4K Maroc</strong> et notre <strong className="font-medium text-zinc-200">IPTV HD Maroc</strong> tiennent le direct sportif comme les sorties cinéma, sans freeze ni buffering.
             </p>
 
             <p>

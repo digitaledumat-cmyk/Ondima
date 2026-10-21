@@ -26,14 +26,14 @@ const highlights = [
 
 export default function Benefits() {
   return (
-    <section className="relative py-20 lg:py-24">
+    <section aria-labelledby="titre-offre" className="relative py-20 lg:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
           <div>
             <p className="mb-3 text-sm font-medium tracking-widest text-violet-400 uppercase">
               Abonnement TV IPTV Maroc
             </p>
-            <h2 className="mb-6 text-3xl font-bold tracking-tight text-white sm:text-4xl">
+            <h2 id="titre-offre" className="mb-6 text-3xl font-bold tracking-tight text-white sm:text-4xl">
               Ce que vous obtenez avec votre{" "}
               <span className="neon-text">TV Ondima</span>
             </h2>
@@ -58,10 +58,10 @@ export default function Benefits() {
             </ul>
           </div>
 
-          <div className="space-y-4">
+          <ol className="space-y-4">
             {steps.map((item) => (
+              <li key={item.step} className="list-none">
               <article
-                key={item.step}
                 className="glow-border group glass-panel flex gap-5 rounded-2xl p-6 transition-all duration-400 hover:scale-[1.02] hover:bg-white/[0.06]"
               >
                 <span className="text-3xl font-black text-violet-500/40 transition-colors group-hover:text-violet-400">
@@ -76,8 +76,9 @@ export default function Benefits() {
                   </p>
                 </div>
               </article>
+              </li>
             ))}
-          </div>
+          </ol>
         </div>
       </div>
     </section>

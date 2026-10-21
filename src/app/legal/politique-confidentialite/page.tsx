@@ -16,7 +16,7 @@ export const metadata: Metadata = createMetadata({
 export default function ConfidentialitePage() {
   return (
     <SiteShell showFab={false}>
-      <main><LegalPageContent page={page} /></main>
+      <main id="contenu"><LegalPageContent page={page} /></main>
     </SiteShell>
   );
 }

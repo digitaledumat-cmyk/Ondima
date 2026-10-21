@@ -15,7 +15,7 @@ type SitemapRoute = {
 
 /**
  * URLs indexables uniquement.
- * La racine `/` redirige en 301 vers `/tv`.
+ * La racine `/` et l'ancien slug `/tv` redirigent en 301 vers `/iptv`.
  * `/abonnement-iptv` et `/tarifs` redirigent en 301 vers `/abonnement-iptv-maroc`.
  */
 const SITEMAP_ROUTES: SitemapRoute[] = [
@@ -46,6 +46,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return SITEMAP_ROUTES.filter(
     (route) =>
       route.path !== "/" &&
+      route.path !== "/tv" &&
       route.path !== "/abonnement-iptv" &&
       route.path !== "/tarifs",
   ).map((route) => ({

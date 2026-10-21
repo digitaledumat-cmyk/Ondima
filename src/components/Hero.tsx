@@ -21,19 +21,24 @@ function WhatsAppIcon({ className }: { className?: string }) {
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden pt-20 pb-16 lg:pt-24 lg:pb-20">
+    <section
+      aria-labelledby="titre-accueil"
+      className="relative overflow-hidden pt-20 pb-16 lg:pt-24 lg:pb-20"
+    >
       <div className="hero-grid hero-glow-left hero-glow-right absolute inset-0" aria-hidden />
 
       <div className="relative mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-12 xl:gap-16">
-          {/* Left content */}
           <div className="space-y-6 lg:space-y-7">
             <p className="text-xs font-medium tracking-[0.2em] text-zinc-500 uppercase drop-shadow-[0_4px_12px_rgba(0,0,0,1)]">
-              Ondima.ma/tv · Maroc 2026
+              Ondima.ma/iptv · Maroc 2026
             </p>
 
-            <h1 className="text-4xl leading-[1.1] font-extrabold tracking-tight text-white drop-shadow-[0_4px_12px_rgba(0,0,0,1)] sm:text-5xl xl:text-[3.25rem]">
-              Abonnement TV Maroc 2026 : IPTV Premium HD/4K sans coupure
+            <h1
+              id="titre-accueil"
+              className="text-4xl leading-[1.1] font-extrabold tracking-tight text-white drop-shadow-[0_4px_12px_rgba(0,0,0,1)] sm:text-5xl xl:text-[3.25rem]"
+            >
+              Abonnement IPTV Maroc 2026 : premium HD/4K sans coupure
             </h1>
 
             <p className="text-lg font-semibold text-cta-orange drop-shadow-[0_4px_12px_rgba(0,0,0,1)] sm:text-xl">
@@ -46,17 +51,17 @@ export default function Hero() {
               WhatsApp en quelques minutes.
             </p>
 
-            <div className="flex flex-wrap gap-2.5">
+            <ul className="flex flex-wrap gap-2.5" aria-label="Points forts de l'abonnement">
               {pills.map((pill) => (
-                <span
+                <li
                   key={pill.label}
                   className="pill-tag inline-flex items-center gap-1.5 rounded-full px-3.5 py-1.5 text-xs font-medium text-purple-200"
                 >
-                  <span>{pill.icon}</span>
+                  <span aria-hidden="true">{pill.icon}</span>
                   {pill.label}
-                </span>
+                </li>
               ))}
-            </div>
+            </ul>
 
             <div className="flex flex-col gap-3 pt-2 sm:flex-row sm:flex-wrap">
               <a
@@ -68,18 +73,18 @@ export default function Hero() {
                 <WhatsAppIcon className="h-5 w-5" />
                 Commander via WhatsApp
               </a>
-              <a
+              <Link
                 href={PRICING_PATH}
                 className="btn-orange inline-flex items-center justify-center rounded-full px-7 py-3.5 text-sm font-bold text-white sm:text-base"
               >
                 Commencer
-              </a>
-              <a
+              </Link>
+              <Link
                 href={PRICING_PATH}
                 className="inline-flex items-center justify-center rounded-full border border-white/20 bg-white/5 px-7 py-3.5 text-sm font-semibold text-zinc-300 transition-all hover:border-white/30 hover:bg-white/10 hover:text-white"
               >
                 Voir les forfaits
-              </a>
+              </Link>
             </div>
 
             <div className="space-y-1 pt-2">

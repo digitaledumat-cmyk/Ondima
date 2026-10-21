@@ -39,7 +39,7 @@ function WhatsAppIcon({ className }: { className?: string }) {
 export default function AbonnementIptvMarocPage() {
   return (
     <SiteShell>
-      <main>
+      <main id="contenu">
         <section className="relative overflow-hidden border-b border-white/5 pt-28 pb-12 lg:pb-16">
           <div className="hero-grid hero-glow-left hero-glow-right absolute inset-0" aria-hidden />
           <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

@@ -22,7 +22,7 @@ export interface RelatedLink {
 }
 
 export const pageTitles: Record<string, string> = {
-  [HOME_PATH]: "Accueil TV",
+  [HOME_PATH]: "Accueil IPTV",
   "/iptv-maroc": "IPTV Maroc",
   [PRICING_PATH]: "Abonnement IPTV Maroc",
   "/fonctionnalites": "Fonctionnalités",
@@ -43,7 +43,7 @@ export const pageTitles: Record<string, string> = {
 const cluster: RelatedLink[] = [
   {
     href: HOME_PATH,
-    label: "Accueil TV IPTV Maroc",
+    label: "Accueil IPTV Maroc",
     hint: "Offre 2026, packs et activation WhatsApp",
   },
   {
@@ -110,10 +110,10 @@ export function relatedLinksFor(pathname: string): RelatedLink[] {
 
 export function breadcrumbsFor(pathname: string): { href: string; label: string }[] {
   if (!pathname || pathname === HOME_PATH || pathname === "/") {
-    return [{ href: HOME_PATH, label: "Accueil TV" }];
+    return [{ href: HOME_PATH, label: "Accueil IPTV" }];
   }
 
-  const crumbs = [{ href: HOME_PATH, label: "Accueil TV" }];
+  const crumbs = [{ href: HOME_PATH, label: "Accueil IPTV" }];
   if (pathname.startsWith("/legal/")) {
     crumbs.push({
       href: pathname,
@@ -158,7 +158,7 @@ export function buildLlmsTxt(): string {
 
 > Abonnement TV et IPTV Maroc premium (Ondima.ma). Chaînes live HD/4K, VOD, serveurs VPS OTT, Anti-freeze, activation WhatsApp 24/7, garantie 45 jours.
 
-Ondima est un fournisseur d'abonnement TV / IPTV basé au Maroc (ondima.ma). L'accueil canonique est ${absoluteUrl(HOME_PATH)}. La racine https://ondima.ma redirige en 301 vers /tv. La page tarifs canonique est ${absoluteUrl(PRICING_PATH)}.
+Ondima est un fournisseur d'abonnement IPTV basé au Maroc (ondima.ma). L'accueil canonique est ${absoluteUrl(HOME_PATH)}. La racine https://ondima.ma et l'ancien chemin /tv redirigent en 301 vers ${absoluteUrl(HOME_PATH)}. La page tarifs canonique est ${absoluteUrl(PRICING_PATH)}.
 
 ${GUARANTEE_TAGLINE}.
 
@@ -166,7 +166,7 @@ Contact : WhatsApp ${WHATSAPP_DISPLAY} (${WHATSAPP_URL}) · e-mail ${GEO_EMAIL}.
 
 ## Pages principales
 
-- [Accueil TV IPTV Maroc](${absoluteUrl(HOME_PATH)}) : offre 2026, packs, avis et FAQ.
+- [Accueil IPTV Maroc](${absoluteUrl(HOME_PATH)}) : offre 2026, packs, avis et FAQ.
 - [IPTV Maroc — abonnement stable](${absoluteUrl("/iptv-maroc")}) : landing SEO (villes, appareils, Anti-freeze).
 - [Abonnement IPTV Maroc — tarifs](${absoluteUrl(PRICING_PATH)}) : Pack Pro, Ultra, VIP (Maroc dhs + Europe €).
 - [Fonctionnalités techniques](${absoluteUrl("/fonctionnalites")}) : 4K, VPS OTT, multi-écrans.

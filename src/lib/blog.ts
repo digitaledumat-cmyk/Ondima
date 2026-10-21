@@ -139,7 +139,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Ondima, spécialiste IPTV Maroc : ce que vous achetez concrètement",
         paragraphs: [
-          "Ondima n'est pas une grande surface. C'est un opérateur IPTV Maroc centré sur la stabilité et le SAV. L'accueil est ondima.ma/tv, la landing SEO iptv maroc explique l'offre ville par ville, et les tarifs sont regroupés sur une seule page — sans labyrinthe de redirections pour l'abonné.",
+          "Ondima n'est pas une grande surface. C'est un opérateur IPTV Maroc centré sur la stabilité et le SAV. L'accueil est ondima.ma/iptv, la landing SEO iptv maroc explique l'offre ville par ville, et les tarifs sont regroupés sur une seule page — sans labyrinthe de redirections pour l'abonné.",
           "Vous achetez un abonnement IPTV Maroc annuel, activé sur WhatsApp, installable sur Smart TV, Android, Firestick ou boîtier, avec une ligne directe si l'image freeze. Pour la diaspora, les prix Europe sont affichés à côté des dirhams : pas de surprise à la commande depuis Paris, Madrid ou Bruxelles.",
         ],
       },

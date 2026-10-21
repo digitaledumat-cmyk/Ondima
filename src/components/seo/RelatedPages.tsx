@@ -13,7 +13,7 @@ export default function RelatedPages() {
   if (links.length === 0) return null;
 
   return (
-    <section
+    <nav
       aria-labelledby="related-pages-heading"
       className="relative border-t border-white/5 py-14"
     >
@@ -45,6 +45,6 @@ export default function RelatedPages() {
           ))}
         </ul>
       </div>
-    </section>
+    </nav>
   );
 }

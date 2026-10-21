@@ -17,7 +17,7 @@ const perks = [
 
 export default function Support() {
   return (
-    <section id="contact" className="relative py-20 lg:py-24">
+    <section id="contact" aria-labelledby="titre-support" className="relative py-20 lg:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="glow-border relative overflow-hidden rounded-3xl glass-panel">
           <div className="absolute top-0 right-0 left-0 h-px shimmer-line" />
@@ -26,7 +26,7 @@ export default function Support() {
               <p className="mb-3 text-sm font-medium tracking-widest text-cyan-400 uppercase">
                 Support & Installation
               </p>
-              <h2 className="mb-4 text-2xl font-bold text-white sm:text-3xl">
+              <h2 id="titre-support" className="mb-4 text-2xl font-bold text-white sm:text-3xl">
                 Activation rapide via{" "}
                 <span className="neon-text">WhatsApp</span>
               </h2>

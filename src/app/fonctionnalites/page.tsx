@@ -29,7 +29,7 @@ export const metadata: Metadata = createMetadata({
 export default function FonctionnalitesPage() {
   return (
     <SiteShell>
-      <main>
+      <main id="contenu">
         <PageHero
           label="Infrastructure technique"
           title="Fonctionnalités Ondima — Technologie IPTV Premium"
