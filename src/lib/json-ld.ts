@@ -89,30 +89,14 @@ export function offerCatalogJsonLd() {
     "@type": "OfferCatalog",
     name: "Tarifs abonnement IPTV Maroc Ondima 2026",
     url: absoluteUrl(PRICING_PATH),
-    itemListElement: pricingPlans.flatMap((plan, index) => [
-      {
-        "@type": "Offer",
-        name: `${plan.name} (Maroc)`,
-        description: plan.tagline,
-        url: absoluteUrl(PRICING_PATH),
-        price: String(plan.price),
-        priceCurrency: "MAD",
-        availability: "https://schema.org/InStock",
-        priceValidUntil: "2026-12-31",
-        position: index * 2 + 1,
-      },
-      {
-        "@type": "Offer",
-        name: `${plan.name} (Europe)`,
-        description: plan.tagline,
-        url: absoluteUrl(PRICING_PATH),
-        price: String(plan.priceEur),
-        priceCurrency: "EUR",
-        availability: "https://schema.org/InStock",
-        priceValidUntil: "2026-12-31",
-        position: index * 2 + 2,
-      },
-    ]),
+    itemListElement: pricingPlans.map((plan, index) => ({
+      "@type": "Offer",
+      name: plan.name,
+      description: plan.tagline,
+      url: absoluteUrl(PRICING_PATH),
+      availability: "https://schema.org/InStock",
+      position: index + 1,
+    })),
   };
 }
 
@@ -125,14 +109,6 @@ export function serviceJsonLd() {
     provider: { "@id": ORG_ID },
     areaServed: ["MA", "FR", "ES"],
     url: absoluteUrl("/iptv-maroc"),
-    offers: {
-      "@type": "AggregateOffer",
-      lowPrice: "300",
-      highPrice: "600",
-      priceCurrency: "MAD",
-      offerCount: pricingPlans.length,
-      url: absoluteUrl(PRICING_PATH),
-    },
   };
 }
 
