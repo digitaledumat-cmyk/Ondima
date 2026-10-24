@@ -2,6 +2,7 @@ import { getPostBySlug } from "@/lib/blog";
 import {
   GUARANTEE_TAGLINE,
   HOME_PATH,
+  LANDING_PATH,
   PRICING_PATH,
   WHATSAPP_DISPLAY,
   WHATSAPP_URL,
@@ -23,7 +24,7 @@ export interface RelatedLink {
 
 export const pageTitles: Record<string, string> = {
   [HOME_PATH]: "Accueil IPTV",
-  "/iptv-maroc": "IPTV Maroc",
+  [LANDING_PATH]: "IPTV Maroc",
   [PRICING_PATH]: "Abonnement IPTV Maroc",
   "/fonctionnalites": "Fonctionnalités",
   "/guide": "Guide d'installation",
@@ -47,7 +48,7 @@ const cluster: RelatedLink[] = [
     hint: "Offre 2026, packs et activation WhatsApp",
   },
   {
-    href: "/iptv-maroc",
+    href: LANDING_PATH,
     label: "IPTV Maroc stable & sans coupure",
     hint: "Landing SEO : couverture, appareils, garantie",
   },
@@ -84,15 +85,15 @@ const cluster: RelatedLink[] = [
 ];
 
 const relatedByPath: Record<string, string[]> = {
-  [HOME_PATH]: ["/iptv-maroc", PRICING_PATH, "/guide", "/faq"],
-  "/iptv-maroc": [PRICING_PATH, "/guide", "/fonctionnalites", "/faq", HOME_PATH],
-  [PRICING_PATH]: ["/iptv-maroc", "/fonctionnalites", "/guide", "/faq", "/contact"],
-  "/fonctionnalites": ["/guide", PRICING_PATH, "/iptv-maroc", "/faq"],
+  [HOME_PATH]: [LANDING_PATH, PRICING_PATH, "/guide", "/faq"],
+  [LANDING_PATH]: [PRICING_PATH, "/guide", "/fonctionnalites", "/faq", HOME_PATH],
+  [PRICING_PATH]: [LANDING_PATH, "/fonctionnalites", "/guide", "/faq", "/contact"],
+  "/fonctionnalites": ["/guide", PRICING_PATH, LANDING_PATH, "/faq"],
   "/guide": ["/fonctionnalites", PRICING_PATH, "/faq", "/contact"],
-  "/faq": [PRICING_PATH, "/guide", "/contact", "/iptv-maroc"],
-  "/blog": [PRICING_PATH, "/iptv-maroc", "/faq", "/guide"],
+  "/faq": [PRICING_PATH, "/guide", "/contact", LANDING_PATH],
+  "/blog": [PRICING_PATH, LANDING_PATH, "/faq", "/guide"],
   "/contact": [PRICING_PATH, "/faq", "/guide", HOME_PATH],
-  "/sitemap-html": [HOME_PATH, "/iptv-maroc", PRICING_PATH, "/faq"],
+  "/sitemap-html": [HOME_PATH, LANDING_PATH, PRICING_PATH, "/faq"],
 };
 
 export function relatedLinksFor(pathname: string): RelatedLink[] {
@@ -100,7 +101,7 @@ export function relatedLinksFor(pathname: string): RelatedLink[] {
     pathname.startsWith("/blog/") && pathname !== "/blog"
       ? "/blog"
       : pathname;
-  const keys = relatedByPath[relatedPath] ?? [HOME_PATH, "/iptv-maroc", PRICING_PATH, "/faq"];
+  const keys = relatedByPath[relatedPath] ?? [HOME_PATH, LANDING_PATH, PRICING_PATH, "/faq"];
   const byHref = new Map(cluster.map((item) => [item.href, item]));
   return keys
     .filter((href) => href !== pathname)
@@ -158,7 +159,7 @@ export function buildLlmsTxt(): string {
 
 > Abonnement TV et IPTV Maroc premium (Ondima.ma). Chaînes live HD/4K, VOD, serveurs VPS OTT, Anti-freeze, activation WhatsApp 24/7, garantie 45 jours.
 
-Ondima est un fournisseur d'abonnement IPTV basé au Maroc (ondima.ma). L'accueil canonique est ${absoluteUrl(HOME_PATH)}. La racine https://ondima.ma et l'ancien chemin /tv redirigent en 301 vers ${absoluteUrl(HOME_PATH)}. La page tarifs canonique est ${absoluteUrl(PRICING_PATH)}.
+Ondima est un fournisseur d'abonnement IPTV basé au Maroc (ondima.ma). L'accueil canonique est ${absoluteUrl(HOME_PATH)}. La racine https://ondima.ma redirige en 301 vers ${absoluteUrl(HOME_PATH)}. La page tarifs canonique est ${absoluteUrl(PRICING_PATH)}.
 
 ${GUARANTEE_TAGLINE}.
 
@@ -167,14 +168,14 @@ Contact : WhatsApp ${WHATSAPP_DISPLAY} (${WHATSAPP_URL}) · e-mail ${GEO_EMAIL}.
 ## Pages principales
 
 - [Accueil IPTV Maroc](${absoluteUrl(HOME_PATH)}) : offre 2026, packs, avis et FAQ.
-- [IPTV Maroc — abonnement stable](${absoluteUrl("/iptv-maroc")}) : landing SEO (villes, appareils, Anti-freeze).
+- [IPTV Maroc — abonnement stable](${absoluteUrl(LANDING_PATH)}) : landing SEO (villes, appareils, Anti-freeze).
 - [Abonnement IPTV Maroc — tarifs](${absoluteUrl(PRICING_PATH)}) : Pack Pro, Ultra, VIP (Maroc dhs + Europe €).
 - [Fonctionnalités techniques](${absoluteUrl("/fonctionnalites")}) : 4K, VPS OTT, multi-écrans.
 - [Guide d'installation](${absoluteUrl("/guide")}) : Nino Player, Smart TV, Firestick, Android.
 - [FAQ](${absoluteUrl("/faq")}) : garantie, débit, appareils, activation.
 - [Contact](${absoluteUrl("/contact")}) : WhatsApp et e-mail.
 - [Blog](${absoluteUrl("/blog")}) : guides pour choisir un abonnement.
-- [IPTV Maroc légal 2027](${absoluteUrl("/blog/iptv-maroc-abonnement-legal-2027")}) : l'abonnement IPTV Maroc en grande surface (réf. Virgin Megastore) et critères Ondima.
+- [IPTV Maroc 2027](${absoluteUrl("/blog/iptv-maroc-abonnement-legal-2027")}) : critères pour choisir un abonnement IPTV Maroc clair et stable.
 - [Plan du site HTML](${absoluteUrl("/sitemap-html")}) : index humain des pages.
 
 ## Tarifs 2026
@@ -183,7 +184,7 @@ Prix annuels fixes, activation WhatsApp, pas d'essai gratuit.
 
 ${packs}
 
-Anciennes URLs (301, ne pas citer comme canoniques) : /abonnement-iptv et /tarifs → ${PRICING_PATH}.
+Ne citer que les URLs canoniques : ${HOME_PATH}, ${LANDING_PATH}, ${PRICING_PATH}.
 
 ## FAQ (extraits)
 

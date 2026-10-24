@@ -2,7 +2,7 @@ import Link from "next/link";
 
 import HeroVisual from "./HeroVisual";
 
-import { GUARANTEE_TAGLINE, PRICING_PATH, WHATSAPP_URL } from "@/lib/constants";
+import { GUARANTEE_TAGLINE, LANDING_PATH, PRICING_PATH, WHATSAPP_URL } from "@/lib/constants";
 
 const pills = [
   { icon: "📺", label: "TV live 45k+" },
@@ -31,7 +31,7 @@ export default function Hero() {
         <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-12 xl:gap-16">
           <div className="space-y-6 lg:space-y-7">
             <p className="text-xs font-medium tracking-[0.2em] text-zinc-500 uppercase drop-shadow-[0_4px_12px_rgba(0,0,0,1)]">
-              Ondima.ma/iptv · Maroc 2026
+              Ondima.ma/pro · Maroc 2026
             </p>
 
             <h1
@@ -92,7 +92,7 @@ export default function Hero() {
                 {GUARANTEE_TAGLINE} · Dès 300 DH/an
               </p>
               <p className="text-xs text-zinc-500">
-                <Link href="/iptv-maroc" className="hover:text-violet-300">
+                <Link href={LANDING_PATH} className="hover:text-violet-300">
                   IPTV Maroc stable
                 </Link>
                 {" · "}

@@ -41,16 +41,16 @@ export function publishedPosts(): BlogPost[] {
 export const blogPosts: BlogPost[] = [
   {
     slug: "iptv-maroc-abonnement-legal-2027",
-    title: "IPTV Maroc 2027 : l'abonnement légal arrive en grande surface",
-    h1: "IPTV Maroc : l'abonnement légal débarque enfin en grande surface",
+    title: "IPTV Maroc 2027 : comment choisir un abonnement clair et stable",
+    h1: "IPTV Maroc 2027 : un abonnement clair, stable et 4K",
     excerpt:
-      "L'IPTV Maroc sort de l'ombre : Virgin Megastore publie une offre d'abonnement structurée. Guide Ondima pour choisir un IPTV Maroc clair, stable et 4K.",
+      "L'IPTV Maroc se choisit sur un site identifié, un prix public et un support joignable. Guide Ondima pour un abonnement clair, stable et 4K.",
     category: "IPTV Maroc",
     date: "20 octobre 2026",
     dateIso: "2026-10-20",
     readTime: "10 min",
     description:
-      "IPTV Maroc 2027 : l'abonnement légal arrive chez Virgin Megastore. Comment choisir un IPTV Maroc stable, 4K, au prix clair, avec support local — le guide Ondima.",
+      "IPTV Maroc 2027 : comment choisir un abonnement stable, 4K, au prix clair, avec support local. Le guide Ondima.",
     keywords: [
       "iptv maroc",
       "abonnement iptv maroc",
@@ -63,42 +63,41 @@ export const blogPosts: BlogPost[] = [
       "iptv maroc smart tv",
       "fournisseur iptv maroc",
       "acheter iptv maroc",
-      "iptv maroc virgin megastore",
     ],
     source: {
-      label: "Virgin Megastore — Abonnement IPTV",
-      href: "https://virginmegastore.ma/abonnement-iptv",
+      label: "Tarifs Ondima — Abonnement IPTV Maroc",
+      href: "https://ondima.ma/abonnement-iptv-pro",
     },
     intro: [
-      "Jusqu'ici, chercher un IPTV Maroc rimait souvent avec un vendeur anonyme, un prix flou et zéro recours. En 2027, le marché change : une enseigne nationale, Virgin Megastore, publie une page dédiée à l'abonnement IPTV. C'est un signal fort — l'IPTV Maroc n'est plus un produit de l'ombre, c'est une offre grand public.",
-      "Cet article Ondima décrypte ce que cette nouveauté change pour l'abonné marocain, comment reconnaître un IPTV Maroc sérieux, et comment choisir un forfait stable (HD/4K, anti-coupure, support local) sans se faire piéger par une recharge jetable.",
+      "Jusqu'ici, chercher un IPTV Maroc rimait souvent avec un vendeur anonyme, un prix flou et zéro recours. En 2027, l'abonné peut exiger l'inverse : un site identifié, un tarif public et un support qui répond après le paiement.",
+      "Cet article Ondima explique comment reconnaître un IPTV Maroc sérieux, et comment choisir un forfait stable (HD/4K, anti-coupure, support local) sans se faire piéger par une recharge jetable.",
     ],
     sections: [
       {
         heading: "IPTV Maroc : pourquoi 2027 marque un tournant",
         paragraphs: [
-          "L'IPTV Maroc, c'est simplement la télévision livrée par internet : chaînes en direct, sport en clair, films et séries à la demande, sur Smart TV, Android, Firestick ou téléphone. La technologie n'est pas nouvelle. Ce qui est nouveau au Maroc, c'est qu'une grande surface high-tech affiche enfin un abonnement IPTV comme un produit de rayon — avec un prix, une durée et un parcours d'activation.",
-          "Quand Virgin Megastore consacre une page à l'abonnement IPTV, le message est clair : la demande IPTV Maroc est assez mature pour sortir des groupes WhatsApp et entrer dans un circuit commercial identifiable. Pour l'abonné, cela veut dire plus de transparence sur l'IPTV Maroc prix, les packs et le support — et moins de « codes magiques » vendus sans facture.",
+          "L'IPTV Maroc, c'est simplement la télévision livrée par internet : chaînes en direct, sport en clair, films et séries à la demande, sur Smart TV, Android, Firestick ou téléphone. La technologie n'est pas nouvelle. Ce qui change, c'est le niveau d'exigence : un abonnement avec un prix, une durée et un parcours d'activation.",
+          "La demande IPTV Maroc est assez mature pour sortir des groupes WhatsApp et entrer dans un circuit commercial identifiable. Pour l'abonné, cela veut dire plus de transparence sur l'IPTV Maroc prix, les packs et le support — et moins de « codes magiques » vendus sans facture.",
         ],
       },
       {
-        heading: "Virgin Megastore comme référence d'un IPTV Maroc structuré",
+        heading: "Ce qu'un IPTV Maroc structuré doit montrer",
         paragraphs: [
-          "Virgin Megastore n'est pas un revendeur improvisé : c'est une enseigne installée à Casablanca, Rabat, Marrakech, Fès, Agadir et Tanger. Voir un abonnement IPTV publié sur virginmegastore.ma, c'est le premier exemple visible d'un IPTV Maroc vendu comme une offre de grande distribution, pas comme un lien M3U échangé en privé.",
-          "Nous citons cette page comme référence de marché — pas comme un copier-coller de catalogue. L'intérêt pour l'internaute qui tape « iptv maroc », c'est le cadre : packs annuels, paiement unique, distinction Maroc / hors Maroc, et un support nommé. C'est exactement le niveau d'exigence qu'un abonné devrait exiger de n'importe quel fournisseur IPTV Maroc, y compris Ondima.",
+          "Un IPTV Maroc sérieux se voit d'abord à son site : une adresse publique, des packs annuels, une distinction Maroc / hors Maroc, et un support nommé. Ce n'est plus un lien M3U échangé en privé.",
+          "L'intérêt pour l'internaute qui tape « iptv maroc », c'est ce cadre. C'est exactement le niveau d'exigence qu'un abonné devrait demander à son fournisseur. Ondima le publie sur sa page tarifs : trois formules, un prix, une durée, un nombre d'écrans.",
         ],
         bullets: [
           "Une URL publique, indexable, plutôt qu'un vendeur sans site",
           "Des formules IPTV Maroc à l'année, pas une recharge au mois sans contrat",
-          "Un positionnement retail : l'IPTV Maroc devient un produit consommateur",
-          "Un signal pour la diaspora (MRE) : l'offre n'est plus réservée au « copain du quartier »",
+          "Des tarifs affichés avant le paiement",
+          "Un support joignable pour la diaspora (MRE) comme pour le Maroc",
         ],
       },
       {
         heading: "Qu'est-ce qu'un IPTV Maroc « légal » dans les faits ?",
         paragraphs: [
           "La question n'est pas « l'IPTV est-elle interdite ? ». L'IPTV Maroc, en tant que mode de diffusion par internet, n'est pas illégal. Ce qui pose problème, c'est la redistribution de chaînes payantes cryptées sans droit (beIN, Canal+, DAZN, etc.) et la vente d'un catalogue dont personne n'assume la source.",
-          "Un IPTV Maroc présenté comme offre structurée se distingue par trois choses : un site identifié, des conditions lisibles (usage privé, pas de revente, pas de diffusion dans un café), et une procédure de retrait si un ayants droit signale un contenu — chez Ondima, c'est la page Politique DMCA. Virgin Megastore, en affichant un abonnement IPTV au grand jour, pousse le marché dans cette direction : moins d'opacité, plus de responsabilité commerciale.",
+          "Un IPTV Maroc présenté comme offre structurée se distingue par trois choses : un site identifié, des conditions lisibles (usage privé, pas de revente, pas de diffusion dans un café), et une procédure de retrait si un ayants droit signale un contenu — chez Ondima, c'est la page Politique DMCA.",
           "Autrement dit : le meilleur IPTV Maroc en 2027 n'est pas celui qui promet « toutes les chaînes du monde pour 50 dhs ». C'est celui qui dit clairement ce que vous achetez, combien de temps ça dure, sur combien d'écrans, et qui répond quand ça coupe.",
         ],
       },
@@ -106,7 +105,7 @@ export const blogPosts: BlogPost[] = [
         heading: "IPTV Maroc prix : ce qu'il faut comparer avant d'acheter",
         paragraphs: [
           "Le mot-clé « iptv maroc prix » cache souvent des pièges. Un tarif trop bas sans infrastructure annoncée finit en freeze dès le match du dimanche. Un tarif élevé sans détail d'appareils vous laisse avec un seul écran alors que vous pensiez équiper le salon et la chambre.",
-          "Sur un IPTV Maroc sérieux, le prix annuel est affiché en dirhams pour le Maroc et, le cas échéant, en euros pour l'Europe / les MRE. Ondima publie trois packs transparents : Pack Pro 300 dhs (35 €), Expérience Ultra 450 dhs (45 €) et VIP 600 dhs (60 €) — paiement unique, 12 mois, activation WhatsApp. C'est le même type de grille lisible que l'on voit désormais côté retail.",
+          "Sur un IPTV Maroc sérieux, le prix annuel est affiché en dirhams pour le Maroc et, le cas échéant, en euros pour l'Europe / les MRE. Ondima publie trois packs : Pack Pro 300 dhs (35 €), Expérience Ultra 450 dhs (45 €) et VIP 600 dhs (60 €) — paiement unique, 12 mois, activation WhatsApp.",
         ],
         bullets: [
           "Durée réelle : 12 mois fermes, sans reconduction cachée",
@@ -127,10 +126,10 @@ export const blogPosts: BlogPost[] = [
         heading: "Comment choisir son fournisseur IPTV Maroc en 2027",
         paragraphs: [
           "Tapez « iptv maroc » et vous verrez des dizaines d'offres. Le filtre est simple. Est-ce que le site existe vraiment ? Est-ce que les tarifs sont publics ? Est-ce qu'il y a un guide, une FAQ, une page légale ? Est-ce que quelqu'un répond après l'activation ?",
-          "L'arrivée d'un acteur retail comme Virgin Megastore sur l'abonnement IPTV relève le niveau : l'abonné marocain peut désormais comparer une enseigne connue et un spécialiste local. Ondima se positionne comme fournisseur IPTV Maroc premium — packs clairs, 4K, anti-freeze, garantie 45 jours, activation en quelques minutes.",
+          "Ondima se positionne comme fournisseur IPTV Maroc premium : packs clairs, 4K, anti-freeze, garantie 45 jours, activation en quelques minutes. Les tarifs sont sur une seule page, le guide d'installation est public, et le support WhatsApp reste joignable après la commande.",
         ],
         bullets: [
-          "Vérifiez l'URL canonique des tarifs (chez Ondima : /abonnement-iptv-maroc)",
+          "Vérifiez l'URL canonique des tarifs (chez Ondima : /abonnement-iptv-pro)",
           "Lisez le guide Smart TV / Android avant de payer",
           "Refusez les offres qui cachent le nombre d'écrans ou la durée",
           "Gardez une trace du paiement et du contact support",
@@ -139,7 +138,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Ondima, spécialiste IPTV Maroc : ce que vous achetez concrètement",
         paragraphs: [
-          "Ondima n'est pas une grande surface. C'est un opérateur IPTV Maroc centré sur la stabilité et le SAV. L'accueil est ondima.ma/iptv, la landing SEO iptv maroc explique l'offre ville par ville, et les tarifs sont regroupés sur une seule page — sans labyrinthe de redirections pour l'abonné.",
+          "Ondima est un opérateur IPTV Maroc centré sur la stabilité et le SAV. L'accueil est ondima.ma/pro, la page IPTV Maroc explique l'offre, et les tarifs sont regroupés sur une seule page.",
           "Vous achetez un abonnement IPTV Maroc annuel, activé sur WhatsApp, installable sur Smart TV, Android, Firestick ou boîtier, avec une ligne directe si l'image freeze. Pour la diaspora, les prix Europe sont affichés à côté des dirhams : pas de surprise à la commande depuis Paris, Madrid ou Bruxelles.",
         ],
       },
@@ -148,12 +147,12 @@ export const blogPosts: BlogPost[] = [
       {
         question: "L'IPTV Maroc est-il légal ?",
         answer:
-          "La technologie IPTV Maroc n'est pas illégale. Ce qui l'est, c'est de redistribuer des chaînes payantes cryptées sans licence. Un IPTV Maroc sérieux affiche son identité, ses tarifs, un usage privé, et une procédure de retrait (DMCA). L'apparition d'une offre chez Virgin Megastore montre que l'IPTV Maroc entre dans un circuit commercial public.",
+          "La technologie IPTV Maroc n'est pas illégale. Ce qui l'est, c'est de redistribuer des chaînes payantes cryptées sans licence. Un IPTV Maroc sérieux affiche son identité, ses tarifs, un usage privé, et une procédure de retrait (DMCA).",
       },
       {
-        question: "Pourquoi citer Virgin Megastore dans un article IPTV Maroc ?",
+        question: "Comment reconnaître un IPTV Maroc sérieux ?",
         answer:
-          "Parce que c'est, en 2027, la référence la plus visible d'un abonnement IPTV vendu par une enseigne nationale au Maroc. Cela sert de jalon : l'IPTV Maroc n'est plus seulement un marché informel. Ondima s'aligne sur cette exigence de clarté (prix, packs, support), en tant que spécialiste streaming.",
+          "Un site identifié, des tarifs publics, un nombre d'écrans annoncé, un guide d'installation et un support joignable après le paiement. Ondima publie ces éléments sur ses pages tarifs, guide et FAQ.",
       },
       {
         question: "Quel est le prix d'un IPTV Maroc sérieux en 2027 ?",

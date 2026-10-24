@@ -1,8 +1,8 @@
-import { HOME_PATH, PRICING_PATH } from "@/lib/constants";
+import { HOME_PATH, LANDING_PATH, PRICING_PATH } from "@/lib/constants";
 
 export const mainNav = [
   { label: "Accueil", href: HOME_PATH },
-  { label: "IPTV Maroc", href: "/iptv-maroc" },
+  { label: "IPTV Maroc", href: LANDING_PATH },
   { label: "Tarifs", href: PRICING_PATH },
   { label: "Fonctionnalités", href: "/fonctionnalites" },
   { label: "Guide", href: "/guide" },
@@ -27,14 +27,14 @@ export const sitemapSections = [
     description: "Navigation essentielle du site Ondima.ma",
     links: [
       { label: "Accueil IPTV", href: HOME_PATH },
-      { label: "IPTV Maroc — Abonnement stable", href: "/iptv-maroc" },
+      { label: "IPTV Maroc — Abonnement stable", href: LANDING_PATH },
       { label: "Tarifs — Packs & forfaits", href: PRICING_PATH },
       { label: "Fonctionnalités techniques", href: "/fonctionnalites" },
       { label: "Guide d'installation", href: "/guide" },
       { label: "FAQ", href: "/faq" },
       { label: "Blog", href: "/blog" },
       {
-        label: "IPTV Maroc — abonnement légal 2027",
+        label: "IPTV Maroc — abonnement 2027",
         href: "/blog/iptv-maroc-abonnement-legal-2027",
       },
       { label: "Contact", href: "/contact" },
@@ -44,14 +44,14 @@ export const sitemapSections = [
     title: "Ressources SEO, GEO & support",
     description: "Maillage interne et fichiers pour moteurs et assistants IA",
     links: [
-      { label: "IPTV Maroc — Abonnement stable", href: "/iptv-maroc" },
+      { label: "IPTV Maroc — Abonnement stable", href: LANDING_PATH },
       { label: "Abonnement IPTV Maroc — Tarifs", href: PRICING_PATH },
       { label: "Guide d'installation Nino Player", href: "/guide" },
       { label: "Fonctionnalités 4K & Anti-freeze", href: "/fonctionnalites" },
       { label: "Accueil IPTV Maroc", href: HOME_PATH },
       { label: "FAQ abonnement Ondima", href: "/faq" },
       {
-        label: "Article IPTV Maroc légal 2027",
+        label: "Article IPTV Maroc 2027",
         href: "/blog/iptv-maroc-abonnement-legal-2027",
       },
       { label: "Plan du site HTML", href: "/sitemap-html" },

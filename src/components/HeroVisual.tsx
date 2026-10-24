@@ -6,7 +6,7 @@ export default function HeroVisual() {
     <div className="glow-border-purple w-full overflow-hidden rounded-2xl">
       <Image
         src={heroImage}
-        alt="Ondima.ma/iptv — Abonnement IPTV Maroc Premium, streaming 4K stable 2026"
+        alt="Ondima.ma/pro — Abonnement IPTV Maroc Premium, streaming 4K stable 2026"
         width={heroImage.width}
         height={heroImage.height}
         priority

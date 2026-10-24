@@ -3,7 +3,7 @@
 import { usePathname } from "next/navigation";
 
 import JsonLd from "@/components/seo/JsonLd";
-import { HOME_PATH, PRICING_PATH } from "@/lib/constants";
+import { HOME_PATH, LANDING_PATH, PRICING_PATH } from "@/lib/constants";
 import { breadcrumbsFor } from "@/lib/geo";
 import {
   breadcrumbJsonLd,
@@ -25,7 +25,7 @@ export default function PageJsonLd() {
   }
 
   if (pathname === HOME_PATH) graph.push(homeWebPageJsonLd());
-  if (pathname === "/iptv-maroc") graph.push(serviceJsonLd());
+  if (pathname === LANDING_PATH) graph.push(serviceJsonLd());
   if (pathname === PRICING_PATH) graph.push(offerCatalogJsonLd());
   if (pathname === HOME_PATH || pathname === "/faq") graph.push(faqJsonLd());
   if (pathname === "/contact") graph.push(contactJsonLd());

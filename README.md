@@ -106,7 +106,9 @@ Le site sera accessible sur **http://localhost:3000** (mode production).
 ## Structure du projet
 
 - `src/app/layout.tsx` — Métadonnées SEO
-- `src/app/iptv/page.tsx` — Page d'accueil (`/iptv`, la racine `/` et l'ancien `/tv` redirigent en 301)
+- `src/app/pro/page.tsx` — Page d'accueil (`/pro` ; la racine `/` redirige en 301)
+- `src/app/iboplayer/page.tsx` — Landing IPTV Maroc
+- `src/app/abonnement-iptv-pro/page.tsx` — Tarifs
 - `src/components/` — Composants UI (Hero, Pricing, Features…)
 - `src/lib/pricing.ts` — Données des offres
 # Ondima

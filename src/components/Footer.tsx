@@ -15,7 +15,7 @@ export default function Footer() {
               <Logo size="md" showDomain />
             </Link>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-zinc-500">
-              Ondima.ma/iptv — abonnement IPTV Maroc 2026. +45 000 chaînes HD/4K,
+              Ondima.ma/pro — abonnement IPTV Maroc 2026. +45 000 chaînes HD/4K,
               VOD et serveurs VPS ultra-rapides.
             </p>
           </div>

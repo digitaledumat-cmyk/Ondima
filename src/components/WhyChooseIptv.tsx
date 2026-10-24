@@ -13,7 +13,7 @@ export default function WhyChooseIptv() {
 
           <div className="space-y-6 text-sm leading-[1.85] text-zinc-400 sm:text-base">
             <p>
-              Ondima.ma/iptv est le hub IPTV des foyers marocains : un <strong className="font-medium text-zinc-200">fournisseur IPTV Maroc</strong> qui transforme chaque écran en télévision 4K stable. Trouver le <strong className="font-medium text-zinc-200">meilleur IPTV Maroc</strong>, c&apos;est allier un catalogue illimité à une infrastructure VPS de dernière génération. Notre <strong className="font-medium text-zinc-200">IPTV 4K Maroc</strong> et notre <strong className="font-medium text-zinc-200">IPTV HD Maroc</strong> tiennent le direct sportif comme les sorties cinéma, sans freeze ni buffering.
+              Ondima.ma/pro est le hub IPTV des foyers marocains : un <strong className="font-medium text-zinc-200">fournisseur IPTV Maroc</strong> qui transforme chaque écran en télévision 4K stable. Trouver le <strong className="font-medium text-zinc-200">meilleur IPTV Maroc</strong>, c&apos;est allier un catalogue illimité à une infrastructure VPS de dernière génération. Notre <strong className="font-medium text-zinc-200">IPTV 4K Maroc</strong> et notre <strong className="font-medium text-zinc-200">IPTV HD Maroc</strong> tiennent le direct sportif comme les sorties cinéma, sans freeze ni buffering.
             </p>
 
             <p>

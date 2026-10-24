@@ -12,7 +12,7 @@ import { blogSeoIntro } from "@/lib/seo-content";
 export const metadata: Metadata = createMetadata({
   title: "Blog IPTV Maroc 2027 | Abonnement légal, guides & comparatifs - Ondima",
   description:
-    "Blog IPTV Maroc : abonnement légal 2027, Virgin Megastore, best IPTV services, guides Smart TV et comparatifs. Expertise Ondima pour choisir un IPTV Maroc stable.",
+    "Blog IPTV Maroc : abonnement 2027, guides Smart TV et comparatifs. Expertise Ondima pour choisir un IPTV Maroc stable.",
   path: "/blog",
   keywords: [
     "iptv maroc",
@@ -80,7 +80,11 @@ export default function BlogPage() {
               })}
             </div>
             <p className="mt-10 text-center text-sm text-zinc-600">
-              Nouveau : article IPTV Maroc légal 2027.{" "}
+              Guide IPTV Maroc 2027.{" "}
+              <Link href="/blog/iptv-maroc-abonnement-legal-2027" className="text-violet-400 hover:text-violet-300">
+                Lire l&apos;article
+              </Link>
+              {" · "}
               <Link href={PRICING_PATH} className="text-violet-400 hover:text-violet-300">
                 Voir nos forfaits
               </Link>

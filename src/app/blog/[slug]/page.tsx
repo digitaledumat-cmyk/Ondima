@@ -6,7 +6,7 @@ import Accordion from "@/components/ui/Accordion";
 import PageHero from "@/components/layout/PageHero";
 import SiteShell from "@/components/layout/SiteShell";
 import JsonLd from "@/components/seo/JsonLd";
-import { HOME_PATH, PRICING_PATH, WHATSAPP_URL } from "@/lib/constants";
+import { HOME_PATH, LANDING_PATH, PRICING_PATH, WHATSAPP_URL } from "@/lib/constants";
 import { getPostBySlug, isPublishedPost, publishedPosts } from "@/lib/blog";
 import { articleJsonLd, faqArticleJsonLd } from "@/lib/json-ld";
 import { createMetadata } from "@/lib/metadata";
@@ -154,7 +154,7 @@ export default async function BlogArticlePage({ params }: BlogArticlePageProps) 
             <Link href="/blog" className="text-violet-400 hover:text-violet-300">
               ← Tous les articles
             </Link>
-            <Link href="/iptv-maroc" className="hover:text-white">
+            <Link href={LANDING_PATH} className="hover:text-white">
               IPTV Maroc
             </Link>
             <Link href={PRICING_PATH} className="hover:text-white">

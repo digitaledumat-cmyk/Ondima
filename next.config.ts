@@ -29,37 +29,9 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
-        source: "/abonnement-iptv",
-        has: [{ type: "host", value: "www.ondima.ma" }],
-        destination: "https://ondima.ma/abonnement-iptv-maroc",
-        statusCode: 301,
-      },
-      {
-        source: "/abonnement-iptv",
-        destination: "/abonnement-iptv-maroc",
-        statusCode: 301,
-      },
-      {
-        source: "/tarifs",
-        has: [{ type: "host", value: "www.ondima.ma" }],
-        destination: "https://ondima.ma/abonnement-iptv-maroc",
-        statusCode: 301,
-      },
-      {
-        source: "/tarifs",
-        destination: "/abonnement-iptv-maroc",
-        statusCode: 301,
-      },
-      {
-        source: "/tv",
-        has: [{ type: "host", value: "www.ondima.ma" }],
-        destination: "https://ondima.ma/iptv",
-        statusCode: 301,
-      },
-      {
         source: "/",
         has: [{ type: "host", value: "www.ondima.ma" }],
-        destination: "https://ondima.ma/iptv",
+        destination: "https://ondima.ma/pro",
         statusCode: 301,
       },
       {
@@ -69,13 +41,8 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
-        source: "/tv",
-        destination: "/iptv",
-        statusCode: 301,
-      },
-      {
         source: "/",
-        destination: "/iptv",
+        destination: "/pro",
         statusCode: 301,
       },
     ];

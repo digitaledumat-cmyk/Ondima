@@ -10,7 +10,7 @@ import { sitemapSections } from "@/lib/navigation";
 export const metadata: Metadata = createMetadata({
   title: "Plan du site Ondima.ma | Accueil IPTV, tarifs et pages 2026",
   description:
-    "Plan du site HTML Ondima.ma : accueil ondima.ma/iptv, IPTV Maroc, tarifs, fonctionnalités, guide, FAQ, blog, contact et pages légales pour un maillage interne SEO optimal.",
+    "Plan du site HTML Ondima.ma : accueil ondima.ma/pro, IPTV Maroc, tarifs, fonctionnalités, guide, FAQ, blog, contact et pages légales pour un maillage interne SEO optimal.",
   path: "/sitemap-html",
 });
 
@@ -21,7 +21,7 @@ export default function SitemapHtmlPage() {
         <PageHero
           label="Navigation"
           title="Plan du site Ondima.ma"
-          description="Index complet des pages indexables. L'accueil du site est ondima.ma/iptv — la racine ondima.ma et l'ancien chemin /tv redirigent en 301 vers cette URL."
+          description="Index complet des pages indexables. L'accueil du site est ondima.ma/pro. La racine ondima.ma redirige en 301 vers cette URL."
         />
         <section className="py-16 lg:py-20">
           <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">

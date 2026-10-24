@@ -6,6 +6,7 @@ import {
 } from "@/lib/geo";
 import {
   HOME_PATH,
+  LANDING_PATH,
   PRICING_PATH,
   WHATSAPP_DISPLAY,
   WHATSAPP_NUMBER,
@@ -108,7 +109,7 @@ export function serviceJsonLd() {
     serviceType: "IPTV / abonnement TV en streaming",
     provider: { "@id": ORG_ID },
     areaServed: ["MA", "FR", "ES"],
-    url: absoluteUrl("/iptv-maroc"),
+    url: absoluteUrl(LANDING_PATH),
   };
 }
 

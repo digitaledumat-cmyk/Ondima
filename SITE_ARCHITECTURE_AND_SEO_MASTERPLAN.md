@@ -5,7 +5,7 @@
 **Codebase root:** `/Users/mac/Desktop/Ondima`  
 **Production domain:** `https://ondima.ma`  
 **Generated from:** Full repository audit (App Router, libs, components, configs)  
-**Version snapshot:** Homepage canonique `/iptv`. 301 depuis `/` et depuis l'ancien slug `/tv`.
+**Version snapshot:** Accueil `/pro`, landing `/iboplayer`, tarifs `/abonnement-iptv-pro`. Seule la racine `/` redirige en 301 vers `/pro`. Les anciens slugs ne sont pas redirigés.
 
 ---
 
@@ -45,10 +45,8 @@ images.formats: ["image/webp", "image/avif"]
 images.remotePatterns: ninoplayer.com (Nino Player logo)
 redirects:
   - /guide-installation → /guide (308/permanent)
-  - /tv → /iptv (301)                 // ancien slug, réclamation copyright
-  - www.ondima.ma/tv → https://ondima.ma/iptv (301)
-  - / → /iptv (301)
-  - www.ondima.ma/ → https://ondima.ma/iptv (301)
+  - / → /pro (301)
+  - www.ondima.ma/ → https://ondima.ma/pro (301)
   - www.ondima.ma/* → https://ondima.ma/:path* (permanent)
 allowedDevOrigins: localhost, 127.0.0.1, LAN IP
 ```
@@ -71,13 +69,13 @@ Ondima/
 ├── src/
 │   ├── app/                     # App Router routes + root layout + SEO files
 │   │   ├── layout.tsx           # Root metadata, font, html lang="fr"
-│   │   ├── iptv/page.tsx        # Homepage /iptv (canonical home)
+│   │   ├── pro/page.tsx         # Homepage /pro (canonical home)
 │   │   ├── globals.css          # Design tokens, utilities, animations
 │   │   ├── sitemap.ts           # Dynamic /sitemap.xml
 │   │   ├── robots.ts            # Dynamic /robots.txt
 │   │   ├── icon.png / apple-icon.png / favicon.ico
-│   │   ├── iptv-maroc/          # SEO landing
-│   │   ├── tarifs/              # Product / pricing page
+│   │   ├── iboplayer/           # SEO landing /iboplayer
+│   │   ├── abonnement-iptv-pro/ # Product / pricing page
 │   │   ├── fonctionnalites/
 │   │   ├── guide/
 │   │   ├── faq/
@@ -154,10 +152,10 @@ Build output marks all marketing pages as **○ Static (prerendered)**.
 
 | File | Role |
 |---|---|
-| `src/lib/constants.ts` | `HOME_PATH = "/iptv"`, WhatsApp, guarantee tagline |
+| `src/lib/constants.ts` | `HOME_PATH = "/pro"`, `LANDING_PATH = "/iboplayer"`, `PRICING_PATH = "/abonnement-iptv-pro"` |
 | `src/lib/metadata.ts` | SITE_URL, DEFAULT_TITLE/DESCRIPTION, OG image, `createMetadata`, `absoluteUrl` |
 | `src/app/layout.tsx` | Root metadata + robots index/follow + keywords + icons |
-| `src/app/sitemap.ts` | Explicit indexable routes; `/iptv` priority 1; `/` and `/tv` excluded (301) |
+| `src/app/sitemap.ts` | Explicit indexable routes; `/pro` priority 1; old slugs excluded (301) |
 | `src/app/robots.ts` | Allow `/`, disallow `/api/`, sitemap pointer |
 | `src/lib/navigation.ts` | Crawlable internal graph |
 
@@ -179,20 +177,20 @@ Build output marks all marketing pages as **○ Static (prerendered)**.
 
 ---
 
-### 2.1 Homepage — `/iptv`
+### 2.1 Homepage — `/pro`
 
 | Field | Detail |
 |---|---|
-| **File** | `src/app/iptv/page.tsx` |
-| **Layout** | Page-level `createMetadata` (`DEFAULT_TITLE` / `DEFAULT_DESCRIPTION` / `HOME_KEYWORDS`, path `/iptv`) |
+| **File** | `src/app/pro/page.tsx` |
+| **Layout** | Page-level `createMetadata` (`DEFAULT_TITLE` / `DEFAULT_DESCRIPTION` / `HOME_KEYWORDS`, path `/pro`) |
 | **Purpose** | Brand + conversion homepage for TV / IPTV Maroc Premium |
 | **Audience / Intent** | Commercial + transactional (discover → WhatsApp / pricing) |
 | **Rendering** | Static SSG + client Header / Accordion / TrialForm / PricingCard |
-| **Redirect** | `/` → `/iptv` (301); `/tv` → `/iptv` (301); `www.ondima.ma/` et `www.ondima.ma/tv` → `https://ondima.ma/iptv` (301) |
+| **Redirect** | `/` → `/pro` (301), y compris `www.ondima.ma/` → `https://ondima.ma/pro` |
 
 **Title:** `Abonnement IPTV Maroc 2026 | +45 000 Chaînes HD/4K - Ondima`  
-**Meta description:** `Ondima.ma/iptv : abonnement IPTV Maroc Premium. Chaînes live, sport, VOD 4K ultra-stable, anti-freeze et support WhatsApp 24/7. Packs dès 300 DH/an, garantie 45 jours.`  
-**Canonical:** `https://ondima.ma/iptv`  
+**Meta description:** `Ondima.ma/pro : abonnement IPTV Maroc Premium. Chaînes live, sport, VOD 4K ultra-stable, anti-freeze et support WhatsApp 24/7. Packs dès 300 DH/an, garantie 45 jours.`  
+**Canonical:** `https://ondima.ma/pro`  
 **Robots:** `index, follow`  
 **Keywords:** IPTV Maroc, abonnement IPTV Maroc, meilleur IPTV Maroc, fournisseur IPTV Maroc, acheter IPTV Maroc, recharge IPTV Maroc, IPTV 4K Maroc, IPTV HD Maroc, TV Maroc, abonnement TV
 
@@ -228,18 +226,18 @@ Build output marks all marketing pages as **○ Static (prerendered)**.
 
 ---
 
-### 2.2 IPTV Maroc SEO landing — `/iptv-maroc`
+### 2.2 IPTV Maroc SEO landing — `/iboplayer`
 
 | Field | Detail |
 |---|---|
-| **File** | `src/app/iptv-maroc/page.tsx` + `src/lib/iptv-maroc.ts` + WhatsApp reviews libs |
-| **Purpose** | Independent SEO landing (keyword hub) — **does not replace** `/iptv` or `/tarifs` |
+| **File** | `src/app/iboplayer/page.tsx` + `src/lib/iptv-maroc.ts` + WhatsApp reviews libs |
+| **Purpose** | Independent SEO landing (keyword hub) — **does not replace** `/pro` or `/tarifs` |
 | **Audience / Intent** | Informational → commercial (city + “meilleur IPTV” queries) |
 | **Rendering** | Static + client WhatsAppReviews / PricingCard / Accordion |
 
 **Title:** `IPTV Maroc | Meilleur Abonnement Stable & Sans Coupure – Ondima`  
 **Meta description:** `IPTV Maroc premium Ondima : abonnement stable, HD/FHD/4K, Anti-freeze, support WhatsApp rapide. Pack Pro 300 dhs, Ultra 450 dhs, VIP 600 dhs. Garantie 45 jours.`  
-**Canonical:** `https://ondima.ma/iptv-maroc`  
+**Canonical:** `https://ondima.ma/iboplayer`  
 **Keywords:** IPTV Maroc, meilleur IPTV Maroc, abonnement IPTV Maroc, abonnement IPTV stable, IPTV sans coupure, support IPTV WhatsApp, IPTV 4K Maroc  
 **Sitemap priority:** `0.95` weekly
 
@@ -261,23 +259,23 @@ Build output marks all marketing pages as **○ Static (prerendered)**.
 
 ---
 
-### 2.3 Product / pricing — `/tarifs`
+### 2.3 Product / pricing — `/abonnement-iptv-pro`
 
 | Field | Detail |
 |---|---|
-| **File** | `src/app/tarifs/page.tsx` |
+| **File** | `src/app/abonnement-iptv-pro/page.tsx` |
 | **Purpose** | Dedicated commercial product page (tariffs & packs) |
 | **Audience / Intent** | Transactional |
 | **Rendering** | Static + PricingCard client |
-| **Redirect** | `/abonnement-iptv` → `/tarifs` (301) |
+| **Redirect** | Aucune. Les anciens chemins ne sont pas conservés. |
 
 **Title:** `Tarifs Ondima | Packs TV & Formules 2026`  
 **Meta description:** `Tarifs Ondima 2026 : Pack Pro 300 dhs, Expérience Ultra 450 dhs, VIP 600 dhs/an. Packs TV avec serveurs VPS OTT, garantie 45 jours et activation WhatsApp 24/7.`  
-**Canonical:** `https://ondima.ma/tarifs`  
+**Canonical:** `https://ondima.ma/abonnement-iptv-pro`  
 **Keywords:** tarifs Ondima, tarifs IPTV Maroc, packs TV Maroc, prix IPTV, formules TV 4K  
 **Sitemap:** priority `0.9` weekly
 
-**UI:** Custom hero H1 → `SeoContentBlock` intro → `Pricing` (no header) → SEO pricing paragraphs → CTA WhatsApp + link `/iptv#commander` → footer links Guide / Fonctionnalités / Accueil (`/iptv`)  
+**UI:** Custom hero H1 → `SeoContentBlock` intro → `Pricing` (no header) → SEO pricing paragraphs → CTA WhatsApp + link `/pro#commander` → footer links Guide / Fonctionnalités / Accueil (`/pro`)  
 
 **H1:** « Tarifs Ondima : packs TV & formules 2026 »  
 **Structured data:** None (Opportunity: Product / Offer schema).
@@ -406,14 +404,14 @@ Build output marks all marketing pages as **○ Static (prerendered)**.
 | **Intent** | Navigational / crawl assist |
 
 **Title:** `Plan du site Ondima.ma | Accueil IPTV, tarifs et pages 2026`  
-**Meta description:** `Plan du site HTML Ondima.ma : accueil ondima.ma/iptv, IPTV Maroc, tarifs, fonctionnalités, guide, FAQ, blog, contact et pages légales pour un maillage interne SEO optimal.`  
+**Meta description:** `Plan du site HTML Ondima.ma : accueil ondima.ma/pro, IPTV Maroc, tarifs, fonctionnalités, guide, FAQ, blog, contact et pages légales pour un maillage interne SEO optimal.`  
 **Canonical:** `https://ondima.ma/sitemap-html`  
 **FAB:** Disabled (`SiteShell showFab={false}`)
 
 **UI:**  
 1. PageHero (label « Navigation »)  
 2. Callout linking to `/sitemap.xml`  
-3. Three sections from `sitemapSections` with visible URLs (`ondima.ma/iptv`, etc.)  
+3. Three sections from `sitemapSections` with visible URLs (`ondima.ma/pro`, etc.)  
 
 **H1:** « Plan du site Ondima.ma »  
 **Structured data:** None.
@@ -471,13 +469,13 @@ All use `LegalPageContent` + `createMetadata` + data in `src/lib/legal.ts`.
 
 ```
                     ┌─────────────────────┐
-                    │   Brand hub: /iptv    │
+                    │   Brand hub: /pro    │
                     │  (commercial home)  │
                     └──────────┬──────────┘
            ┌───────────────────┼───────────────────┐
            ▼                   ▼                   ▼
    ┌───────────────┐  ┌────────────────┐  ┌────────────────┐
-   │ /iptv-maroc   │  │    /tarifs     │  │ /fonctionnalites│
+   │ /iboplayer   │  │    /tarifs     │  │ /fonctionnalites│
    │ SEO keyword   │  │ transactional  │  │ tech authority  │
    │ hub + cities  │  │ pricing        │  │                 │
    └───────┬───────┘  └───────┬────────┘  └────────┬───────┘
@@ -501,18 +499,18 @@ All use `LegalPageContent` + `createMetadata` + data in `src/lib/legal.ts`.
 
 **Cluster logic:**
 
-- **Money cluster:** `/tarifs`, homepage pricing, `/iptv-maroc` formules  
+- **Money cluster:** `/tarifs`, homepage pricing, `/iboplayer` formules  
 - **Trust cluster:** FAQ, reviews, WhatsApp social proof, legal refund  
 - **Support cluster:** `/guide`, Nino Player, Support section  
-- **Authority cluster:** `/fonctionnalites`, long SEO on `/iptv-maroc`, blog listing  
-- **Local cluster:** LocalSeo + city chips on `/iptv-maroc`
+- **Authority cluster:** `/fonctionnalites`, long SEO on `/iboplayer`, blog listing  
+- **Local cluster:** LocalSeo + city chips on `/iboplayer`
 
 ### 3.2 Primary navigation (Header + Footer)
 
 From `mainNav`:
 
-1. Accueil `/iptv`  
-2. IPTV Maroc `/iptv-maroc`  
+1. Accueil `/pro`  
+2. IPTV Maroc `/iboplayer`  
 3. Tarifs `/tarifs`  
 4. Fonctionnalités `/fonctionnalites`  
 5. Guide `/guide`  
@@ -551,7 +549,7 @@ Footer also exposes Plan du site + legal links.
 - `trailingSlash: false` + www→apex → no duplicate hosts/paths  
 - `robots.txt` blocks only `/api/` (no API routes currently, defensive)  
 - Legal pages low priority (`0.3` yearly) to save crawl emphasis for money pages  
-- Homepage `/iptv` `priority: 1.0` daily; `/iptv-maroc` `0.95` weekly; `/` is omitted (301)
+- Homepage `/pro` `priority: 1.0` daily; `/iboplayer` `0.95` weekly; `/` is omitted (301)
 
 ### 3.7 Sitemap configuration detail
 
@@ -559,9 +557,9 @@ Footer also exposes Plan du site + legal links.
 
 | Priority | Paths |
 |---|---|
-| 1.0 daily | `/iptv` (`/` et `/tv` exclus — 301) |
-| 0.95 weekly | `/iptv-maroc` |
-| 0.9 weekly | `/tarifs` (`/abonnement-iptv` excluded — 301) |
+| 1.0 daily | `/pro` (`/` exclu — 301) |
+| 0.95 weekly | `/iboplayer` |
+| 0.9 weekly | `/abonnement-iptv-pro` |
 | 0.8 weekly | `/fonctionnalites`, `/guide` |
 | 0.7 monthly | remaining mainNav + `/sitemap-html` |
 | 0.3 yearly | `/legal/*` |
@@ -580,7 +578,7 @@ Sitemap: https://ondima.ma/sitemap.xml
 ### 3.9 Canonical & social consistency
 
 - Every `createMetadata` page sets matching `alternates.canonical`, `openGraph.url`, title, description.  
-- Root layout + `/iptv` page set homepage canonical to `https://ondima.ma/iptv`.  
+- Root layout + `/pro` page set homepage canonical to `https://ondima.ma/pro`.  
 - OG image shared: `/ondima.webp` (absolute via `metadataBase`).
 
 ---
@@ -602,7 +600,7 @@ Sitemap: https://ondima.ma/sitemap.xml
 
 ### 4.2 By page
 
-#### `/iptv` Homepage
+#### `/pro` Homepage
 
 | Type | Keywords |
 |---|---|
@@ -611,7 +609,7 @@ Sitemap: https://ondima.ma/sitemap.xml
 | LSI | streaming premium, VOD, serveurs VPS, forfaits annuels, garantie 45 jours |
 | Intent | Commercial → Transactional |
 
-#### `/iptv-maroc`
+#### `/iboplayer`
 
 | Type | Keywords |
 |---|---|
@@ -679,9 +677,9 @@ Sitemap: https://ondima.ma/sitemap.xml
 
 | Intent | Pages |
 |---|---|
-| **Navigational** | `/iptv`, `/contact`, `/sitemap-html`, `/legal/*` |
-| **Informational** | `/guide`, `/faq`, `/blog`, `/fonctionnalites`, long SEO on `/iptv-maroc` |
-| **Commercial** | `/iptv`, `/iptv-maroc`, `/fonctionnalites` |
+| **Navigational** | `/pro`, `/contact`, `/sitemap-html`, `/legal/*` |
+| **Informational** | `/guide`, `/faq`, `/blog`, `/fonctionnalites`, long SEO on `/iboplayer` |
+| **Commercial** | `/pro`, `/iboplayer`, `/fonctionnalites` |
 | **Transactional** | `/tarifs`, `/contact` (TrialForm), WhatsApp CTAs sitewide |
 
 ---
@@ -694,7 +692,7 @@ Sitemap: https://ondima.ma/sitemap.xml
 
 - Brand entity: **Ondima** as Moroccan premium IPTV subscription service.  
 - Differentiating angles: Anti-freeze, VPS, WhatsApp activation, 45-day refund, multi-device non-simultaneous clarity, Nino Player guides.  
-- Assets to promote: `/iptv-maroc` (city SEO), `/guide` (HowTo), `/fonctionnalites` (tech), pricing comparison.
+- Assets to promote: `/iboplayer` (city SEO), `/guide` (HowTo), `/fonctionnalites` (tech), pricing comparison.
 
 ### 5.2 Recommended backlink avenues
 
@@ -722,7 +720,7 @@ Sitemap: https://ondima.ma/sitemap.xml
 
 - Impressions/clicks for: `IPTV Maroc`, `abonnement IPTV Maroc`, city modifiers  
 - Conversion: WhatsApp clicks (add event tracking if/when analytics installed)  
-- Index coverage of `/iptv-maroc` and `/tarifs`  
+- Index coverage of `/iboplayer` and `/tarifs`  
 - Referring domains growth monthly  
 
 ### 5.5 Technical off-page hygiene
@@ -769,8 +767,8 @@ Use this checklist to replicate the **Ondima architecture** for a future site.
 
 | Type | Template files to copy |
 |---|---|
-| Homepage | `src/app/iptv/page.tsx` + Hero/Benefits/Features/Pricing/FAQ/LocalSeo |
-| SEO landing | `/iptv-maroc` pattern: PageHero + strengths + devices + pricing + long SEO |
+| Homepage | `src/app/pro/page.tsx` + Hero/Benefits/Features/Pricing/FAQ/LocalSeo |
+| SEO landing | `/iboplayer` pattern: PageHero + strengths + devices + pricing + long SEO |
 | Product | `/tarifs` pattern: H1 + SEO blocks + Pricing + CTA |
 | Authority | `/fonctionnalites` pillars |
 | HowTo | `/guide` accordions + recommended apps |
@@ -821,12 +819,10 @@ Use this checklist to replicate the **Ondima architecture** for a future site.
 
 | URL | Priority tier |
 |---|---|
-| https://ondima.ma/iptv | 1.0 |
-| https://ondima.ma | 301 → /iptv (not in sitemap) |
-| https://ondima.ma/tv | 301 → /iptv (ancien slug, not in sitemap) |
-| https://ondima.ma/iptv-maroc | 0.95 |
-| https://ondima.ma/tarifs | 0.9 |
-| https://ondima.ma/abonnement-iptv | 301 → /tarifs (not in sitemap) |
+| https://ondima.ma/pro | 1.0 |
+| https://ondima.ma | 301 → /pro (not in sitemap) |
+| https://ondima.ma/iboplayer | 0.95 |
+| https://ondima.ma/abonnement-iptv-pro | 0.9 |
 | https://ondima.ma/fonctionnalites | 0.8 |
 | https://ondima.ma/guide | 0.8 |
 | https://ondima.ma/faq | 0.7 |
