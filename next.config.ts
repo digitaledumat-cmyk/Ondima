@@ -29,6 +29,12 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: "/abonnement-iptv-maroc",
+        has: [{ type: "host", value: "www.ondima.ma" }],
+        destination: "https://ondima.ma/abonnement-iptv-pro",
+        statusCode: 302,
+      },
+      {
         source: "/",
         has: [{ type: "host", value: "www.ondima.ma" }],
         destination: "https://ondima.ma/pro",
@@ -39,6 +45,11 @@ const nextConfig: NextConfig = {
         has: [{ type: "host", value: "www.ondima.ma" }],
         destination: "https://ondima.ma/:path*",
         permanent: true,
+      },
+      {
+        source: "/abonnement-iptv-maroc",
+        destination: "/abonnement-iptv-pro",
+        statusCode: 302,
       },
       {
         source: "/",
