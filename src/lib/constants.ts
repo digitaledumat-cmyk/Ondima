@@ -8,7 +8,7 @@ export const HOME_PATH = "/pro";
 /** Landing IPTV Maroc. */
 export const LANDING_PATH = "/iboplayer";
 
-/** Page tarifs. `/abonnement-iptv-maroc` redirige en 302 vers cette URL. */
+/** Page tarifs. `/abonnement-iptv-maroc` redirige en 301 vers cette URL. */
 export const PRICING_PATH = "/abonnement-iptv-pro";
 
 export const GUARANTEE_TAGLINE =

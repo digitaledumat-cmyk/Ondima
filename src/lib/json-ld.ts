@@ -23,7 +23,7 @@ export function organizationGraph() {
         "@type": "Organization",
         "@id": ORG_ID,
         name: SITE_NAME,
-        url: SITE_URL,
+        url: absoluteUrl(HOME_PATH),
         logo: {
           "@type": "ImageObject",
           url: absoluteUrl("/icon.png"),
@@ -43,7 +43,7 @@ export function organizationGraph() {
         "@type": "WebSite",
         "@id": WEBSITE_ID,
         name: SITE_NAME,
-        url: SITE_URL,
+        url: absoluteUrl(HOME_PATH),
         inLanguage: "fr-MA",
         publisher: { "@id": ORG_ID },
         mainEntity: { "@id": absoluteUrl(HOME_PATH) },

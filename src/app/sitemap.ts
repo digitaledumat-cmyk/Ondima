@@ -16,7 +16,7 @@ type SitemapRoute = {
 /**
  * URLs indexables uniquement.
  * La racine `/` redirige en 301 vers `/pro`.
- * `/abonnement-iptv-maroc` redirige en 302 vers `/abonnement-iptv-pro` et ne figure pas ici.
+ * `/abonnement-iptv-maroc` redirige en 301 vers `/abonnement-iptv-pro` et ne figure pas ici.
  */
 const SITEMAP_ROUTES: SitemapRoute[] = [
   { path: HOME_PATH, priority: 1, changeFrequency: "daily" },

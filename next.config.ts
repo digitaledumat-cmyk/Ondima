@@ -32,7 +32,7 @@ const nextConfig: NextConfig = {
         source: "/abonnement-iptv-maroc",
         has: [{ type: "host", value: "www.ondima.ma" }],
         destination: "https://ondima.ma/abonnement-iptv-pro",
-        statusCode: 302,
+        statusCode: 301,
       },
       {
         source: "/",
@@ -49,7 +49,7 @@ const nextConfig: NextConfig = {
       {
         source: "/abonnement-iptv-maroc",
         destination: "/abonnement-iptv-pro",
-        statusCode: 302,
+        statusCode: 301,
       },
       {
         source: "/",
