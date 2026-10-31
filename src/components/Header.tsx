@@ -42,7 +42,7 @@ export default function Header() {
   return (
     <header className="fixed top-0 right-0 left-0 z-50 border-b border-white/5 bg-void/80 backdrop-blur-md">
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3.5 sm:px-6 lg:px-8">
-        <Link href={HOME_PATH} className="shrink-0 transition-opacity hover:opacity-90" aria-label="Accueil Ondima">
+        <Link href="/pro" className="shrink-0 transition-opacity hover:opacity-90" aria-label="Accueil Ondima">
           <Logo size="md" />
         </Link>
 

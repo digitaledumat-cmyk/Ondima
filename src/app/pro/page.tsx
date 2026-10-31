@@ -12,20 +12,31 @@ import WhyChooseIptv from "@/components/WhyChooseIptv";
 import Reviews from "@/components/Reviews";
 import Support from "@/components/Support";
 import TrialForm from "@/components/TrialForm";
-import { HOME_PATH } from "@/lib/constants";
-import {
-  createMetadata,
-  DEFAULT_DESCRIPTION,
-  DEFAULT_TITLE,
-  HOME_KEYWORDS,
-} from "@/lib/metadata";
+import { createMetadata, HOME_KEYWORDS } from "@/lib/metadata";
 
-export const metadata: Metadata = createMetadata({
-  title: DEFAULT_TITLE,
-  description: DEFAULT_DESCRIPTION,
-  path: HOME_PATH,
-  keywords: HOME_KEYWORDS,
-});
+const HOME_TITLE = "Abonnement IPTV Maroc 4K Stable & Sans Coupure | Ondima";
+const HOME_DESCRIPTION =
+  "Abonnement IPTV Maroc Premium. Chaînes live, sport, VOD 4K ultra-stable, anti-freeze et support WhatsApp 24/7. Packs dès 300 DH/an, garantie 45 jours.";
+const HOME_CANONICAL = "https://ondima.ma/pro";
+
+export const metadata: Metadata = {
+  ...createMetadata({
+    title: HOME_TITLE,
+    description: HOME_DESCRIPTION,
+    path: "/pro",
+    keywords: HOME_KEYWORDS,
+  }),
+  alternates: { canonical: HOME_CANONICAL },
+  openGraph: {
+    title: HOME_TITLE,
+    description: HOME_DESCRIPTION,
+    url: HOME_CANONICAL,
+  },
+  twitter: {
+    title: HOME_TITLE,
+    description: HOME_DESCRIPTION,
+  },
+};
 
 export default function Home() {
   return (

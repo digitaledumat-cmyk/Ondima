@@ -83,11 +83,8 @@ export const HOME_KEYWORDS = [
   "abonnement TV",
 ];
 
-export const rootMetadataExtensions: Pick<
-  Metadata,
-  "openGraph" | "twitter" | "alternates"
-> = {
-  alternates: { canonical: absoluteUrl(HOME_PATH) },
+/** Réseaux sociaux par défaut. Pas de canonical ici : chaque page la définit. */
+export const rootMetadataExtensions: Pick<Metadata, "openGraph" | "twitter"> = {
   ...buildSocialMetadata(
     DEFAULT_TITLE,
     DEFAULT_DESCRIPTION,

@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 
 import { publishedPosts } from "@/lib/blog";
-import { HOME_PATH, LANDING_PATH, PRICING_PATH } from "@/lib/constants";
+import { LANDING_PATH, PRICING_PATH } from "@/lib/constants";
 import { legalNav } from "@/lib/navigation";
 import { absoluteUrl } from "@/lib/metadata";
 
@@ -15,11 +15,11 @@ type SitemapRoute = {
 
 /**
  * URLs indexables uniquement.
- * La racine `/` redirige en 301 vers `/pro`.
+ * La racine `/` redirige de façon permanente vers `/pro` et n'est pas listée.
  * `/abonnement-iptv-maroc` redirige en 301 vers `/abonnement-iptv-pro` et ne figure pas ici.
  */
 const SITEMAP_ROUTES: SitemapRoute[] = [
-  { path: HOME_PATH, priority: 1, changeFrequency: "daily" },
+  { path: "/pro", priority: 1.0, changeFrequency: "daily" },
   { path: LANDING_PATH, priority: 0.95, changeFrequency: "weekly" },
   { path: PRICING_PATH, priority: 0.9, changeFrequency: "weekly" },
   { path: "/fonctionnalites", priority: 0.8, changeFrequency: "weekly" },

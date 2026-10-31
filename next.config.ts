@@ -38,7 +38,7 @@ const nextConfig: NextConfig = {
         source: "/",
         has: [{ type: "host", value: "www.ondima.ma" }],
         destination: "https://ondima.ma/pro",
-        statusCode: 301,
+        permanent: true,
       },
       {
         source: "/:path*",
@@ -54,7 +54,7 @@ const nextConfig: NextConfig = {
       {
         source: "/",
         destination: "/pro",
-        statusCode: 301,
+        permanent: true,
       },
     ];
   },
