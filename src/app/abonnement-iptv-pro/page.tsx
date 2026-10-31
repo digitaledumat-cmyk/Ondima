@@ -6,27 +6,42 @@ import TrustBadge from "@/components/TrustBadge";
 import SiteShell from "@/components/layout/SiteShell";
 import Breadcrumbs from "@/components/seo/Breadcrumbs";
 import SeoContentBlock from "@/components/seo/SeoContentBlock";
-import { HOME_PATH, PRICING_PATH, WHATSAPP_URL } from "@/lib/constants";
+import { HOME_PATH, WHATSAPP_URL } from "@/lib/constants";
 import { createMetadata } from "@/lib/metadata";
 import {
   abonnementPricingSeo,
   abonnementSeoIntro,
 } from "@/lib/seo-content";
 
-export const metadata: Metadata = createMetadata({
-  title:
-    "Abonnement IPTV Maroc Premium | Tarifs & Formules 2026 - Ondima",
-  description:
-    "Tarifs IPTV Maroc 2026 : Pack Pro 300 dhs, Expérience Ultra 450 dhs, VIP 600 dhs/an. Acheter IPTV Maroc avec serveurs VPS OTT, garantie 45 jours et activation WhatsApp 24/7.",
-  path: PRICING_PATH,
-  keywords: [
-    "abonnement IPTV Maroc",
-    "tarifs IPTV Maroc",
-    "acheter IPTV Maroc",
-    "prix IPTV",
-    "IPTV 4K Maroc",
-  ],
-});
+const PRICING_TITLE = "Tarifs IPTV Maroc 2026 | Packs Pro, Ultra, VIP | Ondima";
+const PRICING_DESCRIPTION =
+  "Trois formules annuelles : Pack Pro 300 dhs, Ultra 450 dhs et VIP 600 dhs. Serveurs VPS, activation WhatsApp et garantie 45 jours.";
+const PRICING_CANONICAL = "https://ondima.ma/abonnement-iptv-pro";
+
+export const metadata: Metadata = {
+  ...createMetadata({
+    title: PRICING_TITLE,
+    description: PRICING_DESCRIPTION,
+    path: "/abonnement-iptv-pro",
+    keywords: [
+      "tarifs IPTV Maroc",
+      "prix IPTV Maroc",
+      "pack IPTV Maroc",
+      "acheter IPTV Maroc",
+      "formules IPTV Ondima",
+    ],
+  }),
+  alternates: { canonical: PRICING_CANONICAL },
+  openGraph: {
+    title: PRICING_TITLE,
+    description: PRICING_DESCRIPTION,
+    url: PRICING_CANONICAL,
+  },
+  twitter: {
+    title: PRICING_TITLE,
+    description: PRICING_DESCRIPTION,
+  },
+};
 
 function WhatsAppIcon({ className }: { className?: string }) {
   return (
@@ -48,7 +63,7 @@ export default function AbonnementIptvMarocPage() {
               Nos offres · 2026
             </p>
             <h1 className="max-w-4xl text-3xl font-extrabold tracking-tight text-white sm:text-4xl lg:text-5xl">
-              Abonnement IPTV Maroc Premium : Nos Tarifs &amp; Formules 2026
+              Tarifs IPTV Maroc 2026 : Pack Pro, Ultra et VIP
             </h1>
             <p className="mt-5 max-w-2xl text-base leading-relaxed text-zinc-400">
               Trois packs annuels — Pack Pro (300 dhs / 35&nbsp;€), Expérience Ultra

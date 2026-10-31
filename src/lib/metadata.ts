@@ -9,7 +9,7 @@ export const DEFAULT_TITLE =
   "Abonnement IPTV Maroc 2026 | +45 000 Chaînes HD/4K - Ondima";
 
 export const DEFAULT_DESCRIPTION =
-  "Ondima.ma/pro : abonnement IPTV Maroc Premium. Chaînes live, sport, VOD 4K ultra-stable, anti-freeze et support WhatsApp 24/7. Packs dès 300 DH/an, garantie 45 jours.";
+  "Abonnement IPTV Maroc Premium. Chaînes live, sport, VOD 4K ultra-stable, anti-freeze et support WhatsApp 24/7. Packs dès 300 DH/an, garantie 45 jours.";
 
 export const OG_IMAGE = {
   url: "/ondima.webp",

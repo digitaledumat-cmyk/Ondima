@@ -8,7 +8,7 @@ import WhatsAppReviews from "@/components/WhatsAppReviews";
 import PageHero from "@/components/layout/PageHero";
 import SiteShell from "@/components/layout/SiteShell";
 import SeoContentBlock from "@/components/seo/SeoContentBlock";
-import { GUARANTEE_TAGLINE, LANDING_PATH, PRICING_PATH, WHATSAPP_URL } from "@/lib/constants";
+import { GUARANTEE_TAGLINE, PRICING_PATH, WHATSAPP_URL } from "@/lib/constants";
 import {
   iptvMarocCities,
   iptvMarocDevices,
@@ -19,12 +19,17 @@ import {
 } from "@/lib/iptv-maroc";
 import { createMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = createMetadata({
-  title: "IPTV Maroc | Meilleur Abonnement Stable & Sans Coupure – Ondima",
-  description:
-    "IPTV Maroc premium Ondima : abonnement stable, HD/FHD/4K, Anti-freeze, support WhatsApp rapide. Pack Pro 300 dhs, Ultra 450 dhs, VIP 600 dhs. Garantie 45 jours.",
-  path: LANDING_PATH,
-  keywords: [
+const LANDING_TITLE = "IPTV Maroc | Couverture des villes et appareils | Ondima";
+const LANDING_DESCRIPTION =
+  "Couverture IPTV à Casablanca, Rabat, Marrakech, Tanger, Fès et Agadir. Smart TV, Android et Firestick, avec activation WhatsApp.";
+const LANDING_CANONICAL = "https://ondima.ma/iboplayer";
+
+export const metadata: Metadata = {
+  ...createMetadata({
+    title: LANDING_TITLE,
+    description: LANDING_DESCRIPTION,
+    path: "/iboplayer",
+    keywords: [
     "IPTV Maroc",
     "meilleur IPTV Maroc",
     "abonnement IPTV Maroc",
@@ -33,7 +38,18 @@ export const metadata: Metadata = createMetadata({
     "support IPTV WhatsApp",
     "IPTV 4K Maroc",
   ],
-});
+  }),
+  alternates: { canonical: LANDING_CANONICAL },
+  openGraph: {
+    title: LANDING_TITLE,
+    description: LANDING_DESCRIPTION,
+    url: LANDING_CANONICAL,
+  },
+  twitter: {
+    title: LANDING_TITLE,
+    description: LANDING_DESCRIPTION,
+  },
+};
 
 export default function IptvMarocPage() {
   const faqItems = iptvMarocFaq.map((item) => ({
@@ -47,7 +63,7 @@ export default function IptvMarocPage() {
       <main id="contenu">
         <PageHero
           label="IPTV Maroc · 2026"
-          title="IPTV Maroc : le meilleur abonnement stable & sans coupure"
+          title="IPTV Maroc : couverture des villes et appareils"
           description="Découvrez Ondima — abonnement IPTV Maroc premium, image HD/FHD/4K, Anti-freeze, activation WhatsApp et support rapide. Formules dès 300 dhs/an."
         />
 
