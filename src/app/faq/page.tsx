@@ -9,11 +9,18 @@ import { createMetadata } from "@/lib/metadata";
 import { faqSeoIntro } from "@/lib/seo-content";
 
 export const metadata: Metadata = createMetadata({
-  title: "FAQ Best IPTV | IPTV Subscription UK & Service Providers - Ondima",
+  title: "FAQ IPTV Maroc | Prix, débit, Smart TV et garantie - Ondima",
   description:
-    "FAQ IPTV : best IPTV services, IPTV subscription UK, IPTV service providers et routage streaming. Réponses techniques sur garantie 45 jours, débit 4K et multi-écrans.",
+    "FAQ abonnement IPTV au Maroc : packs dès 300 dhs, chaînes selon le forfait, fibre Maroc Telecom, Orange et Inwi, installation Smart TV et garantie 45 jours.",
   path: "/faq",
-  keywords: ["IPTV subscription UK", "best IPTV services", "IPTV service providers", "best IPTV"],
+  keywords: [
+    "FAQ IPTV Maroc",
+    "abonnement IPTV Maroc",
+    "prix IPTV Maroc",
+    "IPTV Smart TV Maroc",
+    "IPTV fibre Maroc",
+    "garantie IPTV Ondima",
+  ],
 });
 
 export default function FaqPage() {
@@ -23,7 +30,7 @@ export default function FaqPage() {
         <PageHero
           label="Support"
           title="Foire aux questions"
-          description="Réponses sur le best IPTV, l'IPTV subscription UK, les IPTV service providers et nos protocoles de streaming haute performance."
+          description="Prix en dirhams, chaînes selon le pack, débit fibre ou 4G, installation Smart TV et garantie 45 jours pour un abonnement IPTV au Maroc."
         />
         <SeoContentBlock
           title={faqSeoIntro.title}

@@ -19,7 +19,7 @@ export default function FAQ({ compact = false }: { compact?: boolean }) {
           <div className="mb-12 text-center">
             <p className="mb-3 text-sm font-medium tracking-widest text-violet-400 uppercase">FAQ</p>
             <h2 id="titre-faq" className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-              Foire Aux Questions : Tout savoir sur le Best IPTV Service
+              Foire aux questions : abonnement IPTV au Maroc
             </h2>
             <p className="mx-auto mt-4 max-w-lg text-sm text-zinc-500">
               Tout ce que vous devez savoir avant de choisir votre forfait Ondima.

@@ -68,8 +68,9 @@ export const blogSeoIntro = {
 };
 
 export const faqSeoIntro = {
-  title: "Questions techniques & couverture internationale",
+  title: "Abonnement IPTV au Maroc : prix, débit et installation",
   paragraphs: [
-    "Cette FAQ couvre les interrogations les plus fréquentes sur nos protocoles de streaming, notre positionnement parmi les best IPTV services et notre offre IPTV subscription UK pour les utilisateurs anglophones.",
+    "Cette FAQ répond aux questions les plus fréquentes au Maroc : tarifs en dirhams, nombre de chaînes selon le pack, fibre Maroc Telecom, Orange ou Inwi, installation sur Smart TV, et garantie de 45 jours.",
+    "Le service couvre Casablanca, Rabat, Marrakech, Tanger, Fès, Agadir et le reste du pays, ainsi que les Marocains résidant en Europe. Le support WhatsApp répond en français et en darija.",
   ],
 };
